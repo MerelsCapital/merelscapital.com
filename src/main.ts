@@ -6,7 +6,6 @@ import { renderIndividuals } from './pages/individuals.js'
 import { renderFamilyOffices } from './pages/family-offices.js'
 import { renderInstitutions } from './pages/institutions.js'
 import { renderArticles } from './pages/articles.js'
-import { renderPrivacy } from './pages/privacy.js'
 import { renderContact } from './pages/contact.js'
 import { renderHeader } from './components/header.js'
 import { renderFooter } from './components/footer.js'
@@ -17,7 +16,6 @@ registerRoute('individuals',   renderIndividuals)
 registerRoute('family-offices',renderFamilyOffices)
 registerRoute('institutions',  renderInstitutions)
 registerRoute('articles',      renderArticles)
-registerRoute('privacy',       renderPrivacy)
 registerRoute('contact',       renderContact)
 
 document.getElementById('header')!.innerHTML = renderHeader()
@@ -77,3 +75,24 @@ document.addEventListener('keydown', (e) => {
 
 // ── Start router ─────────────────────────────────────
 initRouter()
+
+// ── Prefetch slot availability for the next 5 business days ──
+function prefetchSlots(): void {
+  const dates: string[] = []
+  const d = new Date()
+  while (dates.length < 5) {
+    d.setDate(d.getDate() + 1)
+    const dateStr = d.toLocaleDateString('en-CA', { timeZone: 'America/Denver' })
+    const [year, month, day] = dateStr.split('-').map(Number)
+    const dow = new Date(year, month - 1, day).getDay()
+    if (dow !== 0 && dow !== 6) dates.push(dateStr)
+  }
+  dates.forEach(date =>
+    fetch(`https://api.merelscapital.com/slots?date=${date}`).catch(() => {})
+  )
+}
+
+window.addEventListener('load', () => {
+  const schedule = (window as any).requestIdleCallback ?? ((cb: () => void) => setTimeout(cb, 200))
+  schedule(prefetchSlots)
+})
