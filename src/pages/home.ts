@@ -1,25 +1,41 @@
 export function renderHome(): string {
   return `
     <section id="hero">
-      <div class="hero-content">
-        <p class="hero-eyebrow">Independent Wealth Management</p>
-        <h1>Welcome to Merels Capital</h1>
-        <p class="hero-subtitle">Where your financial life is managed with the depth, independence, and personal attention it deserves.</p>
-        <div class="hero-stats">
-          <div class="hero-stat">
-            <span class="stat-number">100%</span>
-            <span class="stat-label">Independent &amp; unconflicted</span>
+      <div class="hero-left">
+        <div class="hero-content">
+          <p class="hero-eyebrow">Independent Wealth Management</p>
+          <h1>Welcome to Merels Capital</h1>
+          <p class="hero-subtitle">Where your financial life is managed with the depth, independence, and personal attention it deserves.</p>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Independent &amp; unconflicted</span>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat">
+              <span class="stat-number">Holistic</span>
+              <span class="stat-label">Advice across every dimension of wealth</span>
+            </div>
           </div>
-          <div class="hero-stat-divider"></div>
-          <div class="hero-stat">
-            <span class="stat-number">Holistic</span>
-            <span class="stat-label">Advice across every dimension of wealth</span>
+          <div class="audience-tabs">
+            <button class="audience-tab active" data-audience="individuals">Individuals &amp; Families</button>
+            <button class="audience-tab" data-audience="family-offices">Family Offices</button>
+            <button class="audience-tab" data-audience="institutions">Institutions</button>
           </div>
         </div>
-        <div class="audience-tabs">
-          <button class="audience-tab active" data-audience="individuals">Individuals &amp; Families</button>
-          <button class="audience-tab" data-audience="family-offices">Family Offices</button>
-          <button class="audience-tab" data-audience="institutions">Institutions</button>
+      </div>
+      <div class="hero-carousel">
+        <div class="carousel-track" id="carousel-track">
+          <div class="carousel-slide"><img src="/images/NYC.jpeg" alt="New York City skyline" /></div>
+          <div class="carousel-slide"><img src="/images/London.jpg" alt="London skyline" /></div>
+          <div class="carousel-slide"><img src="/images/HK.jpg" alt="Hong Kong skyline" /></div>
+          <div class="carousel-slide"><img src="/images/Singapore.jpg" alt="Singapore skyline" /></div>
+        </div>
+        <div class="carousel-dots" id="carousel-dots">
+          <button class="carousel-dot active" data-index="0" aria-label="New York City"></button>
+          <button class="carousel-dot" data-index="1" aria-label="London"></button>
+          <button class="carousel-dot" data-index="2" aria-label="Hong Kong"></button>
+          <button class="carousel-dot" data-index="3" aria-label="Singapore"></button>
         </div>
       </div>
     </section>
@@ -210,7 +226,10 @@ export function renderHome(): string {
   `
 }
 
+let carouselTimer: ReturnType<typeof setInterval> | null = null
+
 export function initHome(): void {
+  // Audience tabs
   const tabs   = document.querySelectorAll<HTMLButtonElement>('.audience-tab')
   const panels = document.querySelectorAll<HTMLElement>('.audience-panel')
 
@@ -222,6 +241,27 @@ export function initHome(): void {
       tab.classList.add('active')
       const panel = document.getElementById(`panel-${target}`)
       if (panel) panel.classList.add('active')
+      document.getElementById('audience-content')?.scrollIntoView({ behavior: 'smooth' })
     })
   })
+
+  // Carousel
+  if (carouselTimer) clearInterval(carouselTimer)
+
+  const track = document.getElementById('carousel-track') as HTMLElement
+  const dots  = document.querySelectorAll<HTMLButtonElement>('.carousel-dot')
+  const total = dots.length
+  let current = 0
+
+  function goTo(index: number) {
+    current = index
+    track.style.transform = `translateX(-${current * 100}%)`
+    dots.forEach((d, i) => d.classList.toggle('active', i === current))
+  }
+
+  dots.forEach(dot => {
+    dot.addEventListener('click', () => goTo(Number(dot.dataset.index)))
+  })
+
+  carouselTimer = setInterval(() => goTo((current + 1) % total), 4500)
 }

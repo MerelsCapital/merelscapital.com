@@ -1,10 +1,15 @@
 export function renderFormAdv(): string {
   return `
-    <section class="about-hero">
-      <div class="about-hero-inner">
-        <span class="section-label light">LEGAL</span>
-        <h1>Form ADV</h1>
-        <p class="about-hero-subtitle">Regulatory disclosure documents filed with the U.S. Securities and Exchange Commission.</p>
+    <section class="split-hero">
+      <div class="split-hero-left">
+        <div class="split-hero-content">
+          <span class="section-label light">LEGAL</span>
+          <h1>Form ADV</h1>
+          <p class="about-hero-subtitle">Regulatory disclosure documents filed with the U.S. Securities and Exchange Commission.</p>
+        </div>
+      </div>
+      <div class="split-hero-image">
+        <img src="/images/Form.png" alt="Financial documents" />
       </div>
     </section>
 
