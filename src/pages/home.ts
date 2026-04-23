@@ -48,7 +48,7 @@ export function renderHome(): string {
               <span class="section-label">WHAT WE DO</span>
               <h2>Wealth advisory built around your vision of prosperity</h2>
               <p>We provide comprehensive financial planning and investment management grounded in what matters most to you—not an abstract benchmark. Every recommendation we make is shaped by your goals, your values, and the life you want to live.</p>
-              <a href="#approach" class="text-link">Explore our approach →</a>
+              <a data-route="individuals" href="#" class="text-link">Explore our approach →</a>
             </div>
             <img class="placeholder-image" src="/images/Partner-1.jpg" alt="Wealth advisory partnership" />
           </div>
@@ -73,7 +73,7 @@ export function renderHome(): string {
               <span class="section-label">WHAT WE DO</span>
               <h2>Serving the complexity of multi-generational wealth</h2>
               <p>Family offices require more than investment management—they demand coordinated oversight of governance, reporting, tax planning, and legacy strategy. We provide the institutional rigor and personalized service that complex family structures require.</p>
-              <a href="#approach" class="text-link">Explore our approach →</a>
+              <a data-route="family-offices" href="#" class="text-link">Explore our approach →</a>
             </div>
             <div class="placeholder-image"></div>
           </div>
@@ -98,7 +98,7 @@ export function renderHome(): string {
               <span class="section-label">WHAT WE DO</span>
               <h2>Disciplined oversight for institutional portfolios</h2>
               <p>Endowments, foundations, and other institutional investors benefit from our OCIO capabilities—combining rigorous investment management with the reporting transparency and governance structures your stakeholders expect.</p>
-              <a href="#approach" class="text-link">Explore our approach →</a>
+              <a data-route="institutions" href="#" class="text-link">Explore our approach →</a>
             </div>
             <div class="placeholder-image"></div>
           </div>
