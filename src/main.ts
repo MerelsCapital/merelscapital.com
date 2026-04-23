@@ -6,7 +6,6 @@ import { renderIndividuals } from './pages/individuals.js'
 import { renderFamilyOffices } from './pages/family-offices.js'
 import { renderInstitutions } from './pages/institutions.js'
 import { renderArticles } from './pages/articles.js'
-import { renderFormAdv } from './pages/form-adv.js'
 import { renderPrivacy } from './pages/privacy.js'
 import { renderContact } from './pages/contact.js'
 import { renderHeader } from './components/header.js'
@@ -18,7 +17,6 @@ registerRoute('individuals',   renderIndividuals)
 registerRoute('family-offices',renderFamilyOffices)
 registerRoute('institutions',  renderInstitutions)
 registerRoute('articles',      renderArticles)
-registerRoute('form-adv',      renderFormAdv)
 registerRoute('privacy',       renderPrivacy)
 registerRoute('contact',       renderContact)
 

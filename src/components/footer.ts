@@ -23,7 +23,7 @@ export function renderFooter(): string {
         </div>
         <div class="footer-col">
           <h4>Legal</h4>
-          <a data-route="form-adv" href="#">Form ADV</a>
+          <a href="https://adviserinfo.sec.gov/firm/summary/339181" target="_blank" rel="noopener">ADV Documents</a>
           <a data-route="privacy" href="#">Privacy Policy</a>
         </div>
         <div class="footer-col">
