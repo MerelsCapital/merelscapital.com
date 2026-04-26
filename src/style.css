@@ -1568,6 +1568,25 @@ a { text-decoration: none; }
   margin-top: -0.25rem;
 }
 
+.contact-feedback {
+  padding: 0.85rem 1rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.contact-feedback--success {
+  background: #ecfdf5;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+}
+
+.contact-feedback--error {
+  background: #fef2f2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+
 .contact-info-col {
   display: flex;
   flex-direction: column;

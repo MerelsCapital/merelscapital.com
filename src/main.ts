@@ -6,7 +6,7 @@ import { renderIndividuals } from './pages/individuals.js'
 import { renderFamilyOffices } from './pages/family-offices.js'
 import { renderSmallBusinesses } from './pages/small-businesses.js'
 import { renderArticles } from './pages/articles.js'
-import { renderContact } from './pages/contact.js'
+import { renderContact, initContact } from './pages/contact.js'
 import { renderHeader } from './components/header.js'
 import { renderFooter } from './components/footer.js'
 
@@ -16,7 +16,7 @@ registerRoute('individuals',   renderIndividuals)
 registerRoute('family-offices',renderFamilyOffices)
 registerRoute('small-businesses', renderSmallBusinesses)
 registerRoute('articles',      renderArticles)
-registerRoute('contact',       renderContact)
+registerRoute('contact',       renderContact, initContact)
 
 document.getElementById('header')!.innerHTML = renderHeader()
 document.getElementById('footer')!.innerHTML = renderFooter()

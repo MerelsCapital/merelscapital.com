@@ -1,3 +1,52 @@
+export function initContact(): void {
+  const form     = document.getElementById('contact-form')     as HTMLFormElement
+  const submit   = document.getElementById('contact-submit')   as HTMLButtonElement
+  const feedback = document.getElementById('contact-feedback') as HTMLElement
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault()
+
+    submit.disabled = true
+    submit.textContent = 'Sending…'
+    feedback.hidden = true
+    feedback.className = 'contact-feedback'
+
+    const data = new FormData(form)
+    const body = {
+      first_name: data.get('first_name') as string,
+      last_name:  data.get('last_name')  as string,
+      email:      data.get('email')      as string,
+      phone:      data.get('phone')      as string,
+      subject:    data.get('subject')    as string,
+      message:    data.get('message')    as string,
+    }
+
+    try {
+      const res = await fetch('https://api.merelscapital.com/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body),
+      })
+
+      if (res.ok) {
+        feedback.textContent = 'Your message has been sent. We\'ll be in touch shortly.'
+        feedback.classList.add('contact-feedback--success')
+        form.reset()
+        submit.textContent = 'Message Sent'
+      } else {
+        throw new Error('Server error')
+      }
+    } catch {
+      feedback.textContent = 'Something went wrong. Please try again or email us directly at info@merelscapital.com.'
+      feedback.classList.add('contact-feedback--error')
+      submit.disabled = false
+      submit.textContent = 'Send Message'
+    }
+
+    feedback.hidden = false
+  })
+}
+
 export function renderContact(): string {
   return `
     <section class="split-hero">
@@ -18,20 +67,20 @@ export function renderContact(): string {
         <div class="contact-form-col">
           <h2>Get in touch</h2>
           <p class="contact-intro">Fill out the form below and a member of our team will respond within one business day.</p>
-          <form class="contact-form" onsubmit="return false;">
+          <form class="contact-form" id="contact-form">
             <div class="form-row">
               <div class="form-group">
                 <label for="contact-first">First Name</label>
-                <input type="text" id="contact-first" name="first_name" placeholder="Jane" autocomplete="given-name" />
+                <input type="text" id="contact-first" name="first_name" placeholder="Jane" autocomplete="given-name" required />
               </div>
               <div class="form-group">
                 <label for="contact-last">Last Name</label>
-                <input type="text" id="contact-last" name="last_name" placeholder="Smith" autocomplete="family-name" />
+                <input type="text" id="contact-last" name="last_name" placeholder="Smith" autocomplete="family-name" required />
               </div>
             </div>
             <div class="form-group">
               <label for="contact-email">Email Address</label>
-              <input type="email" id="contact-email" name="email" placeholder="jane@example.com" autocomplete="email" />
+              <input type="email" id="contact-email" name="email" placeholder="jane@example.com" autocomplete="email" required />
             </div>
             <div class="form-group">
               <label for="contact-phone">Phone Number <span class="form-optional">(optional)</span></label>
@@ -51,7 +100,8 @@ export function renderContact(): string {
               <label for="contact-message">Message <span class="form-optional">(optional)</span></label>
               <textarea id="contact-message" name="message" rows="5" placeholder="Tell us a little about your situation…"></textarea>
             </div>
-            <button type="submit" class="form-submit">Send Message</button>
+            <div id="contact-feedback" class="contact-feedback" hidden></div>
+            <button type="submit" class="form-submit" id="contact-submit">Send Message</button>
             <p class="form-disclaimer">By submitting this form you agree to be contacted by Merels Capital. We will never sell or share your information with third parties.</p>
           </form>
         </div>

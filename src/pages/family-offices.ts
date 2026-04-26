@@ -1,10 +1,15 @@
 export function renderFamilyOffices(): string {
   return `
-    <section class="about-hero">
-      <div class="about-hero-inner">
-        <span class="section-label light">FAMILY OFFICES</span>
-        <h1>Institutional rigor for the families you serve.</h1>
-        <p class="about-hero-subtitle">Coordinated investment management, governance, and reporting for single and multi-family office structures.</p>
+    <section class="split-hero">
+      <div class="split-hero-left">
+        <div class="split-hero-content">
+          <span class="section-label light">FAMILY OFFICES</span>
+          <h1>Institutional rigor for the families you serve.</h1>
+          <p class="about-hero-subtitle">Coordinated investment management, governance, and reporting for single and multi-family office structures.</p>
+        </div>
+      </div>
+      <div class="split-hero-image">
+        <img src="/images/familyoffice-1.png" alt="Family office wealth management" />
       </div>
     </section>
 
@@ -16,7 +21,7 @@ export function renderFamilyOffices(): string {
           <p>Family offices require more than investment management — they demand coordinated oversight of governance, reporting, tax planning, and legacy strategy across generations. We provide the institutional rigor and personalized service that complex family structures require.</p>
           <p>We work as an extension of your family office, bringing capabilities that would otherwise require building an entire internal team.</p>
         </div>
-        <div class="placeholder-image"></div>
+        <img class="placeholder-image" src="/images/familyoffice-2.jpg" alt="Multi-generational family wealth" />
       </div>
     </section>
 
@@ -72,7 +77,7 @@ export function renderFamilyOffices(): string {
 
     <section class="content-row bg-off-white">
       <div class="content-row-inner reverse">
-        <div class="placeholder-image"></div>
+        <img class="placeholder-image" src="/images/familyoffice-3.jpg" alt="Independence that serves the family" />
         <div class="section-text">
           <span class="section-label">WHY WORK WITH US</span>
           <h2>Independence that serves the family, not the institution</h2>
