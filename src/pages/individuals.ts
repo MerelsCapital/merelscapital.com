@@ -1,10 +1,15 @@
 export function renderIndividuals(): string {
   return `
-    <section class="about-hero">
-      <div class="about-hero-inner">
-        <span class="section-label light">INDIVIDUALS &amp; FAMILIES</span>
-        <h1>Wealth advisory built around your life.</h1>
-        <p class="about-hero-subtitle">Comprehensive financial planning and investment management for individuals and families at every stage of wealth.</p>
+    <section class="split-hero">
+      <div class="split-hero-left">
+        <div class="split-hero-content">
+          <span class="section-label light">INDIVIDUALS &amp; FAMILIES</span>
+          <h1>Wealth advisory built around your life.</h1>
+          <p class="about-hero-subtitle">Comprehensive financial planning and investment management for individuals and families at every stage of wealth.</p>
+        </div>
+      </div>
+      <div class="split-hero-image">
+        <img src="/images/Individuals-1.jpg" alt="Wealth advisory for individuals and families" />
       </div>
     </section>
 
@@ -16,7 +21,7 @@ export function renderIndividuals(): string {
           <p>We provide fully integrated wealth management that goes beyond the portfolio. From financial planning and tax strategy to estate structures and insurance review, we coordinate every dimension of your financial life so nothing falls through the cracks.</p>
           <p>Our approach starts with understanding you — your goals, your values, and the trade-offs you're willing to make. Only then do we build a plan.</p>
         </div>
-        <div class="placeholder-image"></div>
+        <img class="placeholder-image" src="/images/individuals-2.jpg" alt="Individuals and families wealth planning" />
       </div>
     </section>
 
@@ -72,7 +77,7 @@ export function renderIndividuals(): string {
 
     <section class="content-row bg-off-white">
       <div class="content-row-inner reverse">
-        <div class="placeholder-image"></div>
+        <img class="placeholder-image" src="/images/individuals-3.jpg" alt="A partner through every defining moment" />
         <div class="section-text">
           <span class="section-label">HOW WE HELP</span>
           <h2>A partner through every defining moment</h2>
