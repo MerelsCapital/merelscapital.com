@@ -4,7 +4,7 @@ import { renderHome, initHome } from './pages/home.js'
 import { renderAbout } from './pages/about.js'
 import { renderIndividuals } from './pages/individuals.js'
 import { renderFamilyOffices } from './pages/family-offices.js'
-import { renderInstitutions } from './pages/institutions.js'
+import { renderSmallBusinesses } from './pages/small-businesses.js'
 import { renderArticles } from './pages/articles.js'
 import { renderContact } from './pages/contact.js'
 import { renderHeader } from './components/header.js'
@@ -14,7 +14,7 @@ registerRoute('home',          renderHome,        initHome)
 registerRoute('about',         renderAbout)
 registerRoute('individuals',   renderIndividuals)
 registerRoute('family-offices',renderFamilyOffices)
-registerRoute('institutions',  renderInstitutions)
+registerRoute('small-businesses', renderSmallBusinesses)
 registerRoute('articles',      renderArticles)
 registerRoute('contact',       renderContact)
 

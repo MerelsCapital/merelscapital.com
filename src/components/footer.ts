@@ -14,7 +14,7 @@ export function renderFooter(): string {
           <h4>Services</h4>
           <a data-route="individuals" href="#">Individuals &amp; Families</a>
           <a data-route="family-offices" href="#">Family Offices</a>
-          <a data-route="institutions" href="#">Institutions</a>
+          <a data-route="small-businesses" href="#">Small Businesses</a>
         </div>
         <div class="footer-col">
           <h4>Company</h4>

@@ -20,16 +20,16 @@ export function renderHome(): string {
           <div class="audience-tabs">
             <button class="audience-tab active" data-audience="individuals">Individuals &amp; Families</button>
             <button class="audience-tab" data-audience="family-offices">Family Offices</button>
-            <button class="audience-tab" data-audience="institutions">Institutions</button>
+            <button class="audience-tab" data-audience="small-businesses">Small Businesses</button>
           </div>
         </div>
       </div>
       <div class="hero-carousel">
         <div class="carousel-track" id="carousel-track">
-          <div class="carousel-slide"><img src="/images/NYC.jpeg" alt="New York City skyline" /></div>
-          <div class="carousel-slide"><img src="/images/London.jpg" alt="London skyline" /></div>
-          <div class="carousel-slide"><img src="/images/HK.jpg" alt="Hong Kong skyline" /></div>
-          <div class="carousel-slide"><img src="/images/Singapore.jpg" alt="Singapore skyline" /></div>
+          <div class="carousel-slide"><img src="/images/NY.jpeg" alt="New York City skyline" /></div>
+          <div class="carousel-slide"><img src="/images/London.jpeg" alt="London skyline" /></div>
+          <div class="carousel-slide"><img src="/images/HK.jpeg" alt="Hong Kong skyline" /></div>
+          <div class="carousel-slide"><img src="/images/Singapore.jpeg" alt="Singapore skyline" /></div>
         </div>
         <div class="carousel-dots" id="carousel-dots">
           <button class="carousel-dot active" data-index="0" aria-label="New York City"></button>
@@ -75,12 +75,12 @@ export function renderHome(): string {
               <p>Family offices require more than investment management—they demand coordinated oversight of governance, reporting, tax planning, and legacy strategy. We provide the institutional rigor and personalized service that complex family structures require.</p>
               <a data-route="family-offices" href="#" class="text-link">Explore our approach →</a>
             </div>
-            <div class="placeholder-image"></div>
+            <img class="placeholder-image" src="/images/family%20office%201.jpeg" alt="Family office wealth management" />
           </div>
         </div>
         <div class="content-row bg-white">
           <div class="content-row-inner reverse">
-            <div class="placeholder-image"></div>
+            <img class="placeholder-image" src="/images/family%20office%202.jpeg" alt="Multi-generational family wealth" />
             <div class="section-text">
               <span class="section-label">WHY WORK WITH US</span>
               <h2>Independence that serves the family, not the institution</h2>
@@ -91,26 +91,26 @@ export function renderHome(): string {
         </div>
       </div>
 
-      <div class="audience-panel" id="panel-institutions">
+      <div class="audience-panel" id="panel-small-businesses">
         <div class="content-row bg-off-white">
           <div class="content-row-inner">
             <div class="section-text">
               <span class="section-label">WHAT WE DO</span>
-              <h2>Disciplined oversight for institutional portfolios</h2>
-              <p>Endowments, foundations, and other institutional investors benefit from our OCIO capabilities—combining rigorous investment management with the reporting transparency and governance structures your stakeholders expect.</p>
-              <a data-route="institutions" href="#" class="text-link">Explore our approach →</a>
+              <h2>Financial guidance for business owners at every stage</h2>
+              <p>Running a business and building personal wealth require different disciplines—but they're inseparable. We help small business owners integrate their business and personal finances, plan for growth, and prepare for what comes next, whether that's succession, a sale, or retirement.</p>
+              <a data-route="small-businesses" href="#" class="text-link">Explore our approach →</a>
             </div>
-            <div class="placeholder-image"></div>
+            <img class="placeholder-image" src="/images/smallbusiness-1.jpg" alt="Small business financial planning" />
           </div>
         </div>
         <div class="content-row bg-white">
           <div class="content-row-inner reverse">
-            <div class="placeholder-image"></div>
+            <img class="placeholder-image" src="/images/smallbusiness-2.jpg" alt="Business owner wealth management" />
             <div class="section-text">
               <span class="section-label">WHY WORK WITH US</span>
-              <h2>Boutique attention with institutional-grade capability</h2>
-              <p>You won't be passed to a junior team or served from a playbook built for someone else. We bring senior-level engagement, dedicated research resources, and an unwavering fiduciary commitment to every institutional relationship we manage.</p>
-              <a href="/contact" class="text-link">Start a conversation →</a>
+              <h2>A partner who understands the complexity of business ownership</h2>
+              <p>Most advisors treat business owners like any other client. We understand that your business is your largest asset, your primary income source, and often your retirement plan all at once. We bring the planning depth that complexity demands—so you can focus on running your business.</p>
+              <a data-route="contact" href="#" class="text-link">Start a conversation →</a>
             </div>
           </div>
         </div>
@@ -200,7 +200,7 @@ export function renderHome(): string {
           </div>
         </div>
         <div class="story-card">
-          <div class="story-image"></div>
+          <img class="story-image" src="/images/institution.jpeg" alt="Institutional partnership" />
           <div class="story-content">
             <h3>A foundation seeks an institutional partner</h3>
             <p>A growing endowment needs more than a portfolio manager—it needs governance, investment policy, and a long-term framework aligned to its mission and obligations.</p>
@@ -255,7 +255,7 @@ export function initHome(): void {
 
   function goTo(index: number) {
     current = index
-    track.style.transform = `translateX(-${current * 100}%)`
+    track.style.transform = `translateX(-${current * 25}%)`
     dots.forEach((d, i) => d.classList.toggle('active', i === current))
   }
 

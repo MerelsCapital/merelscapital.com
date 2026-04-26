@@ -1,10 +1,15 @@
 export function renderAbout(): string {
   return `
-    <section class="about-hero">
-      <div class="about-hero-inner">
-        <span class="section-label light">ABOUT US</span>
-        <h1>Built differently, by design.</h1>
-        <p class="about-hero-subtitle">We believe great wealth management starts with a genuine relationship—not a product pitch. Everything we do flows from that conviction.</p>
+    <section class="split-hero">
+      <div class="split-hero-left">
+        <div class="split-hero-content">
+          <span class="section-label light">ABOUT US</span>
+          <h1>Built differently, by design.</h1>
+          <p class="about-hero-subtitle">We believe great wealth management starts with a genuine relationship—not a product pitch. Everything we do flows from that conviction.</p>
+        </div>
+      </div>
+      <div class="split-hero-image">
+        <img src="/images/About-Us.jpeg" alt="About Merels Capital" />
       </div>
     </section>
 

@@ -1,10 +1,15 @@
 export function renderContact(): string {
   return `
-    <section class="about-hero">
-      <div class="about-hero-inner">
-        <span class="section-label light">CONTACT</span>
-        <h1>Let's start a conversation.</h1>
-        <p class="about-hero-subtitle">No obligation, no pressure. Tell us a little about your situation and we'll be in touch.</p>
+    <section class="split-hero">
+      <div class="split-hero-left">
+        <div class="split-hero-content">
+          <span class="section-label light">CONTACT</span>
+          <h1>Let's start a conversation.</h1>
+          <p class="about-hero-subtitle">No obligation, no pressure. Tell us a little about your situation and we'll be in touch.</p>
+        </div>
+      </div>
+      <div class="split-hero-image">
+        <img src="/images/Contact.jpeg" alt="Contact Merels Capital" />
       </div>
     </section>
 

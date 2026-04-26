@@ -1,10 +1,15 @@
 export function renderArticles(): string {
   return `
-    <section class="about-hero">
-      <div class="about-hero-inner">
-        <span class="section-label light">ARTICLES</span>
-        <h1>Plain-language guidance on complex topics.</h1>
-        <p class="about-hero-subtitle">Educational content on financial planning, investing, tax strategy, and estate planning — written to inform, not to sell.</p>
+    <section class="split-hero">
+      <div class="split-hero-left">
+        <div class="split-hero-content">
+          <span class="section-label light">ARTICLES</span>
+          <h1>Plain-language guidance on complex topics.</h1>
+          <p class="about-hero-subtitle">Educational content on financial planning, investing, tax strategy, and estate planning — written to inform, not to sell.</p>
+        </div>
+      </div>
+      <div class="split-hero-image">
+        <img src="/images/Articles.jpeg" alt="Articles from Merels Capital" />
       </div>
     </section>
 
