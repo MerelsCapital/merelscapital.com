@@ -9,65 +9,59 @@ export function renderArticles(): string {
         </div>
       </div>
       <div class="split-hero-image">
-        <img src="/images/Articles.jpeg" alt="Articles from Merels Capital" />
+        <img src="/images/hero-articles.jpeg" alt="Articles from Merels Capital" />
       </div>
     </section>
 
     <section class="posts-section bg-off-white">
       <div class="posts-section-inner">
         <div class="posts-grid">
-          <article class="post-card">
-            <div class="post-image"></div>
+          <article class="post-card post-card--linked" data-route="articles/energy-2026">
+            <img class="post-image" src="/images/articles/article-4/Article-4_Banner.jpg" alt="The Energy Sector: Data Center Demand Boom Meets Iranian War Supply Shocks" />
             <div class="post-body">
-              <span class="post-category">Financial Planning</span>
-              <h3 class="post-title">What Does a Comprehensive Financial Plan Actually Include?</h3>
-              <p class="post-excerpt">Many investors have an investment account but not a financial plan. We walk through what a true plan covers — and why the difference matters.</p>
-              <span class="post-date">March 2026</span>
+              <span class="post-category">Markets</span>
+              <h3 class="post-title">The Energy Sector: Data Center Demand Boom Meets Iranian War Supply Shocks</h3>
+              <p class="post-excerpt">Surging electricity demand from AI-powered data centers is colliding with acute geopolitical supply risks from the escalating war in Iran — reshaping commodity prices, utility revenues, and broader macroeconomic outcomes.</p>
+              <div class="post-card-footer">
+                <span class="post-date">March 2026</span>
+                <a data-route="articles/energy-2026" href="#" class="text-link">Read →</a>
+              </div>
             </div>
           </article>
-          <article class="post-card">
-            <div class="post-image post-image-2"></div>
+          <article class="post-card post-card--linked" data-route="articles/usd-2026">
+            <img class="post-image" src="/images/articles/article-3/Article-3_Banner.jpg" alt="The US Dollar in 2026" />
             <div class="post-body">
-              <span class="post-category">Retirement</span>
-              <h3 class="post-title">The 4% Rule: A Starting Point, Not a Prescription</h3>
-              <p class="post-excerpt">The conventional 4% withdrawal rule is widely cited but frequently misapplied. Here's what it actually says — and what it doesn't.</p>
-              <span class="post-date">February 2026</span>
+              <span class="post-category">Markets</span>
+              <h3 class="post-title">The US Dollar in 2026: Navigating Cyclical Regimes Amid Persistent Global Dominance</h3>
+              <p class="post-excerpt">The DXY stood at 97.61 as of February 27, 2026 — down 9.27% year-over-year but rebounding modestly on resilient US inflation and labour data.</p>
+              <div class="post-card-footer">
+                <span class="post-date">July 2026</span>
+                <a data-route="articles/usd-2026" href="#" class="text-link">Read →</a>
+              </div>
             </div>
           </article>
-          <article class="post-card">
-            <div class="post-image post-image-3"></div>
+          <article class="post-card post-card--linked" data-route="articles/private-credit-2026">
+            <img class="post-image" src="/images/articles/article-2/Article-2_Banner.jpg" alt="Private Credit in Corporate Debt Markets" />
             <div class="post-body">
               <span class="post-category">Investing</span>
-              <h3 class="post-title">Active vs. Passive: A Framework for Deciding</h3>
-              <p class="post-excerpt">The debate between active and passive investing is often treated as binary. The more useful question is: where does active management add value, and where doesn't it?</p>
-              <span class="post-date">January 2026</span>
+              <h3 class="post-title">The Evolving Role of Private Credit in Corporate Debt Markets</h3>
+              <p class="post-excerpt">Global private credit AUM is projected to surpass $2 trillion in 2026 and approach $4 trillion by 2030 — but 2026 marks the sector's first real credit-cycle test.</p>
+              <div class="post-card-footer">
+                <span class="post-date">June 2026</span>
+                <a data-route="articles/private-credit-2026" href="#" class="text-link">Read →</a>
+              </div>
             </div>
           </article>
-          <article class="post-card">
-            <div class="post-image post-image-4"></div>
+          <article class="post-card post-card--linked" data-route="articles/gold-2025">
+            <img class="post-image" src="/images/articles/article-1/Article-1_Banner.jpg" alt="Gold's 2025 Surge" />
             <div class="post-body">
-              <span class="post-category">Tax Strategy</span>
-              <h3 class="post-title">Understanding Roth Conversions: When They Make Sense</h3>
-              <p class="post-excerpt">Converting pre-tax retirement savings to Roth can be a powerful long-term strategy — but only under the right circumstances. We explain the key variables.</p>
-              <span class="post-date">December 2025</span>
-            </div>
-          </article>
-          <article class="post-card">
-            <div class="post-image post-image-5"></div>
-            <div class="post-body">
-              <span class="post-category">Estate Planning</span>
-              <h3 class="post-title">Revocable Trusts: What They Do (and Don't) Accomplish</h3>
-              <p class="post-excerpt">Revocable living trusts are one of the most commonly recommended estate planning tools — and one of the most commonly misunderstood. Here's a clear-eyed look at the benefits and limitations.</p>
-              <span class="post-date">November 2025</span>
-            </div>
-          </article>
-          <article class="post-card">
-            <div class="post-image post-image-6"></div>
-            <div class="post-body">
-              <span class="post-category">Financial Planning</span>
-              <h3 class="post-title">How to Think About Risk Tolerance — Beyond the Questionnaire</h3>
-              <p class="post-excerpt">Standard risk tolerance questionnaires measure how you feel about risk today, not how you'll behave when markets fall. Building a resilient portfolio requires going deeper.</p>
-              <span class="post-date">October 2025</span>
+              <span class="post-category">Investing</span>
+              <h3 class="post-title">Gold's 2025 Surge: Understanding the Drivers and Outlook for 2026</h3>
+              <p class="post-excerpt">We are predicting a rise in gold prices up to $5,300/toz due to an increase in private sector investment into the gold market.</p>
+              <div class="post-card-footer">
+                <span class="post-date">May 2026</span>
+                <a data-route="articles/gold-2025" href="#" class="text-link">Read →</a>
+              </div>
             </div>
           </article>
         </div>

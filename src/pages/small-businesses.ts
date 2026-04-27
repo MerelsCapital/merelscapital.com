@@ -9,7 +9,7 @@ export function renderSmallBusinesses(): string {
         </div>
       </div>
       <div class="split-hero-image">
-        <img src="/images/Small-Business-1.png" alt="Small business financial planning" />
+        <img src="/images/hero-smallbusiness.jpg" alt="Small business financial planning" />
       </div>
     </section>
 
@@ -21,7 +21,7 @@ export function renderSmallBusinesses(): string {
           <p>For most business owners, the line between personal and business finances is blurred by design. Your business is your largest asset, your primary income source, and often the foundation of your retirement plan. We help you manage that complexity—coordinating business cash flow, personal savings, tax strategy, and long-term planning into a single coherent picture.</p>
           <p>Whether you're in growth mode, preparing for a sale, or planning for the next generation, we bring the depth of planning your situation demands.</p>
         </div>
-        <div class="placeholder-image"></div>
+        <img class="placeholder-image" src="/images/page-smallbusiness-whatwedo.jpg" alt="Integrating business and personal finances" />
       </div>
     </section>
 
@@ -77,7 +77,7 @@ export function renderSmallBusinesses(): string {
 
     <section class="content-row bg-off-white">
       <div class="content-row-inner reverse">
-        <div class="placeholder-image"></div>
+        <img class="placeholder-image" src="/images/page-smallbusiness-partner.jpg" alt="Business owners at every stage" />
         <div class="section-text">
           <span class="section-label">WHO WE SERVE</span>
           <h2>Owners at every stage of the journey</h2>

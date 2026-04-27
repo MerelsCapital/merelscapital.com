@@ -58,7 +58,7 @@ export function renderContact(): string {
         </div>
       </div>
       <div class="split-hero-image">
-        <img src="/images/Contact.jpeg" alt="Contact Merels Capital" />
+        <img src="/images/hero-contact.jpeg" alt="Contact Merels Capital" />
       </div>
     </section>
 

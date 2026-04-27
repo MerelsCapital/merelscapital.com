@@ -26,10 +26,10 @@ export function renderHome(): string {
       </div>
       <div class="hero-carousel">
         <div class="carousel-track" id="carousel-track">
-          <div class="carousel-slide"><img src="/images/NY.jpeg" alt="New York City skyline" /></div>
-          <div class="carousel-slide"><img src="/images/London.jpeg" alt="London skyline" /></div>
-          <div class="carousel-slide"><img src="/images/HK.jpeg" alt="Hong Kong skyline" /></div>
-          <div class="carousel-slide"><img src="/images/Singapore.jpeg" alt="Singapore skyline" /></div>
+          <div class="carousel-slide"><img src="/images/carousel-newyork.jpeg" alt="New York City skyline" /></div>
+          <div class="carousel-slide"><img src="/images/carousel-london.jpeg" alt="London skyline" /></div>
+          <div class="carousel-slide"><img src="/images/carousel-hongkong.jpeg" alt="Hong Kong skyline" /></div>
+          <div class="carousel-slide"><img src="/images/carousel-singapore.jpeg" alt="Singapore skyline" /></div>
         </div>
         <div class="carousel-dots" id="carousel-dots">
           <button class="carousel-dot active" data-index="0" aria-label="New York City"></button>
@@ -50,12 +50,12 @@ export function renderHome(): string {
               <p>We provide comprehensive financial planning and investment management grounded in what matters most to you—not an abstract benchmark. Every recommendation we make is shaped by your goals, your values, and the life you want to live.</p>
               <a data-route="individuals" href="#" class="text-link">Explore our approach →</a>
             </div>
-            <img class="placeholder-image" src="/images/Partner-1.jpg" alt="Wealth advisory partnership" />
+            <img class="placeholder-image" src="/images/audience-individuals-whatwedo.jpg" alt="Wealth advisory partnership" />
           </div>
         </div>
         <div class="content-row bg-white">
           <div class="content-row-inner reverse">
-            <img class="placeholder-image" src="/images/Wealth-1.jpg" alt="A partner through every defining moment" />
+            <img class="placeholder-image" src="/images/audience-individuals-partner.jpg" alt="A partner through every defining moment" />
             <div class="section-text">
               <span class="section-label">WHY WORK WITH US</span>
               <h2>A partner through every defining moment</h2>
@@ -75,12 +75,12 @@ export function renderHome(): string {
               <p>Family offices require more than investment management—they demand coordinated oversight of governance, reporting, tax planning, and legacy strategy. We provide the institutional rigor and personalized service that complex family structures require.</p>
               <a data-route="family-offices" href="#" class="text-link">Explore our approach →</a>
             </div>
-            <img class="placeholder-image" src="/images/family%20office%201.jpeg" alt="Family office wealth management" />
+            <img class="placeholder-image" src="/images/audience-familyoffice-whatwedo.jpeg" alt="Family office wealth management" />
           </div>
         </div>
         <div class="content-row bg-white">
           <div class="content-row-inner reverse">
-            <img class="placeholder-image" src="/images/family%20office%202.jpeg" alt="Multi-generational family wealth" />
+            <img class="placeholder-image" src="/images/audience-familyoffice-partner.jpeg" alt="Multi-generational family wealth" />
             <div class="section-text">
               <span class="section-label">WHY WORK WITH US</span>
               <h2>Independence that serves the family, not the institution</h2>
@@ -100,12 +100,12 @@ export function renderHome(): string {
               <p>Running a business and building personal wealth require different disciplines—but they're inseparable. We help small business owners integrate their business and personal finances, plan for growth, and prepare for what comes next, whether that's succession, a sale, or retirement.</p>
               <a data-route="small-businesses" href="#" class="text-link">Explore our approach →</a>
             </div>
-            <img class="placeholder-image" src="/images/smallbusiness-1.jpg" alt="Small business financial planning" />
+            <img class="placeholder-image" src="/images/audience-smallbusiness-whatwedo.jpg" alt="Small business financial planning" />
           </div>
         </div>
         <div class="content-row bg-white">
           <div class="content-row-inner reverse">
-            <img class="placeholder-image" src="/images/smallbusiness-2.jpg" alt="Business owner wealth management" />
+            <img class="placeholder-image" src="/images/audience-smallbusiness-partner.jpg" alt="Business owner wealth management" />
             <div class="section-text">
               <span class="section-label">WHY WORK WITH US</span>
               <h2>A partner who understands the complexity of business ownership</h2>
@@ -186,28 +186,28 @@ export function renderHome(): string {
       </div>
       <div class="stories-grid">
         <div class="story-card">
-           <img class="story-image" src="/images/Small-Business-1.png" alt="Small Business Planning" />
+           <img class="story-image" src="/images/stories-smallbusiness.jpg" alt="Small Business Planning" />
           <div class="story-content">
             <h3>Small Business Planning</h3>
             <p>After decades building a company, a liquidity event brings as many questions as answers. We help structure the transition, manage the tax implications, and build a lasting wealth plan for what comes next.</p>
           </div>
         </div>
         <div class="story-card">
-          <img class="story-image" src="/images/Retirement-1.jpeg" alt="Retirement Planning" />
+          <img class="story-image" src="/images/stories-retirement.jpeg" alt="Retirement Planning" />
           <div class="story-content">
             <h3>Retirement Planning</h3>
             <p>Retirement isn't one-size-fits-all. We work with families to build financial plans that support their specific vision—whether that means travel, philanthropy, legacy, or simply peace of mind.</p>
           </div>
         </div>
         <div class="story-card">
-          <img class="story-image" src="/images/institution.jpeg" alt="Institutional partnership" />
+          <img class="story-image" src="/images/stories-trusts.jpeg" alt="Trust Planning" />
           <div class="story-content">
-            <h3>A foundation seeks an institutional partner</h3>
-            <p>A growing endowment needs more than a portfolio manager—it needs governance, investment policy, and a long-term framework aligned to its mission and obligations.</p>
+            <h3>Trust Planning</h3>
+            <p>A well-structured trust does more than transfer assets—it defines how wealth is held, managed, and distributed across generations. We help families identify the right trust structures and ensure they work in concert with the broader financial plan.</p>
           </div>
         </div>
         <div class="story-card">
-          <img class="story-image" src="/images/Trust-1.png" alt="Estate Planning" />
+          <img class="story-image" src="/images/stories-estateplanning.jpg" alt="Estate Planning" />
           <div class="story-content">
             <h3>Estate Planning</h3>
             <p>Multi-generational wealth requires more than financial management. We help families establish the structures and communication frameworks that keep wealth unified across generations.</p>

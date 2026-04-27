@@ -6,6 +6,10 @@ import { renderIndividuals } from './pages/individuals.js'
 import { renderFamilyOffices } from './pages/family-offices.js'
 import { renderSmallBusinesses } from './pages/small-businesses.js'
 import { renderArticles } from './pages/articles.js'
+import { renderArticleGold2025 } from './pages/article-gold-2025.js'
+import { renderArticlePrivateCredit2026 } from './pages/article-private-credit-2026.js'
+import { renderArticleUsd2026 } from './pages/article-usd-2026.js'
+import { renderArticleEnergy2026 } from './pages/article-energy-2026.js'
 import { renderContact, initContact } from './pages/contact.js'
 import { renderHeader } from './components/header.js'
 import { renderFooter } from './components/footer.js'
@@ -15,7 +19,11 @@ registerRoute('about',         renderAbout)
 registerRoute('individuals',   renderIndividuals)
 registerRoute('family-offices',renderFamilyOffices)
 registerRoute('small-businesses', renderSmallBusinesses)
-registerRoute('articles',      renderArticles)
+registerRoute('articles',             renderArticles)
+registerRoute('articles/gold-2025',          renderArticleGold2025)
+registerRoute('articles/private-credit-2026', renderArticlePrivateCredit2026)
+registerRoute('articles/usd-2026',           renderArticleUsd2026)
+registerRoute('articles/energy-2026',        renderArticleEnergy2026)
 registerRoute('contact',       renderContact, initContact)
 
 document.getElementById('header')!.innerHTML = renderHeader()

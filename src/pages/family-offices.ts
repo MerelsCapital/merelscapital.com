@@ -9,7 +9,7 @@ export function renderFamilyOffices(): string {
         </div>
       </div>
       <div class="split-hero-image">
-        <img src="/images/familyoffice-1.png" alt="Family office wealth management" />
+        <img src="/images/hero-familyoffice.png" alt="Family office wealth management" />
       </div>
     </section>
 
@@ -21,7 +21,7 @@ export function renderFamilyOffices(): string {
           <p>Family offices require more than investment management — they demand coordinated oversight of governance, reporting, tax planning, and legacy strategy across generations. We provide the institutional rigor and personalized service that complex family structures require.</p>
           <p>We work as an extension of your family office, bringing capabilities that would otherwise require building an entire internal team.</p>
         </div>
-        <img class="placeholder-image" src="/images/familyoffice-2.jpg" alt="Multi-generational family wealth" />
+        <img class="placeholder-image" src="/images/page-familyoffice-whatwedo.jpg" alt="Multi-generational family wealth" />
       </div>
     </section>
 
@@ -77,7 +77,7 @@ export function renderFamilyOffices(): string {
 
     <section class="content-row bg-off-white">
       <div class="content-row-inner reverse">
-        <img class="placeholder-image" src="/images/familyoffice-3.jpg" alt="Independence that serves the family" />
+        <img class="placeholder-image" src="/images/page-familyoffice-partner.jpg" alt="Independence that serves the family" />
         <div class="section-text">
           <span class="section-label">WHY WORK WITH US</span>
           <h2>Independence that serves the family, not the institution</h2>
