@@ -883,6 +883,26 @@ a { text-decoration: none; }
   margin-bottom: 1.5rem;
 }
 
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.55);
+  transition: color 0.15s;
+}
+
+.footer-contact-item:hover { color: var(--white); }
+
+.footer-contact-item svg { flex-shrink: 0; }
+
 .footer-social a {
   display: inline-flex;
   align-items: center;
