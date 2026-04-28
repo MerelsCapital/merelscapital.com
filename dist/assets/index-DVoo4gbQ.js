@@ -1333,7 +1333,7 @@
         <div class="footer-col">
           <h4>Legal</h4>
           <a href="https://adviserinfo.sec.gov/firm/summary/339181" target="_blank" rel="noopener">ADV Documents</a>
-          <a href="/files/privacy-policy.pdf" target="_blank" rel="noopener">Privacy Policy</a>
+          <a href="files/privacy-policy.pdf" download="privacy-policy.pdf" rel="noopener">Privacy Policy</a>
         </div>
         <div class="footer-col">
           <h4>Contact</h4>
