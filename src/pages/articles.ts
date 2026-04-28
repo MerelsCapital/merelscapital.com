@@ -16,6 +16,18 @@ export function renderArticles(): string {
     <section class="posts-section bg-off-white">
       <div class="posts-section-inner">
         <div class="posts-grid">
+          <article class="post-card post-card--linked" data-route="articles/fed-2026">
+            <img class="post-image" src="/images/articles/article-5/Article-5_Banner.jpg" alt="The Fed's New Reality" />
+            <div class="post-body">
+              <span class="post-category">Markets</span>
+              <h3 class="post-title">The Fed's New Reality: Navigating Sticky Inflation and a Slowing Labor Market</h3>
+              <p class="post-excerpt">The FOMC faces a complicated balancing act: headline inflation has reaccelerated on an energy spike while the labor market shows clear signs of cooling — pointing to a "higher for longer" rate environment.</p>
+              <div class="post-card-footer">
+                <span class="post-date">April 2026</span>
+                <a data-route="articles/fed-2026" href="#" class="text-link">Read →</a>
+              </div>
+            </div>
+          </article>
           <article class="post-card post-card--linked" data-route="articles/energy-2026">
             <img class="post-image" src="/images/articles/article-4/Article-4_Banner.jpg" alt="The Energy Sector: Data Center Demand Boom Meets Iranian War Supply Shocks" />
             <div class="post-body">

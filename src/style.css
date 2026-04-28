@@ -1440,6 +1440,16 @@ img.post-image {
   line-height: 1.85;
 }
 
+.article-callout {
+  background: rgba(27, 39, 116, 0.06);
+  border-left: 3px solid var(--navy);
+  padding: 1rem 1.25rem;
+  border-radius: 0 4px 4px 0;
+  color: var(--text) !important;
+  font-size: 0.95rem !important;
+  line-height: 1.75 !important;
+}
+
 .article-lead {
   font-size: 1.15rem !important;
   color: var(--text) !important;
