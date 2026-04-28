@@ -33,6 +33,8 @@ export function initContact(): void {
         feedback.classList.add('contact-feedback--success')
         form.reset()
         submit.textContent = 'Message Sent'
+        ;(window as any).dataLayer = (window as any).dataLayer || []
+        ;(window as any).dataLayer.push({ event: 'contact_form_complete' })
       } else {
         throw new Error('Server error')
       }
