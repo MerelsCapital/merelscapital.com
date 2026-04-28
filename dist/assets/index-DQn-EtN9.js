@@ -25,10 +25,10 @@
       </div>
       <div class="hero-carousel">
         <div class="carousel-track" id="carousel-track">
-          <div class="carousel-slide"><img src="/images/carousel-newyork.jpeg" alt="New York City skyline" /></div>
-          <div class="carousel-slide"><img src="/images/carousel-london.jpeg" alt="London skyline" /></div>
-          <div class="carousel-slide"><img src="/images/carousel-hongkong.jpeg" alt="Hong Kong skyline" /></div>
-          <div class="carousel-slide"><img src="/images/carousel-singapore.jpeg" alt="Singapore skyline" /></div>
+          <div class="carousel-slide"><img src="/images/carousel-newyork.jpeg" alt="New York City skyline" loading="eager" fetchpriority="high" /></div>
+          <div class="carousel-slide"><img src="/images/carousel-london.jpeg" alt="London skyline" loading="lazy" /></div>
+          <div class="carousel-slide"><img src="/images/carousel-hongkong.jpeg" alt="Hong Kong skyline" loading="lazy" /></div>
+          <div class="carousel-slide"><img src="/images/carousel-singapore.jpeg" alt="Singapore skyline" loading="lazy" /></div>
         </div>
         <div class="carousel-dots" id="carousel-dots">
           <button class="carousel-dot active" data-index="0" aria-label="New York City"></button>
@@ -1282,7 +1282,7 @@
     </section>
   `}function C(){return`
     <nav class="nav-container">
-      <a data-route="home" href="/" class="logo"><img src="/Eagle.png" alt="Merels Capital" height="32"/>Merels Capital</a>
+      <a data-route="home" href="/" class="logo"><img src="/Eagle.svg" alt="Merels Capital" height="32"/>Merels Capital</a>
       <div class="nav-links" id="nav-links">
         <a data-route="home" data-scroll="audience-content" href="/#audience-content">Services</a>
         <a data-route="home" data-scroll="philosophy" href="/#philosophy">Philosophy</a>
@@ -1345,4 +1345,4 @@
       <p>© 2026 Merels Capital. All rights reserved.</p>
       <p>Investment advisory services offered through Merels Capital, LLC, a registered investment adviser.</p>
     </div>
-  `}n(`home`,c,u),n(`about`,d),n(`individuals`,f),n(`family-offices`,p),n(`small-businesses`,m),n(`articles`,h),n(`articles/gold-2025`,g),n(`articles/private-credit-2026`,_),n(`articles/usd-2026`,v),n(`articles/energy-2026`,y),n(`articles/fed-2026`,b),n(`contact`,S,x),document.getElementById(`header`).innerHTML=C(),document.getElementById(`footer`).innerHTML=w();var T=document.getElementById(`header`);window.addEventListener(`scroll`,()=>{T.classList.toggle(`scrolled`,window.scrollY>10)},{passive:!0});var E=document.getElementById(`mobile-menu-btn`),D=document.getElementById(`nav-links`),O=document.getElementById(`nav-actions`);E.addEventListener(`click`,()=>{let e=D.classList.toggle(`open`);O.classList.toggle(`open`,e),E.setAttribute(`aria-label`,e?`Close menu`:`Open menu`)});var k=document.getElementById(`book-now-btn`),A=document.getElementById(`booking-modal`),j=document.getElementById(`booking-modal-close`),M=A.querySelector(`.booking-modal-backdrop`),N=document.getElementById(`booking-iframe`),P=!1;function F(){P||=(N.src=`https://bookings.merelscapital.com`,!0),A.hidden=!1,document.body.style.overflow=`hidden`}k.addEventListener(`click`,F),document.addEventListener(`click`,e=>{e.target.closest(`[data-action="open-booking"]`)&&F()});function I(){A.hidden=!0,document.body.style.overflow=``}j.addEventListener(`click`,I),M.addEventListener(`click`,I),document.addEventListener(`keydown`,e=>{e.key===`Escape`&&I()}),s();function L(){let e=[],t=new Date;for(;e.length<5;){t.setDate(t.getDate()+1);let n=t.toLocaleDateString(`en-CA`,{timeZone:`America/Denver`}),[r,i,a]=n.split(`-`).map(Number),o=new Date(r,i-1,a).getDay();o!==0&&o!==6&&e.push(n)}e.forEach(e=>fetch(`https://api.merelscapital.com/slots?date=${e}`).catch(()=>{}))}window.addEventListener(`load`,()=>{(window.requestIdleCallback??(e=>setTimeout(e,200)))(L)});
+  `}n(`home`,c,u),n(`about`,d),n(`individuals`,f),n(`family-offices`,p),n(`small-businesses`,m),n(`articles`,h),n(`articles/gold-2025`,g),n(`articles/private-credit-2026`,_),n(`articles/usd-2026`,v),n(`articles/energy-2026`,y),n(`articles/fed-2026`,b),n(`contact`,S,x),document.getElementById(`header`).innerHTML=C(),document.getElementById(`footer`).innerHTML=w();var T=document.getElementById(`header`);window.addEventListener(`scroll`,()=>{T.classList.toggle(`scrolled`,window.scrollY>10)},{passive:!0});var E=document.getElementById(`mobile-menu-btn`),D=document.getElementById(`nav-links`),O=document.getElementById(`nav-actions`);E.addEventListener(`click`,()=>{let e=D.classList.toggle(`open`);O.classList.toggle(`open`,e),E.setAttribute(`aria-label`,e?`Close menu`:`Open menu`)});var k=document.getElementById(`book-now-btn`),A=document.getElementById(`booking-modal`),j=document.getElementById(`booking-modal-close`),M=A.querySelector(`.booking-modal-backdrop`),N=document.getElementById(`booking-iframe`),P=!1;function F(){P||=(N.src=`https://bookings.merelscapital.com`,!0),A.hidden=!1,document.body.style.overflow=`hidden`}k.addEventListener(`click`,F),document.addEventListener(`click`,e=>{e.target.closest(`[data-action="open-booking"]`)&&F()});function I(){A.hidden=!0,document.body.style.overflow=``}j.addEventListener(`click`,I),M.addEventListener(`click`,I),document.addEventListener(`keydown`,e=>{e.key===`Escape`&&I()}),s();function L(){let e=[],t=new Date;for(;e.length<5;){t.setDate(t.getDate()+1);let n=t.toLocaleDateString(`en-CA`,{timeZone:`America/Denver`}),[r,i,a]=n.split(`-`).map(Number),o=new Date(r,i-1,a).getDay();o!==0&&o!==6&&e.push(n)}e.forEach(e=>fetch(`https://api.merelscapital.com/slots?date=${e}`).catch(()=>{}))}window.addEventListener(`load`,()=>{setTimeout(L,3e3)});

@@ -26,10 +26,10 @@ export function renderHome(): string {
       </div>
       <div class="hero-carousel">
         <div class="carousel-track" id="carousel-track">
-          <div class="carousel-slide"><img src="/images/carousel-newyork.jpeg" alt="New York City skyline" /></div>
-          <div class="carousel-slide"><img src="/images/carousel-london.jpeg" alt="London skyline" /></div>
-          <div class="carousel-slide"><img src="/images/carousel-hongkong.jpeg" alt="Hong Kong skyline" /></div>
-          <div class="carousel-slide"><img src="/images/carousel-singapore.jpeg" alt="Singapore skyline" /></div>
+          <div class="carousel-slide"><img src="/images/carousel-newyork.jpeg" alt="New York City skyline" loading="eager" fetchpriority="high" /></div>
+          <div class="carousel-slide"><img src="/images/carousel-london.jpeg" alt="London skyline" loading="lazy" /></div>
+          <div class="carousel-slide"><img src="/images/carousel-hongkong.jpeg" alt="Hong Kong skyline" loading="lazy" /></div>
+          <div class="carousel-slide"><img src="/images/carousel-singapore.jpeg" alt="Singapore skyline" loading="lazy" /></div>
         </div>
         <div class="carousel-dots" id="carousel-dots">
           <button class="carousel-dot active" data-index="0" aria-label="New York City"></button>

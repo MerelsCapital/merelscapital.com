@@ -1,7 +1,7 @@
 export function renderHeader(): string {
   return `
     <nav class="nav-container">
-      <a data-route="home" href="/" class="logo"><img src="/Eagle.png" alt="Merels Capital" height="32"/>Merels Capital</a>
+      <a data-route="home" href="/" class="logo"><img src="/Eagle.svg" alt="Merels Capital" height="32"/>Merels Capital</a>
       <div class="nav-links" id="nav-links">
         <a data-route="home" data-scroll="audience-content" href="/#audience-content">Services</a>
         <a data-route="home" data-scroll="philosophy" href="/#philosophy">Philosophy</a>

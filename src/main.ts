@@ -103,6 +103,5 @@ function prefetchSlots(): void {
 }
 
 window.addEventListener('load', () => {
-  const schedule = (window as any).requestIdleCallback ?? ((cb: () => void) => setTimeout(cb, 200))
-  schedule(prefetchSlots)
+  setTimeout(prefetchSlots, 3000)
 })
