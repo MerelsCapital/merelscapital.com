@@ -23,7 +23,7 @@ export function renderArticles(): string {
               <h3 class="post-title">The Fed's New Reality: Navigating Sticky Inflation and a Slowing Labor Market</h3>
               <p class="post-excerpt">The FOMC faces a complicated balancing act: headline inflation has reaccelerated on an energy spike while the labor market shows clear signs of cooling — pointing to a "higher for longer" rate environment.</p>
               <div class="post-card-footer">
-                <span class="post-date">April 2026</span>
+                <span class="post-date">May 2026</span>
                 <a data-route="articles/fed-2026" href="#" class="text-link">Read →</a>
               </div>
             </div>
@@ -35,7 +35,7 @@ export function renderArticles(): string {
               <h3 class="post-title">The Energy Sector: Data Center Demand Boom Meets Iranian War Supply Shocks</h3>
               <p class="post-excerpt">Surging electricity demand from AI-powered data centers is colliding with acute geopolitical supply risks from the escalating war in Iran — reshaping commodity prices, utility revenues, and broader macroeconomic outcomes.</p>
               <div class="post-card-footer">
-                <span class="post-date">March 2026</span>
+                <span class="post-date">April 2026</span>
                 <a data-route="articles/energy-2026" href="#" class="text-link">Read →</a>
               </div>
             </div>
@@ -47,7 +47,7 @@ export function renderArticles(): string {
               <h3 class="post-title">The US Dollar in 2026: Navigating Cyclical Regimes Amid Persistent Global Dominance</h3>
               <p class="post-excerpt">The DXY stood at 97.61 as of February 27, 2026 — down 9.27% year-over-year but rebounding modestly on resilient US inflation and labour data.</p>
               <div class="post-card-footer">
-                <span class="post-date">July 2026</span>
+                <span class="post-date">March 2026</span>
                 <a data-route="articles/usd-2026" href="#" class="text-link">Read →</a>
               </div>
             </div>
@@ -59,7 +59,7 @@ export function renderArticles(): string {
               <h3 class="post-title">The Evolving Role of Private Credit in Corporate Debt Markets</h3>
               <p class="post-excerpt">Global private credit AUM is projected to surpass $2 trillion in 2026 and approach $4 trillion by 2030 — but 2026 marks the sector's first real credit-cycle test.</p>
               <div class="post-card-footer">
-                <span class="post-date">June 2026</span>
+                <span class="post-date">February 2026</span>
                 <a data-route="articles/private-credit-2026" href="#" class="text-link">Read →</a>
               </div>
             </div>
@@ -71,7 +71,7 @@ export function renderArticles(): string {
               <h3 class="post-title">Gold's 2025 Surge: Understanding the Drivers and Outlook for 2026</h3>
               <p class="post-excerpt">We are predicting a rise in gold prices up to $5,300/toz due to an increase in private sector investment into the gold market.</p>
               <div class="post-card-footer">
-                <span class="post-date">May 2026</span>
+                <span class="post-date">January 2026</span>
                 <a data-route="articles/gold-2025" href="#" class="text-link">Read →</a>
               </div>
             </div>
