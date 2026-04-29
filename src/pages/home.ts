@@ -133,7 +133,7 @@ export function renderHome(): string {
       <div class="section-header centered">
         <span class="section-label">OUR INVESTMENT APPROACH</span>
         <h2>Investment expertise in service of your goals</h2>
-        <p class="section-intro">Our investment platform combines open-architecture independence with disciplined research—giving you access to best-in-class opportunities without conflicts of interest.</p>
+        <p class="section-intro">Our investment methodlogy combines open-architecture independence with disciplined research giving you access to best-in-class opportunities without conflicts of interest.</p>
       </div>
       <div class="pillars-grid">
         <div class="pillar">
@@ -176,7 +176,7 @@ export function renderHome(): string {
           <h3>Transparent Reporting</h3>
           <p>You always have a clear, consolidated view of your complete financial picture.</p>
         </div>
-      </div>
+      </div> 
     </section>
 
     <section id="insights">
@@ -252,6 +252,7 @@ export function initHome(): void {
   const dots  = document.querySelectorAll<HTMLButtonElement>('.carousel-dot')
   const total = dots.length
   let current = 0
+
 
   function goTo(index: number) {
     current = index

@@ -63,9 +63,9 @@ export function renderAbout(): string {
         </div>
         <div class="founding-body">
           <div class="founding-text">
-            <p>Most wealth management firms are built around products. The advice they give is shaped — even if subtly — by what they sell, what their parent company manufactures, and how their advisors are compensated. For clients, that creates a persistent question: is this recommendation in my interest, or theirs?</p>
-            <p>We built Merels Capital to make that question unnecessary. By remaining independent — with no proprietary products, no parent company, and no distribution incentives — we can give advice that is structurally unconflicted. Not just claimed to be, but actually designed to be. Every recommendation we make stands on one criterion alone: is this the right thing for this client?</p>
-            <p>We also believed that genuine wealth management requires a depth of relationship that large institutions struggle to provide. When your advisor changes every few years, when your portfolio is built from a centralized model, when you're one of thousands of clients — something important gets lost. We built this firm to be different on that dimension too: fewer clients, deeper relationships, senior advisors engaged at every stage.</p>
+            <p>Most wealth management firms are built around products. The advice they give is shaped, even if subtly, by what they sell, what their parent company manufactures, and how their advisors are compensated. For clients, that creates a persistent question: is this recommendation in my interest, or theirs?</p>
+            <p>We built Merels Capital to make that question unnecessary. By remaining independent with no proprietary products, no parent company, and no distribution incentives we can give advice that is structurally unconflicted. Not just claimed to be, but actually designed to be. Every recommendation we make stands on one criterion alone: is this the right thing for this client?</p>
+            <p>We also believed that genuine wealth management requires a depth of relationship that large institutions struggle to provide. When your advisor changes every few years, when your portfolio is built from a centralized model, when you're one of thousands of clients, something important gets lost. We built this firm to be different on that dimension too: fewer clients, deeper relationships, senior advisors engaged at every stage.</p>
             <p>That is the firm we set out to build. It is the firm we intend to remain.</p>
           </div>
           <div class="founding-image">
@@ -84,19 +84,19 @@ export function renderAbout(): string {
         <div class="practice-grid">
           <div class="practice-card">
             <h3>We listen before we recommend.</h3>
-            <p>We don't arrive at a first meeting with a portfolio pre-loaded. Before we suggest anything, we spend time understanding your situation — your goals, your concerns, the trade-offs you're willing to make, and what prosperity actually means to you. The plan follows from that conversation, not the other way around.</p>
+            <p>We don't arrive at a first meeting with a set of products to sell. Before we suggest anything, we spend time understanding your situation, your goals, your concerns, the trade-offs you're willing to make, and what prosperity actually means to you. The plan follows from that conversation, not the other way around.</p>
           </div>
           <div class="practice-card">
             <h3>We tell you what we actually think.</h3>
-            <p>If an investment you're excited about doesn't make sense for your situation, we'll say so. If the market is doing something that doesn't change what you should do, we'll say that too. Our job is to give you our honest assessment — not to validate decisions you've already made or tell you what you want to hear.</p>
+            <p>If an investment you're excited about doesn't make sense for your situation, we'll say so. If the market is doing something that doesn't change what you should do, we'll say that too. Our job is to give you our honest assessment, not to validate decisions you've already made or tell you what you want to hear.</p>
           </div>
           <div class="practice-card">
             <h3>We think about taxes every time.</h3>
-            <p>An investment decision and a tax decision are the same decision. We don't treat tax planning as something that happens in April — it's embedded in every portfolio decision we make, from how we harvest losses to how we think about the location of assets across your accounts.</p>
+            <p>An investment decision and a tax decision are the same decision. We don't treat tax planning as something that happens in April, it's embedded in every portfolio decision we make, from how we harvest losses to how we think about the location of assets across your accounts.</p>
           </div>
           <div class="practice-card">
             <h3>We stay engaged when it matters most.</h3>
-            <p>The moments when clients most need their advisor — a business sale, an inheritance, a divorce, a market crisis — are exactly when some firms go quiet or hand you off to a junior associate. We remain directly involved at every inflection point, because those are the moments that define a financial life.</p>
+            <p>The moments when clients most need their advisor, a business sale, an inheritance, a divorce, a market crisis, are exactly when some firms go quiet or hand you off to a junior associate. We remain directly involved at every inflection point, because those are the moments that define a financial life.</p>
           </div>
         </div>
       </div>

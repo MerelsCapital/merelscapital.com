@@ -54,8 +54,8 @@ export function renderFamilyOffices(): string {
         </div>
         <div class="pillar">
           <div class="pillar-icon">◈</div>
-          <h3>Next-Generation Planning</h3>
-          <p>Preparing rising generation members to steward and grow inherited wealth responsibly.</p>
+          <h3>Minor &amp; Trust Accounts</h3>
+          <p>Establishing custodial accounts, 529 plans, and irrevocable trusts to grow and protect assets designated for minor beneficiaries.</p>
         </div>
         <div class="pillar">
           <div class="pillar-icon">◈</div>
@@ -69,8 +69,8 @@ export function renderFamilyOffices(): string {
         </div>
         <div class="pillar">
           <div class="pillar-icon">◈</div>
-          <h3>Manager Selection</h3>
-          <p>Independent evaluation and monitoring of external investment managers and strategies.</p>
+          <h3>Concentrated Position Management</h3>
+          <p>Strategic reduction and hedging of large single-stock or closely-held business positions to manage risk while minimising tax consequences.</p>
         </div>
       </div>
     </section>

@@ -18,7 +18,7 @@ export function renderSmallBusinesses(): string {
         <div class="section-text">
           <span class="section-label">WHAT WE DO</span>
           <h2>Integrating your business and personal financial life</h2>
-          <p>For most business owners, the line between personal and business finances is blurred by design. Your business is your largest asset, your primary income source, and often the foundation of your retirement plan. We help you manage that complexity—coordinating business cash flow, personal savings, tax strategy, and long-term planning into a single coherent picture.</p>
+          <p>For most business owners, the line between personal and business finances is blurred by design. Your business is your largest asset, your primary income source, and often the foundation of your retirement plan. We help you manage that complexity, coordinating business cash flow, personal savings, tax strategy, and long-term planning into a single coherent picture.</p>
           <p>Whether you're in growth mode, preparing for a sale, or planning for the next generation, we bring the depth of planning your situation demands.</p>
         </div>
         <img class="placeholder-image" src="/images/page-smallbusiness-whatwedo.jpg" alt="Integrating business and personal finances" />

@@ -81,7 +81,7 @@ export function renderIndividuals(): string {
         <div class="section-text">
           <span class="section-label">HOW WE HELP</span>
           <h2>A partner through every defining moment</h2>
-          <p>The most consequential financial decisions rarely come with a manual. Whether you're approaching a business exit, navigating an inheritance, planning for a child's education, or thinking carefully about what retirement looks like for you — we provide clarity and confidence at every step.</p>
+          <p>The most consequential financial decisions rarely come with a manual. Whether you're approaching a business exit, navigating an inheritance, planning for a child's education, or thinking carefully about what retirement looks like for you. We provide clarity and confidence at every step.</p>
           <a data-route="contact" href="#" class="text-link">Start a conversation →</a>
         </div>
       </div>
