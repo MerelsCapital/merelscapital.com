@@ -86,20 +86,13 @@ document.addEventListener('keydown', (e) => {
 // ── Start router ─────────────────────────────────────
 initRouter()
 
-// ── Prefetch slot availability for the next 5 business days ──
+// ── Prefetch slot availability for the next business day ──
 function prefetchSlots(): void {
-  const dates: string[] = []
   const d = new Date()
-  while (dates.length < 5) {
-    d.setDate(d.getDate() + 1)
-    const dateStr = d.toLocaleDateString('en-CA', { timeZone: 'America/Denver' })
-    const [year, month, day] = dateStr.split('-').map(Number)
-    const dow = new Date(year, month - 1, day).getDay()
-    if (dow !== 0 && dow !== 6) dates.push(dateStr)
-  }
-  dates.forEach(date =>
-    fetch(`https://api.merelscapital.com/slots?date=${date}`).catch(() => {})
-  )
+  d.setDate(d.getDate() + 1)
+  while (d.getDay() === 0 || d.getDay() === 6) d.setDate(d.getDate() + 1)
+  const date = d.toLocaleDateString('en-CA', { timeZone: 'America/Denver' })
+  fetch(`https://api.merelscapital.com/slots?date=${date}`).catch(() => {})
 }
 
 window.addEventListener('load', () => {
