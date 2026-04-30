@@ -12,6 +12,16 @@ import { renderArticleUsd2026 } from './pages/article-usd-2026.js'
 import { renderArticleEnergy2026 } from './pages/article-energy-2026.js'
 import { renderArticleFed2026 } from './pages/article-fed-2026.js'
 import { renderContact, initContact } from './pages/contact.js'
+import { renderRetirementCalculator, initRetirementCalculator } from './pages/tools/retirement-calculator.js'
+import { renderRetirementQuiz, initRetirementQuiz } from './pages/tools/retirement-quiz.js'
+import { renderSocialSecurity, initSocialSecurity } from './pages/tools/social-security.js'
+import { renderRmdPlanner, initRmdPlanner } from './pages/tools/rmd-planner.js'
+import { renderRothConversion, initRothConversion } from './pages/tools/roth-conversion.js'
+import { renderRollover401k, initRollover401k } from './pages/tools/401k-rollover.js'
+import { render529Planner, init529Planner } from './pages/tools/529-planner.js'
+import { renderRiskTolerance, initRiskTolerance } from './pages/tools/risk-tolerance.js'
+import { renderTaxSavings, initTaxSavings } from './pages/tools/tax-savings.js'
+import { renderSavingsGoal, initSavingsGoal } from './pages/tools/savings-goal.js'
 import { renderHeader } from './components/header.js'
 import { renderFooter } from './components/footer.js'
 
@@ -27,6 +37,16 @@ registerRoute('articles/usd-2026',           renderArticleUsd2026)
 registerRoute('articles/energy-2026',        renderArticleEnergy2026)
 registerRoute('articles/fed-2026',           renderArticleFed2026)
 registerRoute('contact',       renderContact, initContact)
+registerRoute('tools/retirement-calculator', renderRetirementCalculator, initRetirementCalculator)
+registerRoute('tools/retirement-quiz',       renderRetirementQuiz,       initRetirementQuiz)
+registerRoute('tools/social-security',       renderSocialSecurity,       initSocialSecurity)
+registerRoute('tools/rmd-planner',           renderRmdPlanner,           initRmdPlanner)
+registerRoute('tools/roth-conversion',       renderRothConversion,       initRothConversion)
+registerRoute('tools/401k-rollover',         renderRollover401k,         initRollover401k)
+registerRoute('tools/529-planner',           render529Planner,           init529Planner)
+registerRoute('tools/risk-tolerance',        renderRiskTolerance,        initRiskTolerance)
+registerRoute('tools/tax-savings',           renderTaxSavings,           initTaxSavings)
+registerRoute('tools/savings-goal',          renderSavingsGoal,          initSavingsGoal)
 
 document.getElementById('header')!.innerHTML = renderHeader()
 document.getElementById('footer')!.innerHTML = renderFooter()
@@ -47,6 +67,21 @@ mobileBtn.addEventListener('click', () => {
   navActions.classList.toggle('open', open)
   mobileBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu')
 })
+
+// ── Tools dropdown ───────────────────────────────────
+const toolsBtn = document.getElementById('tools-dropdown-btn')
+if (toolsBtn) {
+  const toolsDropdown = toolsBtn.closest('.nav-dropdown')!
+  toolsBtn.addEventListener('click', (e) => {
+    e.stopPropagation()
+    const isOpen = toolsDropdown.classList.toggle('open')
+    toolsBtn.setAttribute('aria-expanded', String(isOpen))
+  })
+  document.addEventListener('click', () => {
+    toolsDropdown.classList.remove('open')
+    toolsBtn.setAttribute('aria-expanded', 'false')
+  })
+}
 
 // ── Booking modal ────────────────────────────────────
 const bookBtn  = document.getElementById('book-now-btn')!

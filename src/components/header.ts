@@ -7,6 +7,23 @@ export function renderHeader(): string {
         <a data-route="home" data-scroll="philosophy" href="/#philosophy">Philosophy</a>
         <a data-route="home" data-scroll="approach" href="/#approach">Our Approach</a>
         <a data-route="home" data-scroll="insights" href="/#insights">Insights</a>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-trigger" id="tools-dropdown-btn" aria-expanded="false">
+            Tools <span class="nav-dropdown-arrow">▾</span>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a data-route="tools/retirement-calculator" href="#">Retirement Calculator</a>
+            <a data-route="tools/retirement-quiz" href="#">Retirement Readiness Quiz</a>
+            <a data-route="tools/social-security" href="#">Social Security Optimizer</a>
+            <a data-route="tools/rmd-planner" href="#">RMD Planner</a>
+            <a data-route="tools/roth-conversion" href="#">Roth Conversion Analyzer</a>
+            <a data-route="tools/401k-rollover" href="#">401k Rollover Comparison</a>
+            <a data-route="tools/529-planner" href="#">529 Education Planner</a>
+            <a data-route="tools/risk-tolerance" href="#">Risk Tolerance Questionnaire</a>
+            <a data-route="tools/tax-savings" href="#">Tax Savings Estimator</a>
+            <a data-route="tools/savings-goal" href="#">Savings Goal Estimator</a>
+          </div>
+        </div>
       </div>
       <div class="nav-actions" id="nav-actions">
         <a data-route="about" href="#">About Us</a>

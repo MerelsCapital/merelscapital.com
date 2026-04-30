@@ -26,10 +26,10 @@ export function renderHome(): string {
       </div>
       <div class="hero-carousel">
         <div class="carousel-track" id="carousel-track">
-          <div class="carousel-slide"><img src="/images/carousel-newyork.jpeg" alt="New York City skyline" loading="eager" fetchpriority="high" /></div>
-          <div class="carousel-slide"><img src="/images/carousel-london.jpeg" alt="London skyline" loading="lazy" /></div>
-          <div class="carousel-slide"><img src="/images/carousel-hongkong.jpeg" alt="Hong Kong skyline" loading="lazy" /></div>
-          <div class="carousel-slide"><img src="/images/carousel-singapore.jpeg" alt="Singapore skyline" loading="lazy" /></div>
+          <div class="carousel-slide"><img data-src="/images/carousel-newyork.jpeg" alt="New York City skyline" /></div>
+          <div class="carousel-slide"><img data-src="/images/carousel-london.jpeg" alt="London skyline" /></div>
+          <div class="carousel-slide"><img data-src="/images/carousel-hongkong.jpeg" alt="Hong Kong skyline" /></div>
+          <div class="carousel-slide"><img data-src="/images/carousel-singapore.jpeg" alt="Singapore skyline" /></div>
         </div>
         <div class="carousel-dots" id="carousel-dots">
           <button class="carousel-dot active" data-index="0" aria-label="New York City"></button>
@@ -245,7 +245,19 @@ export function initHome(): void {
     })
   })
 
-  // Carousel
+  // Carousel — only load images on non-mobile (carousel is display:none below 768px)
+  if (window.matchMedia('(min-width: 768px)').matches) {
+    document.querySelectorAll<HTMLImageElement>('.carousel-slide img[data-src]').forEach((img, i) => {
+      img.src = img.dataset.src!
+      if (i === 0) {
+        img.setAttribute('fetchpriority', 'high')
+        img.loading = 'eager'
+      } else {
+        img.loading = 'lazy'
+      }
+    })
+  }
+
   if (carouselTimer) clearInterval(carouselTimer)
 
   const track = document.getElementById('carousel-track') as HTMLElement
