@@ -1280,7 +1280,7 @@
         </div>
       </div>
     </section>
-  `}var S=e=>`$`+Math.round(e).toLocaleString(`en-US`);function C(){return Math.sqrt(-2*Math.log(Math.random()||1e-10))*Math.cos(2*Math.PI*Math.random())}function te(){return`
+  `}var S=e=>`$`+Math.round(e).toLocaleString(`en-US`);function C(){return Math.sqrt(-2*Math.log(Math.random()||1e-10))*Math.cos(2*Math.PI*Math.random())}function w(){return`
     <div class="tool-page">
       <div class="tool-hero">
         <div class="tool-hero-inner">
@@ -1339,7 +1339,7 @@
       </div>
       <p class="tool-disclaimer">This tool uses Monte Carlo simulation for educational purposes only. Results are hypothetical projections and do not guarantee future performance. Past market behaviour does not predict future results. Consult a qualified financial advisor before making investment decisions.</p>
     </div>
-  `}function ne(){document.getElementById(`rc-calc-btn`)?.addEventListener(`click`,()=>{let e=e=>{document.getElementById(`rc-results`).innerHTML=`<h3>Results</h3><p class="tool-error-msg">${e}</p>`},t=e=>{let t=document.getElementById(e).value.trim();if(t===``)return null;let n=Number(t);return isNaN(n)?null:n},n=e=>Number(document.getElementById(e).value),r=n(`rc-current-age`),i=n(`rc-retirement-age`),a=n(`rc-savings`),o=n(`rc-contribution`),s=n(`rc-return`)/100,c=n(`rc-volatility`)/100,l=n(`rc-income`),u=n(`rc-inflation`)/100,d=n(`rc-years-retired`);if(t(`rc-current-age`)===null)return e(`Please enter your current age.`);if(t(`rc-retirement-age`)===null)return e(`Please enter a target retirement age.`);if(i<=r)return e(`Retirement age must be greater than your current age.`);if(t(`rc-savings`)===null)return e(`Please enter your current savings (enter 0 if none).`);if(t(`rc-contribution`)===null)return e(`Please enter your monthly contribution (enter 0 if none).`);if(t(`rc-return`)===null)return e(`Please enter an expected annual return.`);if(t(`rc-volatility`)===null)return e(`Please enter an annual volatility.`);if(t(`rc-income`)===null)return e(`Please enter your desired annual retirement income.`);if(t(`rc-inflation`)===null)return e(`Please enter an inflation rate.`);if(t(`rc-years-retired`)===null)return e(`Please enter how many years you expect to be in retirement.`);let f=i-r;if(f<=0)return;let p=l*(1+u)**+f,m=[],h=0;for(let e=0;e<500;e++){let e=a;for(let t=0;t<f;t++){let t=s+c*C();e=e*(1+t)+o*12,e<0&&(e=0)}m.push(e);let t=e;for(let e=0;e<d;e++){let e=s+c*C();if(t=t*(1+e)-p,t<=0){t=0;break}}t>0&&h++}m.sort((e,t)=>e-t);let g=m[250],_=m[50],v=m[450],y=h/500*100,b=y>=80?`tool-metric-positive`:y>=60?`tool-metric-warning`:`tool-metric-negative`,x=y>=80?`Strong — portfolio likely sustains withdrawals`:y>=60?`Moderate — consider increasing contributions`:`At risk — significant shortfall in many scenarios`;document.getElementById(`rc-results`).innerHTML=`
+  `}function T(){document.getElementById(`rc-calc-btn`)?.addEventListener(`click`,()=>{let e=e=>{document.getElementById(`rc-results`).innerHTML=`<h3>Results</h3><p class="tool-error-msg">${e}</p>`},t=e=>{let t=document.getElementById(e).value.trim();if(t===``)return null;let n=Number(t);return isNaN(n)?null:n},n=e=>Number(document.getElementById(e).value),r=n(`rc-current-age`),i=n(`rc-retirement-age`),a=n(`rc-savings`),o=n(`rc-contribution`),s=n(`rc-return`)/100,c=n(`rc-volatility`)/100,l=n(`rc-income`),u=n(`rc-inflation`)/100,d=n(`rc-years-retired`);if(t(`rc-current-age`)===null)return e(`Please enter your current age.`);if(t(`rc-retirement-age`)===null)return e(`Please enter a target retirement age.`);if(i<=r)return e(`Retirement age must be greater than your current age.`);if(t(`rc-savings`)===null)return e(`Please enter your current savings (enter 0 if none).`);if(t(`rc-contribution`)===null)return e(`Please enter your monthly contribution (enter 0 if none).`);if(t(`rc-return`)===null)return e(`Please enter an expected annual return.`);if(t(`rc-volatility`)===null)return e(`Please enter an annual volatility.`);if(t(`rc-income`)===null)return e(`Please enter your desired annual retirement income.`);if(t(`rc-inflation`)===null)return e(`Please enter an inflation rate.`);if(t(`rc-years-retired`)===null)return e(`Please enter how many years you expect to be in retirement.`);let f=i-r;if(f<=0)return;let p=l*(1+u)**+f,m=[],h=0;for(let e=0;e<500;e++){let e=a;for(let t=0;t<f;t++){let t=s+c*C();e=e*(1+t)+o*12,e<0&&(e=0)}m.push(e);let t=e;for(let e=0;e<d;e++){let e=s+c*C();if(t=t*(1+e)-p,t<=0){t=0;break}}t>0&&h++}m.sort((e,t)=>e-t);let g=m[250],_=m[50],v=m[450],y=h/500*100,b=y>=80?`tool-metric-positive`:y>=60?`tool-metric-warning`:`tool-metric-negative`,x=y>=80?`Strong — portfolio likely sustains withdrawals`:y>=60?`Moderate — consider increasing contributions`:`At risk — significant shortfall in many scenarios`;document.getElementById(`rc-results`).innerHTML=`
       <h3>Results</h3>
       <div class="tool-metric">
         <div class="tool-metric-label">Success Probability</div>
@@ -1367,7 +1367,7 @@
         <div class="tool-metric-value" style="font-size:1.2rem">${(g/p).toFixed(1)}x annual income</div>
         <div class="tool-metric-sub">Rule of thumb: 25× is often cited as a target</div>
       </div>
-    `})}var w=[{text:`How much of your income are you currently saving for retirement?`,options:[`Less than 5%`,`5–10%`,`10–15%`,`More than 15%`]},{text:`Do you have a dedicated retirement account (401k, IRA, etc.)?`,options:[`No retirement account`,`Yes, but contributions are inconsistent`,`Yes, and I contribute regularly`,`Yes, and I am maximising contributions`]},{text:`How many months of expenses do you have in an emergency fund?`,options:[`Less than 1 month`,`1–3 months`,`3–6 months`,`More than 6 months`]},{text:`Do you have a plan for healthcare coverage in retirement?`,options:[`No, I haven't thought about it`,`Aware of the issue but no plan yet`,`Partial plan (Medicare + supplemental)`,`Comprehensive plan including long-term care`]},{text:`Do you know how much you will need to retire comfortably?`,options:[`No idea`,`I have a rough guess`,`I have done some research`,`I have a detailed, written plan`]},{text:`What is your current debt situation?`,options:[`Significant high-interest debt`,`Moderate debt with a repayment plan`,`Only mortgage or low-interest debt`,`Little to no debt`]},{text:`Have you planned for income sources in retirement?`,options:[`Haven't thought about it`,`Social Security only`,`Social Security plus some savings`,`Multiple streams: SS, savings, pension, or part-time income`]},{text:`How would you describe your investment strategy?`,options:[`I don't invest`,`Basic investments, no clear strategy`,`A strategy, but reviewed infrequently`,`Clear, regularly reviewed strategy`]},{text:`Do you have estate planning documents in place (will, power of attorney, etc.)?`,options:[`None`,`I've thought about it but haven't acted`,`Some basics in place`,`Comprehensive estate plan completed`]},{text:`How confident are you that you are on track for retirement?`,options:[`Not at all confident`,`Somewhat worried`,`Reasonably confident`,`Very confident with a clear plan`]}],T=[{min:0,max:9,label:`Early Stage`,color:`#b91c1c`,desc:`Your retirement foundation is still being built. The good news: starting now has an outsized impact. Focus first on building an emergency fund and opening a retirement account, even with small contributions.`},{min:10,max:18,label:`Building Momentum`,color:`#b45309`,desc:`You have made a start and have some building blocks in place. Now is the time to increase consistency — in contributions, in planning, and in reviewing your strategy at least annually.`},{min:19,max:24,label:`On Track`,color:`#1a7a4a`,desc:`You are demonstrating solid retirement habits across most dimensions. Look for gaps — healthcare planning and estate documents are common areas where otherwise well-prepared people fall short.`},{min:25,max:30,label:`Well Prepared`,color:`#1B2774`,desc:`You have built a comprehensive retirement foundation. The priority now is maintaining your plan, reviewing it as life changes, and ensuring your estate and healthcare plans remain current.`}];function E(){return`
+    `})}var E=[{text:`How much of your income are you currently saving for retirement?`,options:[`Less than 5%`,`5–10%`,`10–15%`,`More than 15%`]},{text:`Do you have a dedicated retirement account (401k, IRA, etc.)?`,options:[`No retirement account`,`Yes, but contributions are inconsistent`,`Yes, and I contribute regularly`,`Yes, and I am maximising contributions`]},{text:`How many months of expenses do you have in an emergency fund?`,options:[`Less than 1 month`,`1–3 months`,`3–6 months`,`More than 6 months`]},{text:`Do you have a plan for healthcare coverage in retirement?`,options:[`No, I haven't thought about it`,`Aware of the issue but no plan yet`,`Partial plan (Medicare + supplemental)`,`Comprehensive plan including long-term care`]},{text:`Do you know how much you will need to retire comfortably?`,options:[`No idea`,`I have a rough guess`,`I have done some research`,`I have a detailed, written plan`]},{text:`What is your current debt situation?`,options:[`Significant high-interest debt`,`Moderate debt with a repayment plan`,`Only mortgage or low-interest debt`,`Little to no debt`]},{text:`Have you planned for income sources in retirement?`,options:[`Haven't thought about it`,`Social Security only`,`Social Security plus some savings`,`Multiple streams: SS, savings, pension, or part-time income`]},{text:`How would you describe your investment strategy?`,options:[`I don't invest`,`Basic investments, no clear strategy`,`A strategy, but reviewed infrequently`,`Clear, regularly reviewed strategy`]},{text:`Do you have estate planning documents in place (will, power of attorney, etc.)?`,options:[`None`,`I've thought about it but haven't acted`,`Some basics in place`,`Comprehensive estate plan completed`]},{text:`How confident are you that you are on track for retirement?`,options:[`Not at all confident`,`Somewhat worried`,`Reasonably confident`,`Very confident with a clear plan`]}],te=[{min:0,max:9,label:`Early Stage`,color:`#b91c1c`,desc:`Your retirement foundation is still being built. The good news: starting now has an outsized impact. Focus first on building an emergency fund and opening a retirement account, even with small contributions.`},{min:10,max:18,label:`Building Momentum`,color:`#b45309`,desc:`You have made a start and have some building blocks in place. Now is the time to increase consistency — in contributions, in planning, and in reviewing your strategy at least annually.`},{min:19,max:24,label:`On Track`,color:`#1a7a4a`,desc:`You are demonstrating solid retirement habits across most dimensions. Look for gaps — healthcare planning and estate documents are common areas where otherwise well-prepared people fall short.`},{min:25,max:30,label:`Well Prepared`,color:`#1B2774`,desc:`You have built a comprehensive retirement foundation. The priority now is maintaining your plan, reviewing it as life changes, and ensuring your estate and healthcare plans remain current.`}];function ne(){return`
     <div class="tool-page">
       <div class="tool-hero">
         <div class="tool-hero-inner">
@@ -1377,9 +1377,9 @@
         </div>
       </div>
       <div class="tool-quiz-body">
-        ${w.map((e,t)=>`
+        ${E.map((e,t)=>`
     <div class="quiz-question">
-      <div class="quiz-question-number">Question ${t+1} of ${w.length}</div>
+      <div class="quiz-question-number">Question ${t+1} of ${E.length}</div>
       <div class="quiz-question-text">${e.text}</div>
       <div class="quiz-options">
         ${e.options.map((e,n)=>`
@@ -1396,7 +1396,7 @@
       </div>
       <p class="tool-disclaimer">This quiz is for educational purposes only and does not constitute financial advice. For a personalised retirement plan, consult a qualified financial advisor.</p>
     </div>
-  `}function D(){document.getElementById(`rq-submit-btn`)?.addEventListener(`click`,()=>{let e=0,t=0;for(let n=0;n<w.length;n++){let r=document.querySelector(`input[name="q${n}"]:checked`);r?e+=Number(r.value):t++}if(t>0){alert(`Please answer all questions (${t} remaining).`);return}let n=T.find(t=>e>=t.min&&e<=t.max),r=Math.round(e/30*100),i=document.getElementById(`rq-results`);i.hidden=!1,i.innerHTML=`
+  `}function re(){document.getElementById(`rq-submit-btn`)?.addEventListener(`click`,()=>{let e=0,t=0;for(let n=0;n<E.length;n++){let r=document.querySelector(`input[name="q${n}"]:checked`);r?e+=Number(r.value):t++}if(t>0){alert(`Please answer all questions (${t} remaining).`);return}let n=te.find(t=>e>=t.min&&e<=t.max),r=Math.round(e/30*100),i=document.getElementById(`rq-results`);i.hidden=!1,i.innerHTML=`
       <div class="quiz-result-card" style="background:${n.color}">
         <div class="quiz-result-score">${e} / 30</div>
         <div class="quiz-result-label">${n.label}</div>
@@ -1409,7 +1409,7 @@
         <p style="color:var(--text-light);margin-bottom:1rem">Want a personalised plan based on where you are today?</p>
         <button data-action="open-booking" class="tool-calculate-btn" style="max-width:280px;margin:0 auto">Talk to an Advisor</button>
       </div>
-    `,i.scrollIntoView({behavior:`smooth`})})}var O=e=>`$`+Math.round(e).toLocaleString(`en-US`);function re(e){return e<=1954?66:e===1955?66.16666666666667:e===1956?66.33333333333333:e===1957?66.5:e===1958?66.66666666666667:e===1959?66.83333333333333:67}function k(e){return e<=1954?`66`:e===1955?`66 + 2 months`:e===1956?`66 + 4 months`:e===1957?`66 + 6 months`:e===1958?`66 + 8 months`:e===1959?`66 + 10 months`:`67`}function A(e){let t=e*.75/12,n=1174,r=7078,i=0;return i=t<=n?t*.9:t<=r?n*.9+(t-n)*.32:n*.9+(r-n)*.32+(t-r)*.15,Math.min(i,3822)}function ie(){let e=new Date().getFullYear();return`
+    `,i.scrollIntoView({behavior:`smooth`})})}var D=e=>`$`+Math.round(e).toLocaleString(`en-US`);function ie(e){return e<=1954?66:e===1955?66.16666666666667:e===1956?66.33333333333333:e===1957?66.5:e===1958?66.66666666666667:e===1959?66.83333333333333:67}function O(e){return e<=1954?`66`:e===1955?`66 + 2 months`:e===1956?`66 + 4 months`:e===1957?`66 + 6 months`:e===1958?`66 + 8 months`:e===1959?`66 + 10 months`:`67`}function k(e){let t=e*.75/12,n=1174,r=7078,i=0;return i=t<=n?t*.9:t<=r?n*.9+(t-n)*.32:n*.9+(r-n)*.32+(t-r)*.15,Math.min(i,3822)}function A(){let e=new Date().getFullYear();return`
     <div class="tool-page">
       <div class="tool-hero">
         <div class="tool-hero-inner">
@@ -1457,19 +1457,19 @@
       </div>
       <p class="tool-disclaimer">Estimates are based on simplified Social Security benefit formulas and assume a consistent career earnings history. Actual benefits are determined by the SSA based on your full earnings record. This is for educational purposes only.</p>
     </div>
-  `}function ae(){let e=document.getElementById(`ss-marital`),t=document.getElementById(`ss-spouse-section`);e.addEventListener(`change`,()=>{t.hidden=e.value!==`married`}),document.getElementById(`ss-calc-btn`)?.addEventListener(`click`,()=>{let t=e=>{document.getElementById(`ss-results`).innerHTML=`<h3>Results</h3><p class="tool-error-msg">${e}</p>`},n=e=>{let t=document.getElementById(e).value.trim();if(t===``)return null;let n=Number(t);return isNaN(n)?null:n},r=new Date().getFullYear();if(n(`ss-birth-year`)===null)return t(`Please enter your birth year.`);let i=Number(document.getElementById(`ss-birth-year`).value);if(i<1924||i>r-40)return t(`Please enter a valid birth year.`);if(n(`ss-income`)===null||Number(document.getElementById(`ss-income`).value)<0)return t(`Please enter your current annual income.`);if(e.value===`married`){if(n(`ss-spouse-income`)===null)return t(`Please enter your spouse's annual income (enter 0 if not working).`);if(n(`ss-spouse-birth-year`)===null)return t(`Please enter your spouse's birth year.`)}let a=Number(document.getElementById(`ss-birth-year`).value),o=Number(document.getElementById(`ss-income`).value),s=e.value===`married`,c=s?Number(document.getElementById(`ss-spouse-income`).value):0,l=s?Number(document.getElementById(`ss-spouse-birth-year`).value):0,u=re(a),d=k(a),f=A(o),p=(u-62)*12,m=0;m=p<=36?5/900*p:5/900*36+(p-36)*(5/1200);let h=f*(1-m),g=f,_=f*(1+(70-u)*.08),v=Math.round(62+g*12*(u-62)/((g-h)*12)),y=Math.round(u+_*12*(70-u)/((_-g)*12)),b=``;if(s&&c===0)b=`
+  `}function ae(){let e=document.getElementById(`ss-marital`),t=document.getElementById(`ss-spouse-section`);e.addEventListener(`change`,()=>{t.hidden=e.value!==`married`}),document.getElementById(`ss-calc-btn`)?.addEventListener(`click`,()=>{let t=e=>{document.getElementById(`ss-results`).innerHTML=`<h3>Results</h3><p class="tool-error-msg">${e}</p>`},n=e=>{let t=document.getElementById(e).value.trim();if(t===``)return null;let n=Number(t);return isNaN(n)?null:n},r=new Date().getFullYear();if(n(`ss-birth-year`)===null)return t(`Please enter your birth year.`);let i=Number(document.getElementById(`ss-birth-year`).value);if(i<1924||i>r-40)return t(`Please enter a valid birth year.`);if(n(`ss-income`)===null||Number(document.getElementById(`ss-income`).value)<0)return t(`Please enter your current annual income.`);if(e.value===`married`){if(n(`ss-spouse-income`)===null)return t(`Please enter your spouse's annual income (enter 0 if not working).`);if(n(`ss-spouse-birth-year`)===null)return t(`Please enter your spouse's birth year.`)}let a=Number(document.getElementById(`ss-birth-year`).value),o=Number(document.getElementById(`ss-income`).value),s=e.value===`married`,c=s?Number(document.getElementById(`ss-spouse-income`).value):0,l=s?Number(document.getElementById(`ss-spouse-birth-year`).value):0,u=ie(a),d=O(a),f=k(o),p=(u-62)*12,m=0;m=p<=36?5/900*p:5/900*36+(p-36)*(5/1200);let h=f*(1-m),g=f,_=f*(1+(70-u)*.08),v=Math.round(62+g*12*(u-62)/((g-h)*12)),y=Math.round(u+_*12*(70-u)/((_-g)*12)),b=``;if(s&&c===0)b=`
         <hr class="tool-divider" />
         <div class="tool-metric">
           <div class="tool-metric-label">Spousal Benefit (non-working spouse at FRA)</div>
-          <div class="tool-metric-value" style="font-size:1.15rem">${O(Math.min(f*.5,A(0))*12)}/yr</div>
+          <div class="tool-metric-value" style="font-size:1.15rem">${D(Math.min(f*.5,k(0))*12)}/yr</div>
           <div class="tool-metric-sub">50% of your PIA — available at your spouse's FRA</div>
         </div>
-      `;else if(s&&c>0){let e=A(c);b=`
+      `;else if(s&&c>0){let e=k(c);b=`
         <hr class="tool-divider" />
         <div class="tool-metric">
-          <div class="tool-metric-label">Spouse Estimated Benefit at FRA (age ${k(l)})</div>
-          <div class="tool-metric-value" style="font-size:1.15rem">${O(e*12)}/yr</div>
-          <div class="tool-metric-sub">Combined household at both FRAs: ${O((f+e)*12)}/yr</div>
+          <div class="tool-metric-label">Spouse Estimated Benefit at FRA (age ${O(l)})</div>
+          <div class="tool-metric-value" style="font-size:1.15rem">${D(e*12)}/yr</div>
+          <div class="tool-metric-sub">Combined household at both FRAs: ${D((f+e)*12)}/yr</div>
         </div>
       `}document.getElementById(`ss-results`).innerHTML=`
       <h3>Estimated Monthly Benefits</h3>
@@ -1478,20 +1478,20 @@
         <tbody>
           <tr>
             <td>Age 62 (earliest)</td>
-            <td>${O(h)}</td>
-            <td>${O(h*12)}</td>
+            <td>${D(h)}</td>
+            <td>${D(h*12)}</td>
             <td style="color:#b91c1c">−${((1-h/f)*100).toFixed(0)}%</td>
           </tr>
           <tr style="background:rgba(27,39,116,0.05)">
             <td>Age ${d} (FRA)</td>
-            <td>${O(g)}</td>
-            <td>${O(g*12)}</td>
+            <td>${D(g)}</td>
+            <td>${D(g*12)}</td>
             <td>—</td>
           </tr>
           <tr>
             <td>Age 70 (maximum)</td>
-            <td>${O(_)}</td>
-            <td>${O(_*12)}</td>
+            <td>${D(_)}</td>
+            <td>${D(_*12)}</td>
             <td style="color:#1a7a4a">+${((_/f-1)*100).toFixed(0)}%</td>
           </tr>
         </tbody>
@@ -1508,7 +1508,7 @@
         <div class="tool-metric-sub">If you live past this age, delaying to 70 pays more in total</div>
       </div>
       ${b}
-    `})}var j=e=>`$`+Math.round(e).toLocaleString(`en-US`),oe={72:27.4,73:26.5,74:25.5,75:24.6,76:23.7,77:22.9,78:22,79:21.1,80:20.2,81:19.4,82:18.5,83:17.7,84:16.8,85:16,86:15.2,87:14.4,88:13.7,89:12.9,90:12.2,91:11.5,92:10.8,93:10.1,94:9.5,95:8.9,96:8.4,97:7.8,98:7.3,99:6.8,100:6.4},se={10:.1,12:.12,22:.22,24:.24,32:.32,35:.35,37:.37};function M(){return`
+    `})}var j=e=>`$`+Math.round(e).toLocaleString(`en-US`),M={72:27.4,73:26.5,74:25.5,75:24.6,76:23.7,77:22.9,78:22,79:21.1,80:20.2,81:19.4,82:18.5,83:17.7,84:16.8,85:16,86:15.2,87:14.4,88:13.7,89:12.9,90:12.2,91:11.5,92:10.8,93:10.1,94:9.5,95:8.9,96:8.4,97:7.8,98:7.3,99:6.8,100:6.4},oe={10:.1,12:.12,22:.22,24:.24,32:.32,35:.35,37:.37};function se(){return`
     <div class="tool-page">
       <div class="tool-hero">
         <div class="tool-hero-inner">
@@ -1555,7 +1555,7 @@
       </div>
       <p class="tool-disclaimer">RMD calculations use the IRS Uniform Lifetime Table (2022 update). RMDs begin at age 73 under SECURE Act 2.0 for those born after 1950. This tool is for educational purposes only and does not constitute tax advice.</p>
     </div>
-  `}function ce(){document.getElementById(`rmd-calc-btn`)?.addEventListener(`click`,()=>{let e=e=>{document.getElementById(`rmd-results`).innerHTML=`<h3>Results</h3><p class="tool-error-msg">${e}</p>`},t=e=>{let t=document.getElementById(e).value.trim();if(t===``)return null;let n=Number(t);return isNaN(n)?null:n};if(t(`rmd-age`)===null)return e(`Please enter your current age.`);if(t(`rmd-balance`)===null||Number(document.getElementById(`rmd-balance`).value)<0)return e(`Please enter your current IRA / 401k balance.`);if(t(`rmd-growth`)===null)return e(`Please enter an expected annual growth rate.`);let n=Number(document.getElementById(`rmd-age`).value),r=Number(document.getElementById(`rmd-balance`).value),i=Number(document.getElementById(`rmd-growth`).value)/100,a=se[document.getElementById(`rmd-tax`).value],o=[];for(let e=0;e<20;e++){let t=n+e;r*=1+i;let s=oe[Math.min(t,100)];if(t>=73&&s){let e=r/s;r-=e,o.push({age:t,balance:r,rmd:e,tax:e*a})}else o.push({age:t,balance:r,rmd:0,tax:0})}let s=o.reduce((e,t)=>e+t.rmd,0),c=o.reduce((e,t)=>e+t.tax,0),l=o.map(e=>`
+  `}function ce(){document.getElementById(`rmd-calc-btn`)?.addEventListener(`click`,()=>{let e=e=>{document.getElementById(`rmd-results`).innerHTML=`<h3>Results</h3><p class="tool-error-msg">${e}</p>`},t=e=>{let t=document.getElementById(e).value.trim();if(t===``)return null;let n=Number(t);return isNaN(n)?null:n};if(t(`rmd-age`)===null)return e(`Please enter your current age.`);if(t(`rmd-balance`)===null||Number(document.getElementById(`rmd-balance`).value)<0)return e(`Please enter your current IRA / 401k balance.`);if(t(`rmd-growth`)===null)return e(`Please enter an expected annual growth rate.`);let n=Number(document.getElementById(`rmd-age`).value),r=Number(document.getElementById(`rmd-balance`).value),i=Number(document.getElementById(`rmd-growth`).value)/100,a=oe[document.getElementById(`rmd-tax`).value],o=[];for(let e=0;e<20;e++){let t=n+e;r*=1+i;let s=M[Math.min(t,100)];if(t>=73&&s){let e=r/s;r-=e,o.push({age:t,balance:r,rmd:e,tax:e*a})}else o.push({age:t,balance:r,rmd:0,tax:0})}let s=o.reduce((e,t)=>e+t.rmd,0),c=o.reduce((e,t)=>e+t.tax,0),l=o.map(e=>`
       <tr>
         <td>${e.age}</td>
         <td>${j(e.balance)}</td>
@@ -1580,7 +1580,7 @@
           <tbody>${l}</tbody>
         </table>
       </div>
-    `})}var N=e=>`$`+Math.round(e).toLocaleString(`en-US`);function P(){return`
+    `})}var N=e=>`$`+Math.round(e).toLocaleString(`en-US`);function le(){return`
     <div class="tool-page">
       <div class="tool-hero">
         <div class="tool-hero-inner">
@@ -1627,7 +1627,7 @@
       </div>
       <p class="tool-disclaimer">Conversions are modeled as tax being withheld from the converted amount; state income taxes are not included. Results are illustrative only. Tax laws change frequently — consult a qualified tax advisor before executing a Roth conversion strategy.</p>
     </div>
-  `}function F(){document.getElementById(`rc2-calc-btn`)?.addEventListener(`click`,()=>{let e=e=>{document.getElementById(`rc2-results`).innerHTML=`<h3>Results</h3><p class="tool-error-msg">${e}</p>`},t=e=>{let t=document.getElementById(e).value.trim();if(t===``)return null;let n=Number(t);return isNaN(n)?null:n};if(t(`rc2-balance`)===null||Number(document.getElementById(`rc2-balance`).value)<0)return e(`Please enter your Traditional IRA / 401k balance.`);if(t(`rc2-annual`)===null)return e(`Please enter the annual conversion amount (enter 0 to model no conversion).`);if(t(`rc2-current-rate`)===null)return e(`Please enter your current marginal tax rate.`);if(t(`rc2-future-rate`)===null)return e(`Please enter your expected tax rate in retirement.`);if(t(`rc2-years`)===null||Number(document.getElementById(`rc2-years`).value)<1)return e(`Please enter a valid number of years until retirement (minimum 1).`);if(t(`rc2-return`)===null)return e(`Please enter an expected annual return.`);let n=Number(document.getElementById(`rc2-balance`).value),r=Number(document.getElementById(`rc2-annual`).value),i=Number(document.getElementById(`rc2-current-rate`).value)/100,a=Number(document.getElementById(`rc2-future-rate`).value)/100,o=Number(document.getElementById(`rc2-years`).value),s=Number(document.getElementById(`rc2-return`).value)/100,c=n;for(let e=0;e<o;e++)c*=1+s;let l=c*(1-a),u=n,d=0,f=0;for(let e=0;e<o;e++){let e=Math.min(u,r);f+=e*i,u=(u-e)*(1+s),d=d*(1+s)+e*(1-i)}let p=d+u*(1-a),m=p-l,h=n,g=0,_=[],v=0;for(let e=1;e<=Math.min(o,15);e++){let t=Math.min(h,r);v+=t*i,h=(h-t)*(1+s),g=g*(1+s)+t*(1-i),_.push({year:e,trad:h,roth:g,combined:h+g,cumTax:v})}let y=m>0?`tool-metric-positive`:`tool-metric-warning`,b=_.map(e=>`
+  `}function ue(){document.getElementById(`rc2-calc-btn`)?.addEventListener(`click`,()=>{let e=e=>{document.getElementById(`rc2-results`).innerHTML=`<h3>Results</h3><p class="tool-error-msg">${e}</p>`},t=e=>{let t=document.getElementById(e).value.trim();if(t===``)return null;let n=Number(t);return isNaN(n)?null:n};if(t(`rc2-balance`)===null||Number(document.getElementById(`rc2-balance`).value)<0)return e(`Please enter your Traditional IRA / 401k balance.`);if(t(`rc2-annual`)===null)return e(`Please enter the annual conversion amount (enter 0 to model no conversion).`);if(t(`rc2-current-rate`)===null)return e(`Please enter your current marginal tax rate.`);if(t(`rc2-future-rate`)===null)return e(`Please enter your expected tax rate in retirement.`);if(t(`rc2-years`)===null||Number(document.getElementById(`rc2-years`).value)<1)return e(`Please enter a valid number of years until retirement (minimum 1).`);if(t(`rc2-return`)===null)return e(`Please enter an expected annual return.`);let n=Number(document.getElementById(`rc2-balance`).value),r=Number(document.getElementById(`rc2-annual`).value),i=Number(document.getElementById(`rc2-current-rate`).value)/100,a=Number(document.getElementById(`rc2-future-rate`).value)/100,o=Number(document.getElementById(`rc2-years`).value),s=Number(document.getElementById(`rc2-return`).value)/100,c=n;for(let e=0;e<o;e++)c*=1+s;let l=c*(1-a),u=n,d=0,f=0;for(let e=0;e<o;e++){let e=Math.min(u,r);f+=e*i,u=(u-e)*(1+s),d=d*(1+s)+e*(1-i)}let p=d+u*(1-a),m=p-l,h=n,g=0,_=[],v=0;for(let e=1;e<=Math.min(o,15);e++){let t=Math.min(h,r);v+=t*i,h=(h-t)*(1+s),g=g*(1+s)+t*(1-i),_.push({year:e,trad:h,roth:g,combined:h+g,cumTax:v})}let y=m>0?`tool-metric-positive`:`tool-metric-warning`,b=_.map(e=>`
       <tr>
         <td>Year ${e.year}</td>
         <td>${N(e.trad)}</td>
@@ -1664,7 +1664,7 @@
           <tbody>${b}</tbody>
         </table>
       </div>
-    `})}var I=e=>`$`+Math.round(e).toLocaleString(`en-US`),L=(e,t)=>{document.getElementById(e).innerHTML=`<h3>Results</h3><p class="tool-error-msg">${t}</p>`};function R(){return`
+    `})}var P=e=>`$`+Math.round(e).toLocaleString(`en-US`),F=(e,t)=>{document.getElementById(e).innerHTML=`<h3>Results</h3><p class="tool-error-msg">${t}</p>`};function I(){return`
     <div class="tool-page">
       <div class="tool-hero">
         <div class="tool-hero-inner">
@@ -1727,11 +1727,11 @@
       </div>
       <p class="tool-disclaimer">Cash-out calculation assumes a 10% early withdrawal penalty (waived after age 59½) plus income tax. This tool is for educational purposes only and does not constitute financial or tax advice.</p>
     </div>
-  `}function z(){document.getElementById(`kr-calc-btn`)?.addEventListener(`click`,()=>{let e=e=>{let t=document.getElementById(e).value.trim();if(t===``)return null;let n=Number(t);return isNaN(n)?null:n},t=e(`kr-balance`),n=e(`kr-age`),r=e(`kr-retirement-age`),i=e(`kr-return`),a=e(`kr-old-er`),o=e(`kr-ira-er`),s=e(`kr-new-er`),c=Number(document.getElementById(`kr-tax-rate`).value)/100;if(t===null||t<0)return L(`kr-results`,`Please enter a valid old plan balance.`);if(n===null||n<18)return L(`kr-results`,`Please enter a valid current age.`);if(r===null)return L(`kr-results`,`Please enter a target retirement age.`);if(r<=n)return L(`kr-results`,`Retirement age must be greater than your current age.`);if(i===null)return L(`kr-results`,`Please enter an expected annual return.`);if(a===null||a<0)return L(`kr-results`,`Please enter the old plan expense ratio.`);if(o===null&&s===null)return L(`kr-results`,`Please enter at least one rollover destination expense ratio (IRA or new employer plan) to compare.`);let l=r-n,u=(e,t)=>e*(1+i/100-t/100)**l,d=u(t,a),f=n<59.5?.1:0,p=t*(1-c-f),m=[{label:`Leave in Old Plan`,value:d,er:a,badge:``,isCash:!1},{label:`Cash Out Now`,value:p,er:0,badge:`Not recommended`,isCash:!0}];o!==null&&m.push({label:`Rollover to IRA`,value:u(t,o),er:o,badge:`Most flexible`,isCash:!1}),s!==null&&m.push({label:`Rollover to New Employer Plan`,value:u(t,s),er:s,badge:``,isCash:!1}),m.sort((e,t)=>t.value-e.value);let h=m[0],g=m.map(e=>{let t=Math.round(e.value/h.value*100),r=e.value===h.value?`green`:e.isCash?`red`:`navy`,a=e.isCash?`After ${(c*100).toFixed(0)}% tax${n<59.5?` + 10% early withdrawal penalty`:``}`:`Net return: ${(i-e.er).toFixed(2)}%/yr`;return`
+  `}function L(){document.getElementById(`kr-calc-btn`)?.addEventListener(`click`,()=>{let e=e=>{let t=document.getElementById(e).value.trim();if(t===``)return null;let n=Number(t);return isNaN(n)?null:n},t=e(`kr-balance`),n=e(`kr-age`),r=e(`kr-retirement-age`),i=e(`kr-return`),a=e(`kr-old-er`),o=e(`kr-ira-er`),s=e(`kr-new-er`),c=Number(document.getElementById(`kr-tax-rate`).value)/100;if(t===null||t<0)return F(`kr-results`,`Please enter a valid old plan balance.`);if(n===null||n<18)return F(`kr-results`,`Please enter a valid current age.`);if(r===null)return F(`kr-results`,`Please enter a target retirement age.`);if(r<=n)return F(`kr-results`,`Retirement age must be greater than your current age.`);if(i===null)return F(`kr-results`,`Please enter an expected annual return.`);if(a===null||a<0)return F(`kr-results`,`Please enter the old plan expense ratio.`);if(o===null&&s===null)return F(`kr-results`,`Please enter at least one rollover destination expense ratio (IRA or new employer plan) to compare.`);let l=r-n,u=(e,t)=>e*(1+i/100-t/100)**l,d=u(t,a),f=n<59.5?.1:0,p=t*(1-c-f),m=[{label:`Leave in Old Plan`,value:d,er:a,badge:``,isCash:!1},{label:`Cash Out Now`,value:p,er:0,badge:`Not recommended`,isCash:!0}];o!==null&&m.push({label:`Rollover to IRA`,value:u(t,o),er:o,badge:`Most flexible`,isCash:!1}),s!==null&&m.push({label:`Rollover to New Employer Plan`,value:u(t,s),er:s,badge:``,isCash:!1}),m.sort((e,t)=>t.value-e.value);let h=m[0],g=m.map(e=>{let t=Math.round(e.value/h.value*100),r=e.value===h.value?`green`:e.isCash?`red`:`navy`,a=e.isCash?`After ${(c*100).toFixed(0)}% tax${n<59.5?` + 10% early withdrawal penalty`:``}`:`Net return: ${(i-e.er).toFixed(2)}%/yr`;return`
         <div class="tool-bar-row">
           <div class="tool-bar-label">
             <span>${e.label}${e.badge?` <em style="font-style:normal;font-size:0.75rem;opacity:0.7">(${e.badge})</em>`:``}</span>
-            <span>${I(e.value)}</span>
+            <span>${P(e.value)}</span>
           </div>
           <div class="tool-bar"><div class="tool-bar-fill ${r}" style="width:${t}%"></div></div>
           <div style="font-size:0.75rem;color:var(--text-light);margin-top:0.2rem">${a}</div>
@@ -1744,17 +1744,17 @@
       <div class="tool-metric">
         <div class="tool-metric-label">${v.label} vs Leave in Old Plan</div>
         <div class="tool-metric-value ${v.value>=d?`tool-metric-positive`:`tool-metric-warning`}" style="font-size:1.15rem">
-          ${v.value>=d?`+`:``}${I(v.value-d)}
+          ${v.value>=d?`+`:``}${P(v.value-d)}
         </div>
         <div class="tool-metric-sub">Difference from lower expense ratio over ${l} years</div>
       </div>`:``}
       ${_?`
       <div class="tool-metric">
         <div class="tool-metric-label">Cost of Cashing Out vs Best Option</div>
-        <div class="tool-metric-value tool-metric-negative" style="font-size:1.15rem">−${I(h.value-_.value)}</div>
+        <div class="tool-metric-value tool-metric-negative" style="font-size:1.15rem">−${P(h.value-_.value)}</div>
         <div class="tool-metric-sub">Foregone growth by taking cash today</div>
       </div>`:``}
-    `})}var B=e=>`$`+Math.round(e).toLocaleString(`en-US`),V={"public-in":{label:`Public In-State`,annual:28e3},"public-out":{label:`Public Out-of-State`,annual:46e3},private:{label:`Private University`,annual:6e4}},H=.05;function U(){return`
+    `})}var R=e=>`$`+Math.round(e).toLocaleString(`en-US`),z={"public-in":{label:`Public In-State`,annual:28e3},"public-out":{label:`Public Out-of-State`,annual:46e3},private:{label:`Private University`,annual:6e4}},B=.05;function V(){return`
     <div class="tool-page">
       <div class="tool-hero">
         <div class="tool-hero-inner">
@@ -1801,17 +1801,17 @@
       </div>
       <p class="tool-disclaimer">College cost projections assume 5% annual tuition inflation. Investment returns are not guaranteed. 529 funds must be used for qualified education expenses to maintain tax advantages. This is for educational purposes only.</p>
     </div>
-  `}function W(){document.getElementById(`p529-calc-btn`)?.addEventListener(`click`,()=>{let e=e=>{document.getElementById(`p529-results`).innerHTML=`<h3>Results</h3><p class="tool-error-msg">${e}</p>`},t=e=>{let t=document.getElementById(e).value.trim();if(t===``)return null;let n=Number(t);return isNaN(n)?null:n};if(t(`p529-child-age`)===null)return e(`Please enter your child's current age.`);if(Number(document.getElementById(`p529-child-age`).value)>=18)return e(`This tool is for children under 18. For a student already enrolled in college, speak with an advisor about other options.`);if(t(`p529-balance`)===null)return e(`Please enter the current 529 balance (enter 0 if starting fresh).`);if(t(`p529-monthly`)===null)return e(`Please enter your planned monthly contribution (enter 0 to see the savings gap).`);if(t(`p529-return`)===null)return e(`Please enter an expected annual return.`);let n=Number(document.getElementById(`p529-child-age`).value),r=document.getElementById(`p529-school`).value,i=Number(document.getElementById(`p529-balance`).value),a=Number(document.getElementById(`p529-monthly`).value),o=Number(document.getElementById(`p529-return`).value)/100,s=V[r],c=Math.max(18-n,1),l=o,u=s.annual*(1+H)**+c,d=u*4,f=l/12,p=c*12,m=i*(1+l)**+c,h=m+a*((1+f)**+p-1)/f,g=d-h,_=Math.min(h/d*100,100),v=Math.max(g,0)>0?(d-m)/(((1+f)**+p-1)/f):0,y=_>=90?`tool-metric-positive`:_>=60?`tool-metric-warning`:`tool-metric-negative`;document.getElementById(`p529-results`).innerHTML=`
+  `}function H(){document.getElementById(`p529-calc-btn`)?.addEventListener(`click`,()=>{let e=e=>{document.getElementById(`p529-results`).innerHTML=`<h3>Results</h3><p class="tool-error-msg">${e}</p>`},t=e=>{let t=document.getElementById(e).value.trim();if(t===``)return null;let n=Number(t);return isNaN(n)?null:n};if(t(`p529-child-age`)===null)return e(`Please enter your child's current age.`);if(Number(document.getElementById(`p529-child-age`).value)>=18)return e(`This tool is for children under 18. For a student already enrolled in college, speak with an advisor about other options.`);if(t(`p529-balance`)===null)return e(`Please enter the current 529 balance (enter 0 if starting fresh).`);if(t(`p529-monthly`)===null)return e(`Please enter your planned monthly contribution (enter 0 to see the savings gap).`);if(t(`p529-return`)===null)return e(`Please enter an expected annual return.`);let n=Number(document.getElementById(`p529-child-age`).value),r=document.getElementById(`p529-school`).value,i=Number(document.getElementById(`p529-balance`).value),a=Number(document.getElementById(`p529-monthly`).value),o=Number(document.getElementById(`p529-return`).value)/100,s=z[r],c=Math.max(18-n,1),l=o,u=s.annual*(1+B)**+c,d=u*4,f=l/12,p=c*12,m=i*(1+l)**+c,h=m+a*((1+f)**+p-1)/f,g=d-h,_=Math.min(h/d*100,100),v=Math.max(g,0)>0?(d-m)/(((1+f)**+p-1)/f):0,y=_>=90?`tool-metric-positive`:_>=60?`tool-metric-warning`:`tool-metric-negative`;document.getElementById(`p529-results`).innerHTML=`
       <h3>Projection at Age 18</h3>
       <div class="tool-metric">
         <div class="tool-metric-label">Projected Savings at College Start</div>
-        <div class="tool-metric-value">${B(h)}</div>
+        <div class="tool-metric-value">${R(h)}</div>
         <div class="tool-metric-sub">In ${c} years at ${(l*100).toFixed(1)}% return</div>
       </div>
       <div class="tool-metric">
         <div class="tool-metric-label">Estimated 4-Year Cost (${s.label})</div>
-        <div class="tool-metric-value" style="font-size:1.2rem">${B(d)}</div>
-        <div class="tool-metric-sub">${B(u)}/yr — inflated at 5%/yr from today's ${B(s.annual*4)}</div>
+        <div class="tool-metric-value" style="font-size:1.2rem">${R(d)}</div>
+        <div class="tool-metric-sub">${R(u)}/yr — inflated at 5%/yr from today's ${R(s.annual*4)}</div>
       </div>
       <hr class="tool-divider" />
       <div class="tool-metric">
@@ -1824,15 +1824,15 @@
       ${g>0?`
       <div class="tool-metric">
         <div class="tool-metric-label">Shortfall</div>
-        <div class="tool-metric-value tool-metric-negative" style="font-size:1.1rem">${B(g)}</div>
-        <div class="tool-metric-sub">To fully fund: save ${B(v+a)}/month total (add ${B(Math.max(v,0))}/mo)</div>
+        <div class="tool-metric-value tool-metric-negative" style="font-size:1.1rem">${R(g)}</div>
+        <div class="tool-metric-sub">To fully fund: save ${R(v+a)}/month total (add ${R(Math.max(v,0))}/mo)</div>
       </div>`:`
       <div class="tool-metric">
         <div class="tool-metric-label">Surplus</div>
-        <div class="tool-metric-value tool-metric-positive" style="font-size:1.1rem">${B(-g)}</div>
+        <div class="tool-metric-value tool-metric-positive" style="font-size:1.1rem">${R(-g)}</div>
         <div class="tool-metric-sub">You are on track to fully cover projected costs</div>
       </div>`}
-    `})}var G=[{text:`How long before you expect to need most of these funds?`,options:[{label:`Less than 3 years`,score:1},{label:`3–7 years`,score:2},{label:`7–15 years`,score:3},{label:`More than 15 years`,score:4}]},{text:`If your portfolio dropped 25% in value over three months, you would:`,options:[{label:`Sell everything to prevent further losses`,score:1},{label:`Sell some holdings to reduce risk`,score:2},{label:`Hold steady and wait for recovery`,score:3},{label:`Buy more while prices are low`,score:4}]},{text:`What is your primary investment goal?`,options:[{label:`Preserve the value I already have`,score:1},{label:`Generate steady, reliable income`,score:2},{label:`Moderate growth with some stability`,score:3},{label:`Maximum long-term growth`,score:4}]},{text:`Which investment scenario would you choose?`,options:[{label:`Guaranteed 3% return annually`,score:1},{label:`50% chance of 8%, 50% chance of 2%`,score:2},{label:`50% chance of 15%, 50% chance of −3%`,score:3},{label:`50% chance of 25%, 50% chance of −12%`,score:4}]},{text:`What portion of your total savings does this investment represent?`,options:[{label:`Almost all of it — my primary financial resource`,score:1},{label:`More than half of my savings`,score:2},{label:`About half`,score:3},{label:`A small portion — I have significant other assets`,score:4}]},{text:`How stable is your income and employment?`,options:[{label:`Uncertain or highly variable`,score:1},{label:`Somewhat stable`,score:2},{label:`Stable employment with reliable income`,score:3},{label:`Multiple income sources — very stable`,score:4}]},{text:`How would a 30% portfolio decline affect your financial life?`,options:[{label:`It would be devastating to my lifestyle`,score:1},{label:`It would cause significant financial hardship`,score:2},{label:`It would be uncomfortable but manageable`,score:3},{label:`It would have little effect on my day-to-day life`,score:4}]},{text:`How would you describe your investment knowledge and experience?`,options:[{label:`Little to no investing experience`,score:1},{label:`Basic knowledge of stocks and bonds`,score:2},{label:`Comfortable with most investment types`,score:3},{label:`Experienced across multiple asset classes`,score:4}]}],le=[{min:8,max:13,label:`Conservative`,desc:`Capital preservation is your priority. You prefer stability over growth and are uncomfortable with significant fluctuations in portfolio value.`,stocks:20,bonds:65,alt:15,color:`#1B2774`},{min:14,max:19,label:`Moderately Conservative`,desc:`You want some growth but lean heavily toward stability. A modest equity allocation with a strong fixed-income core suits your temperament.`,stocks:40,bonds:50,alt:10,color:`#2535a0`},{min:20,max:25,label:`Moderate`,desc:`You seek a balance between growth and stability. You can tolerate moderate fluctuations in exchange for higher long-term returns.`,stocks:60,bonds:35,alt:5,color:`#1a7a4a`},{min:26,max:28,label:`Moderately Aggressive`,desc:`Growth is your primary focus. You are comfortable with meaningful short-term volatility in pursuit of superior long-term returns.`,stocks:78,bonds:17,alt:5,color:`#b45309`},{min:29,max:32,label:`Aggressive`,desc:`Maximum long-term growth is your objective. You have a high tolerance for volatility and a long time horizon to ride out downturns.`,stocks:90,bonds:10,alt:0,color:`#b91c1c`}];function ue(){return`
+    `})}var U=[{text:`How long before you expect to need most of these funds?`,options:[{label:`Less than 3 years`,score:1},{label:`3–7 years`,score:2},{label:`7–15 years`,score:3},{label:`More than 15 years`,score:4}]},{text:`If your portfolio dropped 25% in value over three months, you would:`,options:[{label:`Sell everything to prevent further losses`,score:1},{label:`Sell some holdings to reduce risk`,score:2},{label:`Hold steady and wait for recovery`,score:3},{label:`Buy more while prices are low`,score:4}]},{text:`What is your primary investment goal?`,options:[{label:`Preserve the value I already have`,score:1},{label:`Generate steady, reliable income`,score:2},{label:`Moderate growth with some stability`,score:3},{label:`Maximum long-term growth`,score:4}]},{text:`Which investment scenario would you choose?`,options:[{label:`Guaranteed 3% return annually`,score:1},{label:`50% chance of 8%, 50% chance of 2%`,score:2},{label:`50% chance of 15%, 50% chance of −3%`,score:3},{label:`50% chance of 25%, 50% chance of −12%`,score:4}]},{text:`What portion of your total savings does this investment represent?`,options:[{label:`Almost all of it — my primary financial resource`,score:1},{label:`More than half of my savings`,score:2},{label:`About half`,score:3},{label:`A small portion — I have significant other assets`,score:4}]},{text:`How stable is your income and employment?`,options:[{label:`Uncertain or highly variable`,score:1},{label:`Somewhat stable`,score:2},{label:`Stable employment with reliable income`,score:3},{label:`Multiple income sources — very stable`,score:4}]},{text:`How would a 30% portfolio decline affect your financial life?`,options:[{label:`It would be devastating to my lifestyle`,score:1},{label:`It would cause significant financial hardship`,score:2},{label:`It would be uncomfortable but manageable`,score:3},{label:`It would have little effect on my day-to-day life`,score:4}]},{text:`How would you describe your investment knowledge and experience?`,options:[{label:`Little to no investing experience`,score:1},{label:`Basic knowledge of stocks and bonds`,score:2},{label:`Comfortable with most investment types`,score:3},{label:`Experienced across multiple asset classes`,score:4}]}],de=[{min:8,max:13,label:`Conservative`,desc:`Capital preservation is your priority. You prefer stability over growth and are uncomfortable with significant fluctuations in portfolio value.`,stocks:20,bonds:65,alt:15,color:`#1B2774`},{min:14,max:19,label:`Moderately Conservative`,desc:`You want some growth but lean heavily toward stability. A modest equity allocation with a strong fixed-income core suits your temperament.`,stocks:40,bonds:50,alt:10,color:`#2535a0`},{min:20,max:25,label:`Moderate`,desc:`You seek a balance between growth and stability. You can tolerate moderate fluctuations in exchange for higher long-term returns.`,stocks:60,bonds:35,alt:5,color:`#1a7a4a`},{min:26,max:28,label:`Moderately Aggressive`,desc:`Growth is your primary focus. You are comfortable with meaningful short-term volatility in pursuit of superior long-term returns.`,stocks:78,bonds:17,alt:5,color:`#b45309`},{min:29,max:32,label:`Aggressive`,desc:`Maximum long-term growth is your objective. You have a high tolerance for volatility and a long time horizon to ride out downturns.`,stocks:90,bonds:10,alt:0,color:`#b91c1c`}];function fe(){return`
     <div class="tool-page">
       <div class="tool-hero">
         <div class="tool-hero-inner">
@@ -1842,9 +1842,9 @@
         </div>
       </div>
       <div class="tool-quiz-body">
-        ${G.map((e,t)=>`
+        ${U.map((e,t)=>`
     <div class="quiz-question">
-      <div class="quiz-question-number">Question ${t+1} of ${G.length}</div>
+      <div class="quiz-question-number">Question ${t+1} of ${U.length}</div>
       <div class="quiz-question-text">${e.text}</div>
       <div class="quiz-options">
         ${e.options.map(e=>`
@@ -1861,7 +1861,7 @@
       </div>
       <p class="tool-disclaimer">This questionnaire is for educational purposes only. Risk tolerance is one input among many in building an investment strategy. Consult a financial advisor for personalised portfolio recommendations.</p>
     </div>
-  `}function de(){document.getElementById(`rtq-submit-btn`)?.addEventListener(`click`,()=>{let e=0,t=0;for(let n=0;n<G.length;n++){let r=document.querySelector(`input[name="rtq${n}"]:checked`);r?e+=Number(r.value):t++}if(t>0){alert(`Please answer all questions (${t} remaining).`);return}let n=le.find(t=>e>=t.min&&e<=t.max),r=[{label:`Equities`,pct:n.stocks,color:`navy`},{label:`Fixed Income`,pct:n.bonds,color:`green`},{label:`Alternatives / Cash`,pct:n.alt,color:`amber`}].map(e=>`
+  `}function pe(){document.getElementById(`rtq-submit-btn`)?.addEventListener(`click`,()=>{let e=0,t=0;for(let n=0;n<U.length;n++){let r=document.querySelector(`input[name="rtq${n}"]:checked`);r?e+=Number(r.value):t++}if(t>0){alert(`Please answer all questions (${t} remaining).`);return}let n=de.find(t=>e>=t.min&&e<=t.max),r=[{label:`Equities`,pct:n.stocks,color:`navy`},{label:`Fixed Income`,pct:n.bonds,color:`green`},{label:`Alternatives / Cash`,pct:n.alt,color:`amber`}].map(e=>`
       <div class="tool-bar-row">
         <div class="tool-bar-label"><span>${e.label}</span><span>${e.pct}%</span></div>
         <div class="tool-bar"><div class="tool-bar-fill ${e.color}" style="width:${e.pct}%"></div></div>
@@ -1880,7 +1880,7 @@
         <p style="color:var(--text-light);margin-bottom:1rem">Want a portfolio built around your specific situation and goals?</p>
         <button data-action="open-booking" class="tool-calculate-btn" style="max-width:280px;margin:0 auto">Talk to an Advisor</button>
       </div>
-    `,i.scrollIntoView({behavior:`smooth`})})}var K=e=>`$`+Math.round(e).toLocaleString(`en-US`),fe={single:14600,married:29200,hoh:21900},pe=23e3,me=7500,q=4150,he=8300,ge=105e3;function _e(){return`
+    `,i.scrollIntoView({behavior:`smooth`})})}var W=e=>`$`+Math.round(e).toLocaleString(`en-US`),me={single:14600,married:29200,hoh:21900},G=23e3,he=7500,ge=4150,_e=8300,ve=105e3;function ye(){return`
     <div class="tool-page">
       <div class="tool-hero">
         <div class="tool-hero-inner">
@@ -1947,11 +1947,11 @@
       </div>
       <p class="tool-disclaimer">Estimates are based on federal tax rules only and do not account for state taxes, AMT, phase-outs, or other factors that may affect your situation. This is for educational purposes only and does not constitute tax advice. Consult a qualified tax professional.</p>
     </div>
-  `}function ve(){document.getElementById(`ts-calc-btn`)?.addEventListener(`click`,()=>{let e=e=>{document.getElementById(`ts-results`).innerHTML=`<h3>Results</h3><p class="tool-error-msg">${e}</p>`},t=e=>{let t=document.getElementById(e).value.trim();if(t===``)return null;let n=Number(t);return isNaN(n)?null:n};if(t(`ts-income`)===null||Number(document.getElementById(`ts-income`).value)<=0)return e(`Please enter your gross annual income.`);if(t(`ts-age`)===null||Number(document.getElementById(`ts-age`).value)<18)return e(`Please enter a valid age.`);if(t(`ts-marginal`)===null)return e(`Please enter your marginal tax rate.`);if(t(`ts-charitable`)===null)return e(`Please enter your annual charitable giving (enter 0 if none).`);if(t(`ts-current-itemized`)===null)return e(`Please enter your other itemised deductions (enter 0 if none).`);if(t(`ts-401k-contrib`)===null)return e(`Please enter your current 401k contribution percentage (enter 0 if none).`);if(t(`ts-current-hsa`)===null)return e(`Please enter your current HSA contribution (enter 0 if none).`);let n=document.getElementById(`ts-filing`).value,r=Number(document.getElementById(`ts-income`).value),i=Number(document.getElementById(`ts-age`).value),a=Number(document.getElementById(`ts-marginal`).value)/100,o=Number(document.getElementById(`ts-charitable`).value),s=Number(document.getElementById(`ts-current-itemized`).value),c=Number(document.getElementById(`ts-401k-contrib`).value)/100,l=document.getElementById(`ts-hsa`).value,u=Number(document.getElementById(`ts-current-hsa`).value),d=fe[n],f=o+s,p=Math.max(d,f),m=[],h=((o*2+s+d)/2-p)*a;if(h>50&&m.push({name:`Deduction Bunching`,saving:h,detail:`Bundle ${K(o*2)} of charitable giving every other year vs. ${K(o)}/yr — extra deduction of ~${K(h/a)}/yr on average`}),i>=70){let e=Math.min(o,ge),t=e*a;t>0&&m.push({name:`Qualified Charitable Distribution (QCD)`,saving:t,detail:`Donate ${K(e)} directly from your IRA, excluding it from taxable income entirely`})}let g=pe+(i>=50?me:0),_=r*c,v=Math.max(g-_,0);if(v>500&&m.push({name:`Maximise 401k Contributions`,saving:v*a,detail:`Increase contributions by ${K(v)} to reach the ${`$${(g/1e3).toFixed(0)}k`} ${i>=50?`catch-up`:``} limit`}),l!==`none`){let e=l===`family`?he:q,t=Math.max(e-u,0);t>200&&m.push({name:`Maximise HSA Contributions`,saving:t*a,detail:`Add ${K(t)} to your HSA to reach the ${K(e)} ${l===`family`?`family`:`self-only`} limit — triple tax advantage`})}let y=f-d;y<0&&y>-3e3&&m.push({name:`Accelerate Deductions`,saving:-y*a,detail:`You are ${K(-y)} below the standard deduction. Prepaying deductible expenses could push you above it`});let b=m.reduce((e,t)=>e+t.saving,0),x=m.length>0?m.map(e=>`
+  `}function be(){document.getElementById(`ts-calc-btn`)?.addEventListener(`click`,()=>{let e=e=>{document.getElementById(`ts-results`).innerHTML=`<h3>Results</h3><p class="tool-error-msg">${e}</p>`},t=e=>{let t=document.getElementById(e).value.trim();if(t===``)return null;let n=Number(t);return isNaN(n)?null:n};if(t(`ts-income`)===null||Number(document.getElementById(`ts-income`).value)<=0)return e(`Please enter your gross annual income.`);if(t(`ts-age`)===null||Number(document.getElementById(`ts-age`).value)<18)return e(`Please enter a valid age.`);if(t(`ts-marginal`)===null)return e(`Please enter your marginal tax rate.`);if(t(`ts-charitable`)===null)return e(`Please enter your annual charitable giving (enter 0 if none).`);if(t(`ts-current-itemized`)===null)return e(`Please enter your other itemised deductions (enter 0 if none).`);if(t(`ts-401k-contrib`)===null)return e(`Please enter your current 401k contribution percentage (enter 0 if none).`);if(t(`ts-current-hsa`)===null)return e(`Please enter your current HSA contribution (enter 0 if none).`);let n=document.getElementById(`ts-filing`).value,r=Number(document.getElementById(`ts-income`).value),i=Number(document.getElementById(`ts-age`).value),a=Number(document.getElementById(`ts-marginal`).value)/100,o=Number(document.getElementById(`ts-charitable`).value),s=Number(document.getElementById(`ts-current-itemized`).value),c=Number(document.getElementById(`ts-401k-contrib`).value)/100,l=document.getElementById(`ts-hsa`).value,u=Number(document.getElementById(`ts-current-hsa`).value),d=me[n],f=o+s,p=Math.max(d,f),m=[],h=((o*2+s+d)/2-p)*a;if(h>50&&m.push({name:`Deduction Bunching`,saving:h,detail:`Bundle ${W(o*2)} of charitable giving every other year vs. ${W(o)}/yr — extra deduction of ~${W(h/a)}/yr on average`}),i>=70){let e=Math.min(o,ve),t=e*a;t>0&&m.push({name:`Qualified Charitable Distribution (QCD)`,saving:t,detail:`Donate ${W(e)} directly from your IRA, excluding it from taxable income entirely`})}let g=G+(i>=50?he:0),_=r*c,v=Math.max(g-_,0);if(v>500&&m.push({name:`Maximise 401k Contributions`,saving:v*a,detail:`Increase contributions by ${W(v)} to reach the ${`$${(g/1e3).toFixed(0)}k`} ${i>=50?`catch-up`:``} limit`}),l!==`none`){let e=l===`family`?_e:ge,t=Math.max(e-u,0);t>200&&m.push({name:`Maximise HSA Contributions`,saving:t*a,detail:`Add ${W(t)} to your HSA to reach the ${W(e)} ${l===`family`?`family`:`self-only`} limit — triple tax advantage`})}let y=f-d;y<0&&y>-3e3&&m.push({name:`Accelerate Deductions`,saving:-y*a,detail:`You are ${W(-y)} below the standard deduction. Prepaying deductible expenses could push you above it`});let b=m.reduce((e,t)=>e+t.saving,0),x=m.length>0?m.map(e=>`
           <div class="tool-metric" style="margin-bottom:1.25rem">
             <div style="display:flex;justify-content:space-between;align-items:baseline">
               <div class="tool-metric-label">${e.name}</div>
-              <div style="font-size:1.1rem;font-weight:700;color:#1a7a4a">~${K(e.saving)}/yr</div>
+              <div style="font-size:1.1rem;font-weight:700;color:#1a7a4a">~${W(e.saving)}/yr</div>
             </div>
             <div class="tool-metric-sub">${e.detail}</div>
           </div>
@@ -1959,12 +1959,12 @@
       <h3>Estimated Annual Tax Savings</h3>
       <div class="tool-metric" style="margin-bottom:1.5rem">
         <div class="tool-metric-label">Total Potential Savings</div>
-        <div class="tool-metric-value tool-metric-positive">${K(b)}/yr</div>
+        <div class="tool-metric-value tool-metric-positive">${W(b)}/yr</div>
         <div class="tool-metric-sub">Across ${m.length} identified ${m.length===1?`strategy`:`strategies`}</div>
       </div>
       <hr class="tool-divider" />
       ${x}
-    `})}var J=e=>`$`+Math.round(e).toLocaleString(`en-US`),ye=[{label:`Conservative`,return:.04,color:`#1B2774`},{label:`Moderate`,return:.07,color:`#1a7a4a`},{label:`Aggressive`,return:.1,color:`#b45309`}];function be(){return`
+    `})}var K=e=>`$`+Math.round(e).toLocaleString(`en-US`),xe=[{label:`Conservative`,return:.04,color:`#1B2774`},{label:`Moderate`,return:.07,color:`#1a7a4a`},{label:`Aggressive`,return:.1,color:`#b45309`}];function Se(){return`
     <div class="tool-page">
       <div class="tool-hero">
         <div class="tool-hero-inner">
@@ -2011,31 +2011,31 @@
       </div>
       <p class="tool-disclaimer">Projections assume consistent monthly contributions and do not account for taxes on investment gains. Returns are hypothetical. This tool is for educational purposes only.</p>
     </div>
-  `}function xe(){document.getElementById(`sg-calc-btn`)?.addEventListener(`click`,()=>{let e=e=>{document.getElementById(`sg-results`).innerHTML=`<h3>Results</h3><p class="tool-error-msg">${e}</p>`},t=e=>{let t=document.getElementById(e).value.trim();if(t===``)return null;let n=Number(t);return isNaN(n)?null:n};if(t(`sg-income`)===null||Number(document.getElementById(`sg-income`).value)<=0)return e(`Please enter your monthly take-home income.`);if(t(`sg-expenses`)===null||Number(document.getElementById(`sg-expenses`).value)<0)return e(`Please enter your monthly expenses (enter 0 if none).`);if(t(`sg-current-savings`)===null)return e(`Please enter your current savings toward this goal (enter 0 if starting fresh).`);if(t(`sg-goal`)===null||Number(document.getElementById(`sg-goal`).value)<=0)return e(`Please enter a goal amount greater than zero.`);if(t(`sg-timeline`)===null||Number(document.getElementById(`sg-timeline`).value)<1)return e(`Please enter a timeline of at least 1 year.`);let n=Number(document.getElementById(`sg-income`).value),r=Number(document.getElementById(`sg-expenses`).value),i=Number(document.getElementById(`sg-current-savings`).value),a=Number(document.getElementById(`sg-goal`).value),o=Number(document.getElementById(`sg-timeline`).value),s=document.getElementById(`sg-monthly-saving`).value,c=s===``?null:Number(s),l=n-r,u=o*12;function d(e,t){let n=t/12;return i*(1+t)**+o+(n>0?e*((1+n)**+u-1)/n:e*u)}function f(e){let t=e/12,n=a-i*(1+e)**+o;return n<=0?0:n/(t>0?((1+t)**+u-1)/t:u)}let p=ye.map(e=>{let t=c===null?f(e.return):c,n=d(t,e.return),r=n>=a,i=Math.min(n/a*100,100);return{...e,contrib:t,achieved:n,onTrack:r,pct:i}}),m=p.map(e=>`
+  `}function Ce(){document.getElementById(`sg-calc-btn`)?.addEventListener(`click`,()=>{let e=e=>{document.getElementById(`sg-results`).innerHTML=`<h3>Results</h3><p class="tool-error-msg">${e}</p>`},t=e=>{let t=document.getElementById(e).value.trim();if(t===``)return null;let n=Number(t);return isNaN(n)?null:n};if(t(`sg-income`)===null||Number(document.getElementById(`sg-income`).value)<=0)return e(`Please enter your monthly take-home income.`);if(t(`sg-expenses`)===null||Number(document.getElementById(`sg-expenses`).value)<0)return e(`Please enter your monthly expenses (enter 0 if none).`);if(t(`sg-current-savings`)===null)return e(`Please enter your current savings toward this goal (enter 0 if starting fresh).`);if(t(`sg-goal`)===null||Number(document.getElementById(`sg-goal`).value)<=0)return e(`Please enter a goal amount greater than zero.`);if(t(`sg-timeline`)===null||Number(document.getElementById(`sg-timeline`).value)<1)return e(`Please enter a timeline of at least 1 year.`);let n=Number(document.getElementById(`sg-income`).value),r=Number(document.getElementById(`sg-expenses`).value),i=Number(document.getElementById(`sg-current-savings`).value),a=Number(document.getElementById(`sg-goal`).value),o=Number(document.getElementById(`sg-timeline`).value),s=document.getElementById(`sg-monthly-saving`).value,c=s===``?null:Number(s),l=n-r,u=o*12;function d(e,t){let n=t/12;return i*(1+t)**+o+(n>0?e*((1+n)**+u-1)/n:e*u)}function f(e){let t=e/12,n=a-i*(1+e)**+o;return n<=0?0:n/(t>0?((1+t)**+u-1)/t:u)}let p=xe.map(e=>{let t=c===null?f(e.return):c,n=d(t,e.return),r=n>=a,i=Math.min(n/a*100,100);return{...e,contrib:t,achieved:n,onTrack:r,pct:i}}),m=p.map(e=>`
       <div style="margin-bottom:1.5rem">
         <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:0.25rem">
           <span style="font-size:0.85rem;font-weight:600;color:var(--text)">${e.label} (${(e.return*100).toFixed(0)}%/yr)</span>
-          <span style="font-size:0.9rem;font-weight:700;color:${e.color}">${J(e.achieved)}</span>
+          <span style="font-size:0.9rem;font-weight:700;color:${e.color}">${K(e.achieved)}</span>
         </div>
         <div class="tool-progress-bar" style="margin-bottom:0.3rem">
           <div class="tool-progress-fill" style="width:${e.pct}%;background:${e.color}"></div>
         </div>
         <div style="display:flex;justify-content:space-between;font-size:0.78rem;color:var(--text-light)">
-          <span>Monthly needed: ${J(e.contrib)}</span>
-          <span>${e.onTrack?`✓ On track`:`Shortfall: ${J(a-e.achieved)}`}</span>
+          <span>Monthly needed: ${K(e.contrib)}</span>
+          <span>${e.onTrack?`✓ On track`:`Shortfall: ${K(a-e.achieved)}`}</span>
         </div>
       </div>
     `).join(``),h=c===null?f(0):c,g=i+(c===null?h:c)*u,_=l-(c===null?p[1].contrib:c),v=_>=0?`tool-metric-positive`:`tool-metric-negative`;document.getElementById(`sg-results`).innerHTML=`
-      <h3>Goal: ${J(a)} in ${o} years</h3>
+      <h3>Goal: ${K(a)} in ${o} years</h3>
       <div class="tool-metric" style="margin-bottom:1.5rem">
         <div class="tool-metric-label">Monthly Cash Available for Savings</div>
-        <div class="tool-metric-value">${J(l)}/mo</div>
-        <div class="tool-metric-sub">${J(n)} income − ${J(r)} expenses</div>
+        <div class="tool-metric-value">${K(l)}/mo</div>
+        <div class="tool-metric-sub">${K(n)} income − ${K(r)} expenses</div>
       </div>
       ${c===null?``:`
       <div class="tool-metric" style="margin-bottom:1.5rem">
         <div class="tool-metric-label">Planned Contribution vs Available</div>
-        <div class="tool-metric-value ${v}">${_>=0?`+`:``}${J(_)}/mo</div>
+        <div class="tool-metric-value ${v}">${_>=0?`+`:``}${K(_)}/mo</div>
         <div class="tool-metric-sub">${_>=0?`You have room in your budget`:`Contribution exceeds available income`}</div>
       </div>`}
       <hr class="tool-divider" />
@@ -2044,10 +2044,10 @@
       <hr class="tool-divider" />
       <div class="tool-metric">
         <div class="tool-metric-label">No-Investment Baseline (savings account)</div>
-        <div class="tool-metric-value" style="font-size:1rem">${J(g)}</div>
-        <div class="tool-metric-sub">Flat savings at ${J(h)}/mo — no investment return</div>
+        <div class="tool-metric-value" style="font-size:1rem">${K(g)}</div>
+        <div class="tool-metric-sub">Flat savings at ${K(h)}/mo — no investment return</div>
       </div>
-    `})}function Se(){return`
+    `})}function we(){return`
     <nav class="nav-container">
       <a data-route="home" href="/" class="logo"><img src="/Eagle.svg" alt="Merels Capital" height="32"/>Merels Capital</a>
       <div class="nav-links" id="nav-links">
@@ -2082,7 +2082,7 @@
         <span></span><span></span><span></span>
       </button>
     </nav>
-  `}function Ce(){return`
+  `}function Te(){return`
     <div class="footer-inner">
       <div class="footer-brand">
         <span class="footer-logo">Merels Capital</span>
@@ -2123,10 +2123,39 @@
           <h4>Contact</h4>
           <a data-route="contact" href="#">Contact Us</a>
         </div>
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <p class="footer-newsletter-tagline">Monthly insights on wealth management, tax strategy, and markets.</p>
+          <form id="footer-nl-form" class="footer-newsletter-form" novalidate>
+            <div class="footer-newsletter-row">
+              <input type="email" id="footer-nl-email" placeholder="Your email" autocomplete="email" />
+              <button type="submit" aria-label="Subscribe">→</button>
+            </div>
+            <p id="footer-nl-msg" class="footer-newsletter-msg" hidden></p>
+          </form>
+        </div>
       </div>
     </div>
     <div class="footer-bottom">
       <p>© 2026 Merels Capital. All rights reserved.</p>
       <p>Investment advisory services offered through Merels Capital, LLC, a registered investment adviser.</p>
     </div>
-  `}n(`home`,c,u),n(`about`,d),n(`individuals`,f),n(`family-offices`,p),n(`small-businesses`,m),n(`articles`,h),n(`articles/gold-2025`,g),n(`articles/private-credit-2026`,_),n(`articles/usd-2026`,v),n(`articles/energy-2026`,y),n(`articles/fed-2026`,b),n(`contact`,ee,x),n(`tools/retirement-calculator`,te,ne),n(`tools/retirement-quiz`,E,D),n(`tools/social-security`,ie,ae),n(`tools/rmd-planner`,M,ce),n(`tools/roth-conversion`,P,F),n(`tools/401k-rollover`,R,z),n(`tools/529-planner`,U,W),n(`tools/risk-tolerance`,ue,de),n(`tools/tax-savings`,_e,ve),n(`tools/savings-goal`,be,xe),document.getElementById(`header`).innerHTML=Se(),document.getElementById(`footer`).innerHTML=Ce();var we=document.getElementById(`header`);window.addEventListener(`scroll`,()=>{we.classList.toggle(`scrolled`,window.scrollY>10)},{passive:!0});var Y=document.getElementById(`mobile-menu-btn`),Te=document.getElementById(`nav-links`),Ee=document.getElementById(`nav-actions`);Y.addEventListener(`click`,()=>{let e=Te.classList.toggle(`open`);Ee.classList.toggle(`open`,e),Y.setAttribute(`aria-label`,e?`Close menu`:`Open menu`)});var X=document.getElementById(`tools-dropdown-btn`);if(X){let e=X.closest(`.nav-dropdown`);X.addEventListener(`click`,t=>{t.stopPropagation();let n=e.classList.toggle(`open`);X.setAttribute(`aria-expanded`,String(n))}),document.addEventListener(`click`,()=>{e.classList.remove(`open`),X.setAttribute(`aria-expanded`,`false`)})}var De=document.getElementById(`book-now-btn`),Z=document.getElementById(`booking-modal`),Oe=document.getElementById(`booking-modal-close`),ke=Z.querySelector(`.booking-modal-backdrop`),Ae=document.getElementById(`booking-iframe`),je=!1;function Q(){je||=(Ae.src=`https://bookings.merelscapital.com`,!0),Z.hidden=!1,document.body.style.overflow=`hidden`}De.addEventListener(`click`,Q),document.addEventListener(`click`,e=>{e.target.closest(`[data-action="open-booking"]`)&&Q()});function $(){Z.hidden=!0,document.body.style.overflow=``}Oe.addEventListener(`click`,$),ke.addEventListener(`click`,$),document.addEventListener(`keydown`,e=>{e.key===`Escape`&&$()}),s();function Me(){let e=new Date;for(e.setDate(e.getDate()+1);e.getDay()===0||e.getDay()===6;)e.setDate(e.getDate()+1);let t=e.toLocaleDateString(`en-CA`,{timeZone:`America/Denver`});fetch(`https://api.merelscapital.com/slots?date=${t}`).catch(()=>{})}window.addEventListener(`load`,()=>{setTimeout(Me,3e3)});
+  `}var q=`https://api.merelscapital.com/subscribe`;function Ee(){return`
+    <div class="tool-newsletter">
+      <div class="tool-newsletter-inner">
+        <div class="tool-newsletter-text">
+          <h3>Stay Ahead of Your Finances</h3>
+          <p>Join our newsletter for monthly insights on retirement planning, tax strategy, market trends, and wealth management — delivered directly to your inbox.</p>
+        </div>
+        <form id="tool-nl-form" class="tool-newsletter-form" novalidate>
+          <div class="tool-newsletter-fields">
+            <input type="text" id="tool-nl-first" placeholder="First name" autocomplete="given-name" />
+            <input type="text" id="tool-nl-last" placeholder="Last name" autocomplete="family-name" />
+            <input type="email" id="tool-nl-email" placeholder="Email address" autocomplete="email" />
+          </div>
+          <button type="submit" class="tool-newsletter-btn">Subscribe to Newsletter</button>
+          <p id="tool-nl-msg" class="tool-newsletter-msg" hidden></p>
+        </form>
+      </div>
+    </div>
+  `}function De(){let e=document.getElementById(`tool-nl-form`);e&&e.addEventListener(`submit`,async t=>{t.preventDefault();let n=document.getElementById(`tool-nl-email`).value.trim(),r=document.getElementById(`tool-nl-first`).value.trim(),i=document.getElementById(`tool-nl-last`).value.trim(),a=document.getElementById(`tool-nl-msg`),o=e.querySelector(`button`);if(!n){a.textContent=`Please enter your email address.`,a.className=`tool-newsletter-msg tool-newsletter-error`,a.hidden=!1;return}o.disabled=!0,o.textContent=`Subscribing...`,a.hidden=!0;try{let t=await(await fetch(q,{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify({email:n,first_name:r,last_name:i})})).json();t.success?(a.textContent=`You're subscribed! Welcome to the Merels Capital newsletter.`,a.className=`tool-newsletter-msg tool-newsletter-success`,e.reset()):(a.textContent=t.error??`Something went wrong. Please try again.`,a.className=`tool-newsletter-msg tool-newsletter-error`),a.hidden=!1}catch{a.textContent=`Connection error. Please try again.`,a.className=`tool-newsletter-msg tool-newsletter-error`,a.hidden=!1}finally{o.disabled=!1,o.textContent=`Subscribe to Newsletter`}})}function Oe(){let e=document.getElementById(`footer-nl-form`);e&&e.addEventListener(`submit`,async t=>{t.preventDefault();let n=document.getElementById(`footer-nl-email`).value.trim(),r=document.getElementById(`footer-nl-msg`),i=e.querySelector(`button`);if(n){i.disabled=!0,r.hidden=!0;try{let t=await(await fetch(q,{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify({email:n})})).json();r.textContent=t.success?`You're subscribed!`:t.error??`Something went wrong.`,r.className=t.success?`footer-newsletter-msg footer-nl-success`:`footer-newsletter-msg footer-nl-error`,r.hidden=!1,t.success&&e.reset()}catch{r.textContent=`Connection error. Please try again.`,r.className=`footer-newsletter-msg footer-nl-error`,r.hidden=!1}finally{i.disabled=!1}}})}function J(e,t,r){n(e,()=>t()+Ee(),()=>{r?.(),De()})}n(`home`,c,u),n(`about`,d),n(`individuals`,f),n(`family-offices`,p),n(`small-businesses`,m),n(`articles`,h),n(`articles/gold-2025`,g),n(`articles/private-credit-2026`,_),n(`articles/usd-2026`,v),n(`articles/energy-2026`,y),n(`articles/fed-2026`,b),n(`contact`,ee,x),J(`tools/retirement-calculator`,w,T),J(`tools/retirement-quiz`,ne,re),J(`tools/social-security`,A,ae),J(`tools/rmd-planner`,se,ce),J(`tools/roth-conversion`,le,ue),J(`tools/401k-rollover`,I,L),J(`tools/529-planner`,V,H),J(`tools/risk-tolerance`,fe,pe),J(`tools/tax-savings`,ye,be),J(`tools/savings-goal`,Se,Ce),document.getElementById(`header`).innerHTML=we(),document.getElementById(`footer`).innerHTML=Te(),Oe();var ke=document.getElementById(`header`);window.addEventListener(`scroll`,()=>{ke.classList.toggle(`scrolled`,window.scrollY>10)},{passive:!0});var Y=document.getElementById(`mobile-menu-btn`),Ae=document.getElementById(`nav-links`),je=document.getElementById(`nav-actions`);Y.addEventListener(`click`,()=>{let e=Ae.classList.toggle(`open`);je.classList.toggle(`open`,e),Y.setAttribute(`aria-label`,e?`Close menu`:`Open menu`)});var X=document.getElementById(`tools-dropdown-btn`);if(X){let e=X.closest(`.nav-dropdown`);X.addEventListener(`click`,t=>{t.stopPropagation();let n=e.classList.toggle(`open`);X.setAttribute(`aria-expanded`,String(n))}),document.addEventListener(`click`,()=>{e.classList.remove(`open`),X.setAttribute(`aria-expanded`,`false`)})}var Me=document.getElementById(`book-now-btn`),Z=document.getElementById(`booking-modal`),Ne=document.getElementById(`booking-modal-close`),Pe=Z.querySelector(`.booking-modal-backdrop`),Fe=document.getElementById(`booking-iframe`),Ie=!1;function Q(){Ie||=(Fe.src=`https://bookings.merelscapital.com`,!0),Z.hidden=!1,document.body.style.overflow=`hidden`}Me.addEventListener(`click`,Q),document.addEventListener(`click`,e=>{e.target.closest(`[data-action="open-booking"]`)&&Q()});function $(){Z.hidden=!0,document.body.style.overflow=``}Ne.addEventListener(`click`,$),Pe.addEventListener(`click`,$),document.addEventListener(`keydown`,e=>{e.key===`Escape`&&$()}),s();function Le(){let e=new Date;for(e.setDate(e.getDate()+1);e.getDay()===0||e.getDay()===6;)e.setDate(e.getDate()+1);let t=e.toLocaleDateString(`en-CA`,{timeZone:`America/Denver`});fetch(`https://api.merelscapital.com/slots?date=${t}`).catch(()=>{})}window.addEventListener(`load`,()=>{setTimeout(Le,3e3)});

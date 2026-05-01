@@ -24,6 +24,11 @@ import { renderTaxSavings, initTaxSavings } from './pages/tools/tax-savings.js'
 import { renderSavingsGoal, initSavingsGoal } from './pages/tools/savings-goal.js'
 import { renderHeader } from './components/header.js'
 import { renderFooter } from './components/footer.js'
+import { renderNewsletterSignup, initNewsletterSignup, initFooterNewsletter } from './components/newsletter.js'
+
+function registerToolRoute(name: string, render: () => string, init?: () => void) {
+  registerRoute(name, () => render() + renderNewsletterSignup(), () => { init?.(); initNewsletterSignup() })
+}
 
 registerRoute('home',          renderHome,        initHome)
 registerRoute('about',         renderAbout)
@@ -37,19 +42,20 @@ registerRoute('articles/usd-2026',           renderArticleUsd2026)
 registerRoute('articles/energy-2026',        renderArticleEnergy2026)
 registerRoute('articles/fed-2026',           renderArticleFed2026)
 registerRoute('contact',       renderContact, initContact)
-registerRoute('tools/retirement-calculator', renderRetirementCalculator, initRetirementCalculator)
-registerRoute('tools/retirement-quiz',       renderRetirementQuiz,       initRetirementQuiz)
-registerRoute('tools/social-security',       renderSocialSecurity,       initSocialSecurity)
-registerRoute('tools/rmd-planner',           renderRmdPlanner,           initRmdPlanner)
-registerRoute('tools/roth-conversion',       renderRothConversion,       initRothConversion)
-registerRoute('tools/401k-rollover',         renderRollover401k,         initRollover401k)
-registerRoute('tools/529-planner',           render529Planner,           init529Planner)
-registerRoute('tools/risk-tolerance',        renderRiskTolerance,        initRiskTolerance)
-registerRoute('tools/tax-savings',           renderTaxSavings,           initTaxSavings)
-registerRoute('tools/savings-goal',          renderSavingsGoal,          initSavingsGoal)
+registerToolRoute('tools/retirement-calculator', renderRetirementCalculator, initRetirementCalculator)
+registerToolRoute('tools/retirement-quiz',       renderRetirementQuiz,       initRetirementQuiz)
+registerToolRoute('tools/social-security',       renderSocialSecurity,       initSocialSecurity)
+registerToolRoute('tools/rmd-planner',           renderRmdPlanner,           initRmdPlanner)
+registerToolRoute('tools/roth-conversion',       renderRothConversion,       initRothConversion)
+registerToolRoute('tools/401k-rollover',         renderRollover401k,         initRollover401k)
+registerToolRoute('tools/529-planner',           render529Planner,           init529Planner)
+registerToolRoute('tools/risk-tolerance',        renderRiskTolerance,        initRiskTolerance)
+registerToolRoute('tools/tax-savings',           renderTaxSavings,           initTaxSavings)
+registerToolRoute('tools/savings-goal',          renderSavingsGoal,          initSavingsGoal)
 
 document.getElementById('header')!.innerHTML = renderHeader()
 document.getElementById('footer')!.innerHTML = renderFooter()
+initFooterNewsletter()
 
 // ── Scroll shadow on header ──────────────────────────
 const header = document.getElementById('header')!

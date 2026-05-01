@@ -40,6 +40,17 @@ export function renderFooter(): string {
           <h4>Contact</h4>
           <a data-route="contact" href="#">Contact Us</a>
         </div>
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <p class="footer-newsletter-tagline">Monthly insights on wealth management, tax strategy, and markets.</p>
+          <form id="footer-nl-form" class="footer-newsletter-form" novalidate>
+            <div class="footer-newsletter-row">
+              <input type="email" id="footer-nl-email" placeholder="Your email" autocomplete="email" />
+              <button type="submit" aria-label="Subscribe">→</button>
+            </div>
+            <p id="footer-nl-msg" class="footer-newsletter-msg" hidden></p>
+          </form>
+        </div>
       </div>
     </div>
     <div class="footer-bottom">
