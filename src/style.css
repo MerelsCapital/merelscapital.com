@@ -147,6 +147,9 @@ a { text-decoration: none; }
 /* Tools dropdown */
 .nav-dropdown {
   position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
 }
 
 .nav-dropdown-trigger {
@@ -339,6 +342,8 @@ a { text-decoration: none; }
 
   .nav-dropdown {
     width: 100%;
+    align-self: auto;
+    display: block;
   }
 
   .nav-dropdown-trigger {
