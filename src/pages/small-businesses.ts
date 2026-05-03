@@ -167,7 +167,7 @@ export function renderSmallBusinesses(): string {
       <div class="cta-inner">
         <h2>Let's talk about your business and your future.</h2>
         <p>Every business owner's situation is different. Tell us where you are and we'll help you think through what comes next.</p>
-        <a data-route="contact" href="#" class="btn-primary-light">Schedule a Consultation</a>
+        <button data-action="open-booking" class="btn-primary-light">Schedule a Consultation</button>
       </div>
     </section>
   `
