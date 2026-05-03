@@ -1,6 +1,8 @@
 picture { display: block; }
 picture img { display: block; }
 
+#main-content { min-height: calc(100vh - var(--nav-h)); }
+
 /* ── Custom fonts ───────────────────────────────────── */
 @font-face {
   font-family: 'FelixTitling';
