@@ -1,12 +1,9 @@
-type RouteRender = () => string
-type RouteInit = () => void
+type RouteLoader = () => Promise<{ html: string; init?: () => void }>
 
-const routes = new Map<string, RouteRender>()
-const inits  = new Map<string, RouteInit>()
+const routes = new Map<string, RouteLoader>()
 
-export function registerRoute(name: string, render: RouteRender, init?: RouteInit) {
-  routes.set(name, render)
-  if (init) inits.set(name, init)
+export function registerRoute(name: string, loader: RouteLoader) {
+  routes.set(name, loader)
 }
 
 function routeToPath(route: string): string {
@@ -14,15 +11,15 @@ function routeToPath(route: string): string {
 }
 
 function pathToRoute(path: string): string {
-  const segment = path.replace(/^\//, '') || 'home'
-  return segment
+  return path.replace(/^\//, '') || 'home'
 }
 
-function renderRoute(route: string, scrollTarget?: string) {
+async function renderRoute(route: string, scrollTarget?: string) {
   const resolved = routes.has(route) ? route : 'home'
+  const { html, init } = await routes.get(resolved)!()
   const main = document.getElementById('main-content')!
-  main.innerHTML = routes.get(resolved)!()
-  inits.get(resolved)?.()
+  main.innerHTML = html
+  init?.()
   if (scrollTarget) {
     document.getElementById(scrollTarget)?.scrollIntoView({ behavior: 'smooth' })
   } else {
@@ -36,12 +33,10 @@ export function navigate(route: string, scrollTarget?: string) {
 }
 
 export function initRouter() {
-  // Handle back/forward
   window.addEventListener('popstate', (e) => {
     renderRoute(e.state?.route ?? pathToRoute(location.pathname), e.state?.scrollTarget)
   })
 
-  // Handle link clicks
   document.addEventListener('click', (e) => {
     const el = (e.target as Element).closest<HTMLElement>('[data-route]')
     if (!el) return
@@ -49,7 +44,6 @@ export function initRouter() {
     navigate(el.dataset.route!, el.dataset.scroll)
   })
 
-  // Load the route matching the current URL (handles direct links and refresh)
   const initialRoute = pathToRoute(location.pathname)
   history.replaceState({ route: initialRoute }, '', routeToPath(initialRoute))
   renderRoute(initialRoute)

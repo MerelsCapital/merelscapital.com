@@ -1,57 +1,110 @@
 import './style.css'
 import { registerRoute, initRouter } from './router.js'
-import { renderHome, initHome } from './pages/home.js'
-import { renderAbout } from './pages/about.js'
-import { renderIndividuals } from './pages/individuals.js'
-import { renderFamilyOffices } from './pages/family-offices.js'
-import { renderSmallBusinesses } from './pages/small-businesses.js'
-import { renderArticles } from './pages/articles.js'
-import { renderArticleGold2025 } from './pages/article-gold-2025.js'
-import { renderArticlePrivateCredit2026 } from './pages/article-private-credit-2026.js'
-import { renderArticleUsd2026 } from './pages/article-usd-2026.js'
-import { renderArticleEnergy2026 } from './pages/article-energy-2026.js'
-import { renderArticleFed2026 } from './pages/article-fed-2026.js'
-import { renderContact, initContact } from './pages/contact.js'
-import { renderRetirementCalculator, initRetirementCalculator } from './pages/tools/retirement-calculator.js'
-import { renderRetirementQuiz, initRetirementQuiz } from './pages/tools/retirement-quiz.js'
-import { renderSocialSecurity, initSocialSecurity } from './pages/tools/social-security.js'
-import { renderRmdPlanner, initRmdPlanner } from './pages/tools/rmd-planner.js'
-import { renderRothConversion, initRothConversion } from './pages/tools/roth-conversion.js'
-import { renderRollover401k, initRollover401k } from './pages/tools/401k-rollover.js'
-import { render529Planner, init529Planner } from './pages/tools/529-planner.js'
-import { renderRiskTolerance, initRiskTolerance } from './pages/tools/risk-tolerance.js'
-import { renderTaxSavings, initTaxSavings } from './pages/tools/tax-savings.js'
-import { renderSavingsGoal, initSavingsGoal } from './pages/tools/savings-goal.js'
 import { renderHeader } from './components/header.js'
 import { renderFooter } from './components/footer.js'
 import { renderNewsletterSignup, initNewsletterSignup, initFooterNewsletter } from './components/newsletter.js'
 
-function registerToolRoute(name: string, render: () => string, init?: () => void) {
-  registerRoute(name, () => render() + renderNewsletterSignup(), () => { init?.(); initNewsletterSignup() })
+type PageModule = { render: () => string; init?: () => void }
+
+function registerToolRoute(name: string, loader: () => Promise<PageModule>) {
+  registerRoute(name, async () => {
+    const { render, init } = await loader()
+    return {
+      html: render() + renderNewsletterSignup(),
+      init: () => { init?.(); initNewsletterSignup() },
+    }
+  })
 }
 
-registerRoute('home',          renderHome,        initHome)
-registerRoute('about',         renderAbout)
-registerRoute('individuals',   renderIndividuals)
-registerRoute('family-offices',renderFamilyOffices)
-registerRoute('businesses', renderSmallBusinesses)
-registerRoute('articles',             renderArticles)
-registerRoute('articles/gold-2025',          renderArticleGold2025)
-registerRoute('articles/private-credit-2026', renderArticlePrivateCredit2026)
-registerRoute('articles/usd-2026',           renderArticleUsd2026)
-registerRoute('articles/energy-2026',        renderArticleEnergy2026)
-registerRoute('articles/fed-2026',           renderArticleFed2026)
-registerRoute('contact',       renderContact, initContact)
-registerToolRoute('tools/retirement-calculator', renderRetirementCalculator, initRetirementCalculator)
-registerToolRoute('tools/retirement-quiz',       renderRetirementQuiz,       initRetirementQuiz)
-registerToolRoute('tools/social-security',       renderSocialSecurity,       initSocialSecurity)
-registerToolRoute('tools/rmd-planner',           renderRmdPlanner,           initRmdPlanner)
-registerToolRoute('tools/roth-conversion',       renderRothConversion,       initRothConversion)
-registerToolRoute('tools/401k-rollover',         renderRollover401k,         initRollover401k)
-registerToolRoute('tools/529-planner',           render529Planner,           init529Planner)
-registerToolRoute('tools/risk-tolerance',        renderRiskTolerance,        initRiskTolerance)
-registerToolRoute('tools/tax-savings',           renderTaxSavings,           initTaxSavings)
-registerToolRoute('tools/savings-goal',          renderSavingsGoal,          initSavingsGoal)
+registerRoute('home', async () => {
+  const { renderHome, initHome } = await import('./pages/home.js')
+  return { html: renderHome(), init: initHome }
+})
+registerRoute('about', async () => {
+  const { renderAbout } = await import('./pages/about.js')
+  return { html: renderAbout() }
+})
+registerRoute('individuals', async () => {
+  const { renderIndividuals } = await import('./pages/individuals.js')
+  return { html: renderIndividuals() }
+})
+registerRoute('family-offices', async () => {
+  const { renderFamilyOffices } = await import('./pages/family-offices.js')
+  return { html: renderFamilyOffices() }
+})
+registerRoute('businesses', async () => {
+  const { renderSmallBusinesses } = await import('./pages/small-businesses.js')
+  return { html: renderSmallBusinesses() }
+})
+registerRoute('articles', async () => {
+  const { renderArticles } = await import('./pages/articles.js')
+  return { html: renderArticles() }
+})
+registerRoute('articles/gold-2025', async () => {
+  const { renderArticleGold2025 } = await import('./pages/article-gold-2025.js')
+  return { html: renderArticleGold2025() }
+})
+registerRoute('articles/private-credit-2026', async () => {
+  const { renderArticlePrivateCredit2026 } = await import('./pages/article-private-credit-2026.js')
+  return { html: renderArticlePrivateCredit2026() }
+})
+registerRoute('articles/usd-2026', async () => {
+  const { renderArticleUsd2026 } = await import('./pages/article-usd-2026.js')
+  return { html: renderArticleUsd2026() }
+})
+registerRoute('articles/energy-2026', async () => {
+  const { renderArticleEnergy2026 } = await import('./pages/article-energy-2026.js')
+  return { html: renderArticleEnergy2026() }
+})
+registerRoute('articles/fed-2026', async () => {
+  const { renderArticleFed2026 } = await import('./pages/article-fed-2026.js')
+  return { html: renderArticleFed2026() }
+})
+registerRoute('contact', async () => {
+  const { renderContact, initContact } = await import('./pages/contact.js')
+  return { html: renderContact(), init: initContact }
+})
+
+registerToolRoute('tools/retirement-calculator', async () => {
+  const { renderRetirementCalculator: render, initRetirementCalculator: init } = await import('./pages/tools/retirement-calculator.js')
+  return { render, init }
+})
+registerToolRoute('tools/retirement-quiz', async () => {
+  const { renderRetirementQuiz: render, initRetirementQuiz: init } = await import('./pages/tools/retirement-quiz.js')
+  return { render, init }
+})
+registerToolRoute('tools/social-security', async () => {
+  const { renderSocialSecurity: render, initSocialSecurity: init } = await import('./pages/tools/social-security.js')
+  return { render, init }
+})
+registerToolRoute('tools/rmd-planner', async () => {
+  const { renderRmdPlanner: render, initRmdPlanner: init } = await import('./pages/tools/rmd-planner.js')
+  return { render, init }
+})
+registerToolRoute('tools/roth-conversion', async () => {
+  const { renderRothConversion: render, initRothConversion: init } = await import('./pages/tools/roth-conversion.js')
+  return { render, init }
+})
+registerToolRoute('tools/401k-rollover', async () => {
+  const { renderRollover401k: render, initRollover401k: init } = await import('./pages/tools/401k-rollover.js')
+  return { render, init }
+})
+registerToolRoute('tools/529-planner', async () => {
+  const { render529Planner: render, init529Planner: init } = await import('./pages/tools/529-planner.js')
+  return { render, init }
+})
+registerToolRoute('tools/risk-tolerance', async () => {
+  const { renderRiskTolerance: render, initRiskTolerance: init } = await import('./pages/tools/risk-tolerance.js')
+  return { render, init }
+})
+registerToolRoute('tools/tax-savings', async () => {
+  const { renderTaxSavings: render, initTaxSavings: init } = await import('./pages/tools/tax-savings.js')
+  return { render, init }
+})
+registerToolRoute('tools/savings-goal', async () => {
+  const { renderSavingsGoal: render, initSavingsGoal: init } = await import('./pages/tools/savings-goal.js')
+  return { render, init }
+})
 
 document.getElementById('header')!.innerHTML = renderHeader()
 document.getElementById('footer')!.innerHTML = renderFooter()
