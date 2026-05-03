@@ -9,7 +9,7 @@ export function renderArticleUsd2026(): string {
         </div>
       </div>
       <div class="split-hero-image">
-        <img src="/images/articles/article-3/Article-3_Banner.jpg" alt="The US Dollar in 2026" />
+        <picture><source media="(max-width: 768px)" srcset="/images/mobile/articles/article-3/Article-3_Banner.jpg"><img src="/images/desktop/articles/article-3/Article-3_Banner.jpg" alt="The US Dollar in 2026"></picture>
       </div>
     </section>
 
@@ -25,7 +25,7 @@ export function renderArticleUsd2026(): string {
         <p>Since the end of the Bretton Woods system in 1971 and the advent of floating exchange rates in 1973, the dollar has exhibited prolonged periods of strength and weakness, typically lasting 8.7 years on average. These are not random fluctuations but regime shifts tied to macroeconomic fundamentals.</p>
 
         <figure class="article-exhibit">
-          <img src="/images/articles/article-3/Article-3_Image-1.png" alt="DXY historical bull and bear phases" />
+          <picture><source media="(max-width: 768px)" srcset="/images/mobile/articles/article-3/Article-3_Image-1.png"><img src="/images/desktop/articles/article-3/Article-3_Image-1.png" alt="DXY historical bull and bear phases"></picture>
           <figcaption>DXY periods of strength and weakness</figcaption>
         </figure>
 
@@ -54,7 +54,7 @@ export function renderArticleUsd2026(): string {
         <p><strong>Safe-haven and risk-sentiment dynamics:</strong> In risk-off episodes (e.g., 2008, March 2020), the dollar surges as investors seek liquidity in the world's deepest markets; in risk-on expansions, it weakens as capital flows outward. This counter-cyclical element in crises but pro-cyclical link to US relative strength makes it distinctly cyclical.</p>
 
         <figure class="article-exhibit">
-          <img src="/images/articles/article-3/Article-3_Image-2.png" alt="Dollar cyclicality — empirical evidence" />
+          <picture><source media="(max-width: 768px)" srcset="/images/mobile/articles/article-3/Article-3_Image-2.png"><img src="/images/desktop/articles/article-3/Article-3_Image-2.png" alt="Dollar cyclicality — empirical evidence"></picture>
           <figcaption>Dollar correlation with global financial conditions and EMDE growth</figcaption>
         </figure>
 
@@ -77,7 +77,7 @@ export function renderArticleUsd2026(): string {
         <p>Potential upside risks to the dollar include stronger US data, delayed Fed cuts, or risk-off events that trigger safe-haven flows. Volatility is expected to remain elevated due to policy uncertainty around tariffs, geopolitics, and the ongoing transition in the dollar cycle.</p>
 
         <figure class="article-exhibit">
-          <img src="/images/articles/article-3/Article-3_Image-3.png" alt="DXY projection through 2027" />
+          <picture><source media="(max-width: 768px)" srcset="/images/mobile/articles/article-3/Article-3_Image-3.png"><img src="/images/desktop/articles/article-3/Article-3_Image-3.png" alt="DXY projection through 2027"></picture>
           <figcaption>Projection for DXY leading into 2027</figcaption>
         </figure>
 
@@ -88,7 +88,7 @@ export function renderArticleUsd2026(): string {
         <p>Risks include an abrupt reversal if US exceptionalism reasserts (e.g., via productivity surprises from AI or deregulation), disorderly unwinds if fiscal sustainability concerns escalate, or a structural acceleration of de-dollarisation — though evidence suggests this remains gradual. The dollar's liquidity, rule-of-law backing, and network effects ensure its reserve status persists even through cyclical weakness.</p>
 
         <figure class="article-exhibit">
-          <img src="/images/articles/article-3/Article-3_Image-4.png" alt="IMF COFER global reserve currency shares" />
+          <picture><source media="(max-width: 768px)" srcset="/images/mobile/articles/article-3/Article-3_Image-4.png"><img src="/images/desktop/articles/article-3/Article-3_Image-4.png" alt="IMF COFER global reserve currency shares"></picture>
           <figcaption>Global reserve currency composition — Source: IMF COFER</figcaption>
         </figure>
 

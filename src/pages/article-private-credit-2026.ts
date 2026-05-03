@@ -9,7 +9,7 @@ export function renderArticlePrivateCredit2026(): string {
         </div>
       </div>
       <div class="split-hero-image">
-        <img src="/images/articles/article-2/Article-2_Banner.jpg" alt="Private credit and corporate debt markets" />
+        <picture><source media="(max-width: 768px)" srcset="/images/mobile/articles/article-2/Article-2_Banner.jpg"><img src="/images/desktop/articles/article-2/Article-2_Banner.jpg" alt="Private credit and corporate debt markets"></picture>
       </div>
     </section>
 
@@ -21,7 +21,7 @@ export function renderArticlePrivateCredit2026(): string {
         <p>In this approach, non-bank lenders extend debt, and recent analyses project global private credit AUM surpassing $2 trillion in 2026, with forecasts approaching $4 trillion by 2030, driven by sustained investor inflows, expansion into asset-backed finance (ABF), and growth in new regions. Companies appreciate its dependability and adaptability, particularly in turbulent markets where broadly syndicated loans (BSL) or bond availability can waver. With stabilising economies, private credit is both rivalling and supporting BSL, delivering funding when traditional avenues are limited.</p>
 
         <figure class="article-exhibit">
-          <img src="/images/articles/article-2/Article-2_Image-1.jpg" alt="Private credit AUM growth" />
+          <picture><source media="(max-width: 768px)" srcset="/images/mobile/articles/article-2/Article-2_Image-1.jpg"><img src="/images/desktop/articles/article-2/Article-2_Image-1.jpg" alt="Private credit AUM growth"></picture>
           <figcaption>Source: IMF</figcaption>
         </figure>
 
@@ -30,7 +30,7 @@ export function renderArticlePrivateCredit2026(): string {
         <p>Future refinancing needs will challenge both systems' strength. Projections for US speculative-grade debt expirations show a sharp climb, with roughly $344 billion due from 2026 to 2028, more than half rated B- or below. From about $50 billion in 2026, these climb to a high of nearly $400 billion in 2028, then ease. Joint BSL and private credit originations topped $225 billion yearly in 2024 and 2025, indicating capacity for immediate demands, yet the 2028–2029 spike may call for additional channels. Lower-tier firms are poised to lean on private credit for assured delivery, mixing public and private sources to address growing needs.</p>
 
         <figure class="article-exhibit">
-          <img src="/images/articles/article-2/Article-2_Image-2.jpg" alt="US speculative-grade debt refinancing wall" />
+          <picture><source media="(max-width: 768px)" srcset="/images/mobile/articles/article-2/Article-2_Image-2.jpg"><img src="/images/desktop/articles/article-2/Article-2_Image-2.jpg" alt="US speculative-grade debt refinancing wall"></picture>
           <figcaption>Source: S&P Global</figcaption>
         </figure>
 
@@ -41,7 +41,7 @@ export function renderArticlePrivateCredit2026(): string {
         <p>Private credit now reaches larger borrowers, with roughly 20% carrying over $500 million in obligations by 2025, up from 8% in 2021. This draws larger firms seeking quick closings and bespoke conditions, despite broader margins. Yet global strains affect the field, with cash interest coverage falling to approximately 1.6x mid-2025 from 2.4x in 2021. Defaults lingered near 4% in Q2 — below wider speculative benchmarks but reflecting growing tension, with downgrades at a yearly peak.</p>
 
         <figure class="article-exhibit">
-          <img src="/images/articles/article-2/Article-2_Image-3.jpg" alt="Private credit interest coverage and defaults" />
+          <picture><source media="(max-width: 768px)" srcset="/images/mobile/articles/article-2/Article-2_Image-3.jpg"><img src="/images/desktop/articles/article-2/Article-2_Image-3.jpg" alt="Private credit interest coverage and defaults"></picture>
           <figcaption>Source: Lincoln International</figcaption>
         </figure>
 
@@ -52,7 +52,7 @@ export function renderArticlePrivateCredit2026(): string {
         <p>As interest from everyday investors grows — through vehicles like business development companies and ETFs — institutional managers may move toward more specialised, less liquid areas, driving further innovation. Access for retail investors is expanding rapidly via semi-liquid and evergreen funds. These now hold a substantial share of the US direct lending market, with evergreen private credit funds reaching approximately $644 billion in AUM as of mid-2025. Projections suggest retail involvement in private credit will continue to grow substantially by 2030, though this trend may encourage big institutions to focus on niche, less liquid opportunities such as asset-based finance.</p>
 
         <figure class="article-exhibit">
-          <img src="/images/articles/article-2/Article-2_Image-4.jpg" alt="Private credit retail and institutional AUM outlook" />
+          <picture><source media="(max-width: 768px)" srcset="/images/mobile/articles/article-2/Article-2_Image-4.jpg"><img src="/images/desktop/articles/article-2/Article-2_Image-4.jpg" alt="Private credit retail and institutional AUM outlook"></picture>
           <figcaption>Source: With Intelligence</figcaption>
         </figure>
 

@@ -9,7 +9,7 @@ export function renderArticles(): string {
         </div>
       </div>
       <div class="split-hero-image">
-        <img src="/images/hero-articles.jpeg" alt="Articles from Merels Capital" />
+        <picture><source media="(max-width: 768px)" srcset="/images/mobile/hero-articles.jpeg"><img src="/images/desktop/hero-articles.jpeg" alt="Articles from Merels Capital"></picture>
       </div>
     </section>
 
@@ -17,7 +17,7 @@ export function renderArticles(): string {
       <div class="posts-section-inner">
         <div class="posts-grid">
           <article class="post-card post-card--linked" data-route="articles/fed-2026">
-            <img class="post-image" src="/images/articles/article-5/Article-5_Banner.jpg" alt="The Fed's New Reality" />
+            <picture><source media="(max-width: 768px)" srcset="/images/mobile/articles/article-5/Article-5_Banner.jpg"><img class="post-image" src="/images/desktop/articles/article-5/Article-5_Banner.jpg" alt="The Fed's New Reality"></picture>
             <div class="post-body">
               <span class="post-category">Markets</span>
               <h3 class="post-title">The Fed's New Reality: Navigating Sticky Inflation and a Slowing Labor Market</h3>
@@ -29,7 +29,7 @@ export function renderArticles(): string {
             </div>
           </article>
           <article class="post-card post-card--linked" data-route="articles/energy-2026">
-            <img class="post-image" src="/images/articles/article-4/Article-4_Banner.jpg" alt="The Energy Sector: Data Center Demand Boom Meets Iranian War Supply Shocks" />
+            <picture><source media="(max-width: 768px)" srcset="/images/mobile/articles/article-4/Article-4_Banner.jpg"><img class="post-image" src="/images/desktop/articles/article-4/Article-4_Banner.jpg" alt="The Energy Sector: Data Center Demand Boom Meets Iranian War Supply Shocks"></picture>
             <div class="post-body">
               <span class="post-category">Markets</span>
               <h3 class="post-title">The Energy Sector: Data Center Demand Boom Meets Iranian War Supply Shocks</h3>
@@ -41,7 +41,7 @@ export function renderArticles(): string {
             </div>
           </article>
           <article class="post-card post-card--linked" data-route="articles/usd-2026">
-            <img class="post-image" src="/images/articles/article-3/Article-3_Banner.jpg" alt="The US Dollar in 2026" />
+            <picture><source media="(max-width: 768px)" srcset="/images/mobile/articles/article-3/Article-3_Banner.jpg"><img class="post-image" src="/images/desktop/articles/article-3/Article-3_Banner.jpg" alt="The US Dollar in 2026"></picture>
             <div class="post-body">
               <span class="post-category">Markets</span>
               <h3 class="post-title">The US Dollar in 2026: Navigating Cyclical Regimes Amid Persistent Global Dominance</h3>
@@ -53,7 +53,7 @@ export function renderArticles(): string {
             </div>
           </article>
           <article class="post-card post-card--linked" data-route="articles/private-credit-2026">
-            <img class="post-image" src="/images/articles/article-2/Article-2_Banner.jpg" alt="Private Credit in Corporate Debt Markets" />
+            <picture><source media="(max-width: 768px)" srcset="/images/mobile/articles/article-2/Article-2_Banner.jpg"><img class="post-image" src="/images/desktop/articles/article-2/Article-2_Banner.jpg" alt="Private Credit in Corporate Debt Markets"></picture>
             <div class="post-body">
               <span class="post-category">Investing</span>
               <h3 class="post-title">The Evolving Role of Private Credit in Corporate Debt Markets</h3>
@@ -65,7 +65,7 @@ export function renderArticles(): string {
             </div>
           </article>
           <article class="post-card post-card--linked" data-route="articles/gold-2025">
-            <img class="post-image" src="/images/articles/article-1/Article-1_Banner.jpg" alt="Gold's 2025 Surge" />
+            <picture><source media="(max-width: 768px)" srcset="/images/mobile/articles/article-1/Article-1_Banner.jpg"><img class="post-image" src="/images/desktop/articles/article-1/Article-1_Banner.jpg" alt="Gold's 2025 Surge"></picture>
             <div class="post-body">
               <span class="post-category">Investing</span>
               <h3 class="post-title">Gold's 2025 Surge: Understanding the Drivers and Outlook for 2026</h3>

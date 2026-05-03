@@ -9,7 +9,7 @@ export function renderArticleFed2026(): string {
         </div>
       </div>
       <div class="split-hero-image">
-        <img src="/images/articles/article-5/Article-5_Banner.jpg" alt="The Fed's New Reality" />
+        <picture><source media="(max-width: 768px)" srcset="/images/mobile/articles/article-5/Article-5_Banner.jpg"><img src="/images/desktop/articles/article-5/Article-5_Banner.jpg" alt="The Fed's New Reality"></picture>
       </div>
     </section>
 
@@ -33,7 +33,7 @@ export function renderArticleFed2026(): string {
         <p class="article-callout"><strong>Why this matters:</strong> Headline inflation grabs headlines and affects voter sentiment, but core inflation reveals the underlying trend. When energy prices spike and then fade, headline numbers can look better quickly. But if those spikes feed into wages, rents, or other services prices, inflation becomes "sticky" — harder for the Fed to dislodge without aggressive action.</p>
 
         <figure class="article-exhibit">
-          <img src="/images/articles/article-5/Article-5_Image-1.png" alt="CPI headline vs. core inflation year-over-year" />
+          <picture><source media="(max-width: 768px)" srcset="/images/mobile/articles/article-5/Article-5_Image-1.png"><img src="/images/desktop/articles/article-5/Article-5_Image-1.png" alt="CPI headline vs. core inflation year-over-year"></picture>
           <figcaption>U.S. CPI headline vs. core inflation year-over-year, January 2023 – March 2026 — Source: Bureau of Labor Statistics</figcaption>
         </figure>
 
@@ -53,7 +53,7 @@ export function renderArticleFed2026(): string {
         <p>The Fed's March SEP projects the unemployment rate at 4.4% for 2026, 4.3% in 2027, and 4.2% in 2028 — essentially flat. That stability masks a deeper truth: job growth is barely keeping pace with population increases in many forecasts.</p>
 
         <figure class="article-exhibit">
-          <img src="/images/articles/article-5/Article-5_Image-2.png" alt="Unemployment rate and total job openings" />
+          <picture><source media="(max-width: 768px)" srcset="/images/mobile/articles/article-5/Article-5_Image-2.png"><img src="/images/desktop/articles/article-5/Article-5_Image-2.png" alt="Unemployment rate and total job openings"></picture>
           <figcaption>Unemployment rate vs. total job openings (millions), 2022 – present — Source: BLS JOLTS, FRED</figcaption>
         </figure>
 
@@ -69,7 +69,7 @@ export function renderArticleFed2026(): string {
         <p>This tension is exactly why Fed minutes from the March meeting noted that some participants judged there was a strong case for a "two-sided description" of future policy — meaning the Committee is now explicitly considering both rate cuts and possible hikes depending on incoming data.</p>
 
         <figure class="article-exhibit">
-          <img src="/images/articles/article-5/Article-5_Image-3.png" alt="The Fed's dual mandate in conflict" />
+          <picture><source media="(max-width: 768px)" srcset="/images/mobile/articles/article-5/Article-5_Image-3.png"><img src="/images/desktop/articles/article-5/Article-5_Image-3.png" alt="The Fed's dual mandate in conflict"></picture>
           <figcaption>The Fed's 2026 tightrope: price stability vs. maximum employment — Source: FOMC March 2026 SEP</figcaption>
         </figure>
 
@@ -89,7 +89,7 @@ export function renderArticleFed2026(): string {
         <p class="article-callout"><strong>Plain-language translation:</strong> Think of interest rates like the temperature in your house. The Fed wants the economy at a comfortable 72°F (2% inflation + full employment). Right now the thermostat is set too high because of the energy shock. Instead of immediately turning the AC on full blast (big rate cuts), the Fed is keeping the fan on medium ("higher for longer") until it's sure the temperature will stay down on its own.</p>
 
         <figure class="article-exhibit">
-          <img src="/images/articles/article-5/Article-5_Image-4.png" alt="FOMC March 2026 dot plot" />
+          <picture><source media="(max-width: 768px)" srcset="/images/mobile/articles/article-5/Article-5_Image-4.png"><img src="/images/desktop/articles/article-5/Article-5_Image-4.png" alt="FOMC March 2026 dot plot"></picture>
           <figcaption>FOMC dot plot — individual member projections for the federal funds rate, March 2026 — Source: Federal Reserve</figcaption>
         </figure>
 
@@ -104,7 +104,7 @@ export function renderArticleFed2026(): string {
         </ul>
 
         <figure class="article-exhibit">
-          <img src="/images/articles/article-5/Article-5_Image-5.png" alt="30-year mortgage rate vs. 10-year Treasury yield" />
+          <picture><source media="(max-width: 768px)" srcset="/images/mobile/articles/article-5/Article-5_Image-5.png"><img src="/images/desktop/articles/article-5/Article-5_Image-5.png" alt="30-year mortgage rate vs. 10-year Treasury yield"></picture>
           <figcaption>30-year fixed mortgage rate vs. 10-year Treasury yield, 2023–2026 — Source: Freddie Mac, FRED</figcaption>
         </figure>
 

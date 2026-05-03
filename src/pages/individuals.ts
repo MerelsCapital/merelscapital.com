@@ -9,7 +9,7 @@ export function renderIndividuals(): string {
         </div>
       </div>
       <div class="split-hero-image">
-        <img src="/images/hero-individuals.jpg" alt="Wealth advisory for individuals and families" />
+        <picture><source media="(max-width: 768px)" srcset="/images/mobile/hero-individuals.jpg"><img src="/images/desktop/hero-individuals.jpg" alt="Wealth advisory for individuals and families"></picture>
       </div>
     </section>
 
@@ -21,7 +21,7 @@ export function renderIndividuals(): string {
           <p>We provide fully integrated wealth management that goes beyond the portfolio. From financial planning and tax strategy to estate structures and insurance review, we coordinate every dimension of your financial life so nothing falls through the cracks.</p>
           <p>Our approach starts with understanding you — your goals, your values, and the trade-offs you're willing to make. Only then do we build a plan.</p>
         </div>
-        <img class="placeholder-image" src="/images/page-individuals-whatwedo.jpg" alt="Individuals and families wealth planning" />
+        <picture><source media="(max-width: 768px)" srcset="/images/mobile/page-individuals-whatwedo.jpg"><img class="placeholder-image" src="/images/desktop/page-individuals-whatwedo.jpg" alt="Individuals and families wealth planning"></picture>
       </div>
     </section>
 
@@ -77,7 +77,7 @@ export function renderIndividuals(): string {
 
     <section class="content-row bg-off-white">
       <div class="content-row-inner reverse">
-        <img class="placeholder-image" src="/images/page-individuals-partner.jpg" alt="A partner through every defining moment" />
+        <picture><source media="(max-width: 768px)" srcset="/images/mobile/page-individuals-partner.jpg"><img class="placeholder-image" src="/images/desktop/page-individuals-partner.jpg" alt="A partner through every defining moment"></picture>
         <div class="section-text">
           <span class="section-label">HOW WE HELP</span>
           <h2>A partner through every defining moment</h2>

@@ -5,7 +5,7 @@ export function renderHome(): string {
         <div class="hero-content">
           <p class="hero-eyebrow">Independent Wealth Management</p>
           <h1>Welcome to Merels Capital</h1>
-          <p class="hero-subtitle">Where your financial life is managed with the depth, independence, and personal attention it deserves.</p>
+          <p class="hero-subtitle">Financial planning for business owners, from your first hire through to your exit.</p>
           <div class="hero-stats">
             <div class="hero-stat">
               <span class="stat-number">100%</span>
@@ -18,18 +18,18 @@ export function renderHome(): string {
             </div>
           </div>
           <div class="audience-tabs">
-            <button class="audience-tab active" data-audience="individuals">Individuals &amp; Families</button>
+            <button class="audience-tab active" data-audience="businesses">Businesses</button>
+            <button class="audience-tab" data-audience="individuals">Individuals &amp; Families</button>
             <button class="audience-tab" data-audience="family-offices">Family Offices</button>
-            <button class="audience-tab" data-audience="small-businesses">Small Businesses</button>
           </div>
         </div>
       </div>
       <div class="hero-carousel">
         <div class="carousel-track" id="carousel-track">
-          <div class="carousel-slide"><img data-src="/images/carousel-newyork.jpeg" alt="New York City skyline" /></div>
-          <div class="carousel-slide"><img data-src="/images/carousel-london.jpeg" alt="London skyline" /></div>
-          <div class="carousel-slide"><img data-src="/images/carousel-hongkong.jpeg" alt="Hong Kong skyline" /></div>
-          <div class="carousel-slide"><img data-src="/images/carousel-singapore.jpeg" alt="Singapore skyline" /></div>
+          <div class="carousel-slide"><img data-src="/images/desktop/carousel-newyork.jpeg" alt="New York City skyline" /></div>
+          <div class="carousel-slide"><img data-src="/images/desktop/carousel-london.jpeg" alt="London skyline" /></div>
+          <div class="carousel-slide"><img data-src="/images/desktop/carousel-hongkong.jpeg" alt="Hong Kong skyline" /></div>
+          <div class="carousel-slide"><img data-src="/images/desktop/carousel-singapore.jpeg" alt="Singapore skyline" /></div>
         </div>
         <div class="carousel-dots" id="carousel-dots">
           <button class="carousel-dot active" data-index="0" aria-label="New York City"></button>
@@ -41,26 +41,51 @@ export function renderHome(): string {
     </section>
 
     <section id="audience-content">
-      <div class="audience-panel active" id="panel-individuals">
+      <div class="audience-panel active" id="panel-businesses">
+        <div class="content-row bg-off-white">
+          <div class="content-row-inner">
+            <div class="section-text">
+              <span class="section-label">WHAT WE DO</span>
+              <h2>Financial guidance for business owners at every stage</h2>
+              <p>Running a business and building personal wealth require different disciplines, but the two are inseparable. We help business owners integrate their business and personal finances, plan for growth, and prepare for what comes next, whether that's an exit, a succession, or retirement on your own terms.</p>
+              <a data-route="businesses" href="#" class="text-link">Explore our approach →</a>
+            </div>
+            <picture><source media="(max-width: 768px)" srcset="/images/mobile/audience-smallbusiness-whatwedo.jpg"><img class="placeholder-image" src="/images/desktop/audience-smallbusiness-whatwedo.jpg" alt="Business financial planning"></picture>
+          </div>
+        </div>
+        <div class="content-row bg-white">
+          <div class="content-row-inner reverse">
+            <picture><source media="(max-width: 768px)" srcset="/images/mobile/audience-smallbusiness-partner.jpg"><img class="placeholder-image" src="/images/desktop/audience-smallbusiness-partner.jpg" alt="Business owner wealth management"></picture>
+            <div class="section-text">
+              <span class="section-label">WHY WORK WITH US</span>
+              <h2>A partner who understands the complexity of business ownership</h2>
+              <p>Most advisors treat business owners like any other client. We understand that your business is your largest asset, your primary income source, and often your retirement plan all at once. We bring the planning depth that complexity demands, so you can focus on running your business.</p>
+              <a data-route="contact" href="#" class="text-link">Start a conversation →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="audience-panel" id="panel-individuals">
         <div class="content-row bg-off-white">
           <div class="content-row-inner">
             <div class="section-text">
               <span class="section-label">WHAT WE DO</span>
               <h2>Wealth advisory built around your vision of prosperity</h2>
-              <p>We provide comprehensive financial planning and investment management grounded in what matters most to you—not an abstract benchmark. Every recommendation we make is shaped by your goals, your values, and the life you want to live.</p>
+              <p>We provide comprehensive financial planning and investment management grounded in what matters most to you, not an abstract benchmark. Every recommendation we make is shaped by your goals, your values, and the life you want to live.</p>
               <a data-route="individuals" href="#" class="text-link">Explore our approach →</a>
             </div>
-            <img class="placeholder-image" src="/images/audience-individuals-whatwedo.jpg" alt="Wealth advisory partnership" />
+            <picture><source media="(max-width: 768px)" srcset="/images/mobile/audience-individuals-whatwedo.jpg"><img class="placeholder-image" src="/images/desktop/audience-individuals-whatwedo.jpg" alt="Wealth advisory partnership"></picture>
           </div>
         </div>
         <div class="content-row bg-white">
           <div class="content-row-inner reverse">
-            <img class="placeholder-image" src="/images/audience-individuals-partner.jpg" alt="A partner through every defining moment" />
+            <picture><source media="(max-width: 768px)" srcset="/images/mobile/audience-individuals-partner.jpg"><img class="placeholder-image" src="/images/desktop/audience-individuals-partner.jpg" alt="A partner through every defining moment"></picture>
             <div class="section-text">
               <span class="section-label">WHY WORK WITH US</span>
               <h2>A partner through every defining moment</h2>
               <p>The most important financial decisions in life rarely come with a roadmap. Whether you're navigating a liquidity event, planning for the next generation, or redefining what retirement means to you, we're here to provide clarity and confidence at every step.</p>
-              <a href="/contact" class="text-link">Start a conversation →</a>
+              <a data-route="contact" href="#" class="text-link">Start a conversation →</a>
             </div>
           </div>
         </div>
@@ -72,44 +97,19 @@ export function renderHome(): string {
             <div class="section-text">
               <span class="section-label">WHAT WE DO</span>
               <h2>Serving the complexity of multi-generational wealth</h2>
-              <p>Family offices require more than investment management—they demand coordinated oversight of governance, reporting, tax planning, and legacy strategy. We provide the institutional rigor and personalized service that complex family structures require.</p>
+              <p>Family offices require more than investment management. They demand coordinated oversight of governance, reporting, tax planning, and legacy strategy. We provide the institutional rigor and personalized service that complex family structures require.</p>
               <a data-route="family-offices" href="#" class="text-link">Explore our approach →</a>
             </div>
-            <img class="placeholder-image" src="/images/audience-familyoffice-whatwedo.jpeg" alt="Family office wealth management" />
+            <picture><source media="(max-width: 768px)" srcset="/images/mobile/audience-familyoffice-whatwedo.jpeg"><img class="placeholder-image" src="/images/desktop/audience-familyoffice-whatwedo.jpeg" alt="Family office wealth management"></picture>
           </div>
         </div>
         <div class="content-row bg-white">
           <div class="content-row-inner reverse">
-            <img class="placeholder-image" src="/images/audience-familyoffice-partner.jpeg" alt="Multi-generational family wealth" />
+            <picture><source media="(max-width: 768px)" srcset="/images/mobile/audience-familyoffice-partner.jpeg"><img class="placeholder-image" src="/images/desktop/audience-familyoffice-partner.jpeg" alt="Multi-generational family wealth"></picture>
             <div class="section-text">
               <span class="section-label">WHY WORK WITH US</span>
               <h2>Independence that serves the family, not the institution</h2>
               <p>Our open-architecture approach and freedom from proprietary products means every recommendation is made in your family's best interest. We act as a trusted extension of your family office, bringing capabilities that would otherwise require an entire internal team.</p>
-              <a href="/contact" class="text-link">Start a conversation →</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="audience-panel" id="panel-small-businesses">
-        <div class="content-row bg-off-white">
-          <div class="content-row-inner">
-            <div class="section-text">
-              <span class="section-label">WHAT WE DO</span>
-              <h2>Financial guidance for business owners at every stage</h2>
-              <p>Running a business and building personal wealth require different disciplines—but they're inseparable. We help small business owners integrate their business and personal finances, plan for growth, and prepare for what comes next, whether that's succession, a sale, or retirement.</p>
-              <a data-route="small-businesses" href="#" class="text-link">Explore our approach →</a>
-            </div>
-            <img class="placeholder-image" src="/images/audience-smallbusiness-whatwedo.jpg" alt="Small business financial planning" />
-          </div>
-        </div>
-        <div class="content-row bg-white">
-          <div class="content-row-inner reverse">
-            <img class="placeholder-image" src="/images/audience-smallbusiness-partner.jpg" alt="Business owner wealth management" />
-            <div class="section-text">
-              <span class="section-label">WHY WORK WITH US</span>
-              <h2>A partner who understands the complexity of business ownership</h2>
-              <p>Most advisors treat business owners like any other client. We understand that your business is your largest asset, your primary income source, and often your retirement plan all at once. We bring the planning depth that complexity demands—so you can focus on running your business.</p>
               <a data-route="contact" href="#" class="text-link">Start a conversation →</a>
             </div>
           </div>
@@ -122,8 +122,8 @@ export function renderHome(): string {
         <span class="section-label light">OUR PHILOSOPHY</span>
         <h2>Wealth management that begins with understanding who you are</h2>
         <div class="philosophy-columns">
-          <p>At Merels Capital, we believe the most important work in wealth management happens before a single investment is made. It begins with a genuine understanding of who our clients are—their values, their ambitions, and the responsibilities they carry toward the people and causes they care about most.</p>
-          <p>Our role is not simply to grow portfolios. It is to translate your financial life into a coherent, enduring strategy that serves your vision of prosperity—and that remains resilient across markets, milestones, and generations.</p>
+          <p>At Merels Capital, we believe the most important work in wealth management happens before a single investment is made. It begins with a genuine understanding of who our clients are: their values, their ambitions, and the responsibilities they carry toward the people and causes they care about most.</p>
+          <p>Our role is not simply to grow portfolios. It is to translate your financial life into a coherent, enduring strategy that serves your vision of prosperity, remaining resilient across markets, milestones, and generations.</p>
         </div>
         <a href="/contact" class="btn-outline-light">Learn about our approach</a>
       </div>
@@ -149,7 +149,7 @@ export function renderHome(): string {
         <div class="pillar">
           <div class="pillar-icon">◈</div>
           <h3>Tailored Portfolios</h3>
-          <p>No two clients receive the same portfolio—each is built around your specific situation.</p>
+          <p>No two clients receive the same portfolio. Each is built around your specific situation.</p>
         </div>
         <div class="pillar">
           <div class="pillar-icon">◈</div>
@@ -186,28 +186,28 @@ export function renderHome(): string {
       </div>
       <div class="stories-grid">
         <div class="story-card">
-           <img class="story-image" src="/images/stories-smallbusiness.jpg" alt="Small Business Planning" />
+           <picture><source media="(max-width: 768px)" srcset="/images/mobile/stories-smallbusiness.jpg"><img class="story-image" src="/images/desktop/stories-smallbusiness.jpg" alt="Business Planning"></picture>
           <div class="story-content">
-            <h3>Small Business Planning</h3>
+            <h3>Business Planning</h3>
             <p>After decades building a company, a liquidity event brings as many questions as answers. We help structure the transition, manage the tax implications, and build a lasting wealth plan for what comes next.</p>
           </div>
         </div>
         <div class="story-card">
-          <img class="story-image" src="/images/stories-retirement.jpeg" alt="Retirement Planning" />
+          <picture><source media="(max-width: 768px)" srcset="/images/mobile/stories-retirement.jpeg"><img class="story-image" src="/images/desktop/stories-retirement.jpeg" alt="Retirement Planning"></picture>
           <div class="story-content">
             <h3>Retirement Planning</h3>
-            <p>Retirement isn't one-size-fits-all. We work with families to build financial plans that support their specific vision—whether that means travel, philanthropy, legacy, or simply peace of mind.</p>
+            <p>Retirement isn't one-size-fits-all. We work with families to build financial plans that support their specific vision, whether that means travel, philanthropy, legacy, or simply peace of mind.</p>
           </div>
         </div>
         <div class="story-card">
-          <img class="story-image" src="/images/stories-trusts.jpeg" alt="Trust Planning" />
+          <picture><source media="(max-width: 768px)" srcset="/images/mobile/stories-trusts.jpeg"><img class="story-image" src="/images/desktop/stories-trusts.jpeg" alt="Trust Planning"></picture>
           <div class="story-content">
             <h3>Trust Planning</h3>
-            <p>A well-structured trust does more than transfer assets—it defines how wealth is held, managed, and distributed across generations. We help families identify the right trust structures and ensure they work in concert with the broader financial plan.</p>
+            <p>A well-structured trust does more than transfer assets. It defines how wealth is held, managed, and distributed across generations. We help families identify the right trust structures and ensure they work in concert with the broader financial plan.</p>
           </div>
         </div>
         <div class="story-card">
-          <img class="story-image" src="/images/stories-estateplanning.jpg" alt="Estate Planning" />
+          <picture><source media="(max-width: 768px)" srcset="/images/mobile/stories-estateplanning.jpg"><img class="story-image" src="/images/desktop/stories-estateplanning.jpg" alt="Estate Planning"></picture>
           <div class="story-content">
             <h3>Estate Planning</h3>
             <p>Multi-generational wealth requires more than financial management. We help families establish the structures and communication frameworks that keep wealth unified across generations.</p>

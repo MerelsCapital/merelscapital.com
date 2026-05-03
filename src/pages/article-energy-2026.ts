@@ -9,7 +9,7 @@ export function renderArticleEnergy2026(): string {
         </div>
       </div>
       <div class="split-hero-image">
-        <img src="/images/articles/article-4/Article-4_Banner.jpg" alt="The Energy Sector: Data Center Demand Boom Meets Iranian War Supply Shocks" />
+        <picture><source media="(max-width: 768px)" srcset="/images/mobile/articles/article-4/Article-4_Banner.jpg"><img src="/images/desktop/articles/article-4/Article-4_Banner.jpg" alt="The Energy Sector: Data Center Demand Boom Meets Iranian War Supply Shocks"></picture>
       </div>
     </section>
 
@@ -27,7 +27,7 @@ export function renderArticleEnergy2026(): string {
         <p>In the United States, data centers alone are expected to account for roughly 50% of total electricity demand growth through 2030, adding over 420 TWh cumulatively and contributing nearly 2 percentage points to annual US power demand growth. The European Union sees a similar pattern, with data centers fueling a significant share of the buildings sector's 300 TWh increase. Data centers, currently ~7% of US power demand, are expected to drive ~40% of total US power demand growth over the next five years, adding 1.2 percentage points annually on average to overall demand.</p>
 
         <figure class="article-exhibit">
-          <img src="/images/articles/article-4/Article-4_Image-1.png" alt="IEA year-on-year electricity demand changes by region" />
+          <picture><source media="(max-width: 768px)" srcset="/images/mobile/articles/article-4/Article-4_Image-1.png"><img src="/images/desktop/articles/article-4/Article-4_Image-1.png" alt="IEA year-on-year electricity demand changes by region"></picture>
           <figcaption>IEA: Year-on-year percent changes in electricity demand in selected regions, 2020–2030</figcaption>
         </figure>
 
@@ -36,7 +36,7 @@ export function renderArticleEnergy2026(): string {
         <p>From our perspective, this is a boon for regulated utilities. Higher capex translates into rate-base growth and allowed returns, supporting dividends in the sector. However, the cost is being passed through: consumer electricity inflation is running at 6.9% year-over-year through December 2025 (versus 2.9% headline PCE), and we forecast it to hold near 6% in 2026–2027 before easing to ~3–3.5% in 2028 on softer natural gas prices.</p>
 
         <figure class="article-exhibit">
-          <img src="/images/articles/article-4/Article-4_Image-2.png" alt="FRED energy price per kWh" />
+          <picture><source media="(max-width: 768px)" srcset="/images/mobile/articles/article-4/Article-4_Image-2.png"><img src="/images/desktop/articles/article-4/Article-4_Image-2.png" alt="FRED energy price per kWh"></picture>
           <figcaption>US consumer electricity price per kWh — Source: FRED</figcaption>
         </figure>
 
@@ -49,7 +49,7 @@ export function renderArticleEnergy2026(): string {
         <p>The EIA's March 2026 Short-Term Energy Outlook (released March 10) explicitly incorporates these risks, revising Brent crude forecasts sharply higher: $79/bbl average in 2026 (up 37% from the prior outlook) and $64/bbl in 2027. Current spot Brent sits near $98/bbl as of March, and is expected to stay above $95/bbl short-term before easing. US crude production edges up modestly to 13.6 mb/d in 2026, aided by higher prices incentivising shale output.</p>
 
         <figure class="article-exhibit">
-          <img src="/images/articles/article-4/Article-4_Image-3.png" alt="EIA Brent crude price forecast" />
+          <picture><source media="(max-width: 768px)" srcset="/images/mobile/articles/article-4/Article-4_Image-3.png"><img src="/images/desktop/articles/article-4/Article-4_Image-3.png" alt="EIA Brent crude price forecast"></picture>
           <figcaption>EIA Brent crude forecast — Source: EIA Short-Term Energy Outlook, March 2026</figcaption>
         </figure>
 
@@ -60,7 +60,7 @@ export function renderArticleEnergy2026(): string {
         <p>The shock is mostly limited to energy, muting second-round effects versus 2021–2022. Non-energy trade exposure to the Gulf is &lt;1% of global trade, and chemical/metal price spikes (e.g. 25% in methanol) add at most 0.1 percentage points to global inflation. Still, expected global GDP growth is closer to 2.6% (down from 2.9%) and headline inflation lifts to 2.9% Q4/Q4, with oil alone shaving 0.3% off GDP and adding 0.5–0.6 percentage points to inflation. Central banks have responded: front-end rates have sold off, pricing in +40 basis points higher end-2026 policy rates in the US.</p>
 
         <figure class="article-exhibit">
-          <img src="/images/articles/article-4/Article-4_Image-4.png" alt="Front-end rate pricing" />
+          <picture><source media="(max-width: 768px)" srcset="/images/mobile/articles/article-4/Article-4_Image-4.png"><img src="/images/desktop/articles/article-4/Article-4_Image-4.png" alt="Front-end rate pricing"></picture>
           <figcaption>Front-end rate market pricing, 2026</figcaption>
         </figure>
 
@@ -69,14 +69,14 @@ export function renderArticleEnergy2026(): string {
         <p>Renewables are performing strongly and occupy a growing place in the market as the primary response to the structural demand surge. In 2025, wind and solar already supplied a record 19% of US net generation (utility-scale and small-scale solar). With the massive 2026 capacity pipeline, that share is on track to reach ~21% by 2027, and total renewables (including hydro and biomass) are forecast by the EIA to hit 25% in 2026 and 27% in 2027. Corporate power purchase agreements from hyperscalers have become a dominant financing mechanism — nearly half of all global corporate clean-energy procurement in 2025 came from data-center operators locking in long-term renewable supply to meet sustainability and hedging goals.</p>
 
         <figure class="article-exhibit">
-          <img src="/images/articles/article-4/Article-4_Image-5.jpeg" alt="IEA energy production by source" />
+          <picture><source media="(max-width: 768px)" srcset="/images/mobile/articles/article-4/Article-4_Image-5.jpeg"><img src="/images/desktop/articles/article-4/Article-4_Image-5.jpeg" alt="IEA energy production by source"></picture>
           <figcaption>Energy production by source — Source: IEA</figcaption>
         </figure>
 
         <p>Intermittency remains the main limiting factor: data centers require reliable 24/7 power, so renewables are typically paired with battery storage (which is itself seeing record additions) and flexible gas peakers. The Iranian supply shock indirectly boosts renewables by elevating fossil-fuel risk premia and wholesale prices, improving project economics and dispatch priority for existing wind and solar assets. Overall, renewables are no longer a marginal supplement — they are now the default lowest-cost source for incremental electricity supply and a critical hedge against geopolitical fossil-fuel volatility.</p>
 
         <figure class="article-exhibit">
-          <img src="/images/articles/article-4/Article-4_Image-6.jpeg" alt="IEA electricity usage by type" />
+          <picture><source media="(max-width: 768px)" srcset="/images/mobile/articles/article-4/Article-4_Image-6.jpeg"><img src="/images/desktop/articles/article-4/Article-4_Image-6.jpeg" alt="IEA electricity usage by type"></picture>
           <figcaption>Electricity usage by type — Source: IEA</figcaption>
         </figure>
 

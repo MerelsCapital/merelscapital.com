@@ -1,3 +1,6 @@
+picture { display: block; }
+picture img { display: block; }
+
 /* ── Custom fonts ───────────────────────────────────── */
 @font-face {
   font-family: 'FelixTitling';
@@ -525,6 +528,11 @@ a { text-decoration: none; }
   overflow: hidden;
 }
 
+.split-hero-image picture {
+  width: 100%;
+  height: 100%;
+}
+
 .split-hero-image img {
   width: 100%;
   height: 100%;
@@ -677,6 +685,31 @@ a { text-decoration: none; }
   color: var(--text-light);
   line-height: 1.8;
   margin-bottom: 1.5rem;
+}
+
+.content-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.content-list li {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  padding-left: 1.25rem;
+  position: relative;
+  line-height: 1.5;
+}
+
+.content-list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--navy);
+  font-size: 0.8rem;
 }
 
 .text-link {
@@ -1484,6 +1517,11 @@ a { text-decoration: none; }
   border-radius: 4px;
   overflow: hidden;
   min-height: 400px;
+}
+
+.founding-image picture {
+  width: 100%;
+  height: 100%;
 }
 
 .founding-image img {

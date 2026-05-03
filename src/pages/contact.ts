@@ -60,7 +60,7 @@ export function renderContact(): string {
         </div>
       </div>
       <div class="split-hero-image">
-        <img src="/images/hero-contact.jpeg" alt="Contact Merels Capital" />
+        <picture><source media="(max-width: 768px)" srcset="/images/mobile/hero-contact.jpeg"><img src="/images/desktop/hero-contact.jpeg" alt="Contact Merels Capital"></picture>
       </div>
     </section>
 
@@ -94,7 +94,7 @@ export function renderContact(): string {
                 <option value="" disabled selected>Select a topic…</option>
                 <option value="individuals">Wealth Management for Individuals &amp; Families</option>
                 <option value="family-offices">Family Office Services</option>
-                <option value="small-businesses">Small Business Services</option>
+                <option value="businesses">Business Services</option>
                 <option value="general">General Inquiry</option>
               </select>
             </div>

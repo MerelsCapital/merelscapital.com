@@ -9,7 +9,7 @@ export function renderArticleGold2025(): string {
         </div>
       </div>
       <div class="split-hero-image">
-        <img src="/images/articles/article-1/Article-1_Banner.jpg" alt="Ancient gold coins" />
+        <picture><source media="(max-width: 768px)" srcset="/images/mobile/articles/article-1/Article-1_Banner.jpg"><img src="/images/desktop/articles/article-1/Article-1_Banner.jpg" alt="Ancient gold coins"></picture>
       </div>
     </section>
 
@@ -25,7 +25,7 @@ export function renderArticleGold2025(): string {
         <p>Recent trends show private-sector demand broadening beyond central bank buying, with inflows into gold ETFs, physical bars and coins, and derivatives (like call options) reflecting "sticky" hedges against global policy risks — such as sanctions exposure, monetary fragmentation, or unexpected shifts in interest rates.</p>
 
         <figure class="article-exhibit">
-          <img src="/images/articles/article-1/Article-1_Image-1.png" alt="Gold ETF demand by quarter, 2014–2025" />
+          <picture><source media="(max-width: 768px)" srcset="/images/mobile/articles/article-1/Article-1_Image-1.png"><img src="/images/desktop/articles/article-1/Article-1_Image-1.png" alt="Gold ETF demand by quarter, 2014–2025"></picture>
           <figcaption><strong>Exhibit 1:</strong> Gold ETFs dominated US gold demand in every quarter of 2025</figcaption>
         </figure>
 
@@ -36,7 +36,7 @@ export function renderArticleGold2025(): string {
         <p>This sustained official buying continues to underpin the market's structural strength, even as private-sector ETF inflows have also surged in response to the rising price environment.</p>
 
         <figure class="article-exhibit">
-          <img src="/images/articles/article-1/Article-1_Image-2.png" alt="Central bank gold demand 2010–2025" />
+          <picture><source media="(max-width: 768px)" srcset="/images/mobile/articles/article-1/Article-1_Image-2.png"><img src="/images/desktop/articles/article-1/Article-1_Image-2.png" alt="Central bank gold demand 2010–2025"></picture>
           <figcaption><strong>Exhibit 2:</strong> Central bank gold demand — Source: Metals Focus, Refinitiv GFMS, World Gold Council</figcaption>
         </figure>
 
@@ -45,7 +45,7 @@ export function renderArticleGold2025(): string {
         <p>This pattern of widespread yet concentrated demand from central banks aligns with the broader momentum seen in private investment flows, where ETF inflows have also accelerated amid the price rally. Additionally, individuals buying gold has increased, with high-net-worth families looking for ways to store gold as a hedge against inflation.</p>
 
         <figure class="article-exhibit">
-          <img src="/images/articles/article-1/Article-1_Image-3.png" alt="Google search trends for Gold, 2022–2026" />
+          <picture><source media="(max-width: 768px)" srcset="/images/mobile/articles/article-1/Article-1_Image-3.png"><img src="/images/desktop/articles/article-1/Article-1_Image-3.png" alt="Google search trends for Gold, 2022–2026"></picture>
           <figcaption><strong>Exhibit 3:</strong> Google searches for "Gold" — Source: Google Trends</figcaption>
         </figure>
 
@@ -76,7 +76,7 @@ export function renderArticleGold2025(): string {
         <p>However, this link is not fixed and has shown notable weakening in recent years, particularly since 2022–2023 and into 2026. Gold has at times risen or held firm even as real yields increased, supported by structural drivers including persistent central bank accumulation, geopolitical uncertainty, fiscal concerns, and private-sector diversification flows that outweigh traditional yield sensitivity.</p>
 
         <figure class="article-exhibit">
-          <img src="/images/articles/article-1/Article-1_Image-4.png" alt="Gold price vs inverted real 10-year Treasury yield" />
+          <picture><source media="(max-width: 768px)" srcset="/images/mobile/articles/article-1/Article-1_Image-4.png"><img src="/images/desktop/articles/article-1/Article-1_Image-4.png" alt="Gold price vs inverted real 10-year Treasury yield"></picture>
           <figcaption><strong>Exhibit 4:</strong> Gold price vs. inverted real 10-year Treasury yield — Source: longtermtrends.com</figcaption>
         </figure>
 

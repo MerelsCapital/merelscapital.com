@@ -4,7 +4,7 @@
         <div class="hero-content">
           <p class="hero-eyebrow">Independent Wealth Management</p>
           <h1>Welcome to Merels Capital</h1>
-          <p class="hero-subtitle">Where your financial life is managed with the depth, independence, and personal attention it deserves.</p>
+          <p class="hero-subtitle">Financial planning built for business owners — from your first hire to your exit.</p>
           <div class="hero-stats">
             <div class="hero-stat">
               <span class="stat-number">100%</span>
@@ -17,9 +17,9 @@
             </div>
           </div>
           <div class="audience-tabs">
-            <button class="audience-tab active" data-audience="individuals">Individuals &amp; Families</button>
+            <button class="audience-tab active" data-audience="businesses">Businesses</button>
+            <button class="audience-tab" data-audience="individuals">Individuals &amp; Families</button>
             <button class="audience-tab" data-audience="family-offices">Family Offices</button>
-            <button class="audience-tab" data-audience="small-businesses">Small Businesses</button>
           </div>
         </div>
       </div>
@@ -40,7 +40,32 @@
     </section>
 
     <section id="audience-content">
-      <div class="audience-panel active" id="panel-individuals">
+      <div class="audience-panel active" id="panel-businesses">
+        <div class="content-row bg-off-white">
+          <div class="content-row-inner">
+            <div class="section-text">
+              <span class="section-label">WHAT WE DO</span>
+              <h2>Financial guidance for business owners at every stage</h2>
+              <p>Running a business and building personal wealth require different disciplines — but they're inseparable. We help business owners integrate their business and personal finances, plan for growth, and prepare for what comes next, whether that's an exit, a succession, or retirement on your own terms.</p>
+              <a data-route="businesses" href="#" class="text-link">Explore our approach →</a>
+            </div>
+            <img class="placeholder-image" src="/images/audience-smallbusiness-whatwedo.jpg" alt="Business financial planning" />
+          </div>
+        </div>
+        <div class="content-row bg-white">
+          <div class="content-row-inner reverse">
+            <img class="placeholder-image" src="/images/audience-smallbusiness-partner.jpg" alt="Business owner wealth management" />
+            <div class="section-text">
+              <span class="section-label">WHY WORK WITH US</span>
+              <h2>A partner who understands the complexity of business ownership</h2>
+              <p>Most advisors treat business owners like any other client. We understand that your business is your largest asset, your primary income source, and often your retirement plan all at once. We bring the planning depth that complexity demands — so you can focus on running your business.</p>
+              <a data-route="contact" href="#" class="text-link">Start a conversation →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="audience-panel" id="panel-individuals">
         <div class="content-row bg-off-white">
           <div class="content-row-inner">
             <div class="section-text">
@@ -59,7 +84,7 @@
               <span class="section-label">WHY WORK WITH US</span>
               <h2>A partner through every defining moment</h2>
               <p>The most important financial decisions in life rarely come with a roadmap. Whether you're navigating a liquidity event, planning for the next generation, or redefining what retirement means to you, we're here to provide clarity and confidence at every step.</p>
-              <a href="/contact" class="text-link">Start a conversation →</a>
+              <a data-route="contact" href="#" class="text-link">Start a conversation →</a>
             </div>
           </div>
         </div>
@@ -84,31 +109,6 @@
               <span class="section-label">WHY WORK WITH US</span>
               <h2>Independence that serves the family, not the institution</h2>
               <p>Our open-architecture approach and freedom from proprietary products means every recommendation is made in your family's best interest. We act as a trusted extension of your family office, bringing capabilities that would otherwise require an entire internal team.</p>
-              <a href="/contact" class="text-link">Start a conversation →</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="audience-panel" id="panel-small-businesses">
-        <div class="content-row bg-off-white">
-          <div class="content-row-inner">
-            <div class="section-text">
-              <span class="section-label">WHAT WE DO</span>
-              <h2>Financial guidance for business owners at every stage</h2>
-              <p>Running a business and building personal wealth require different disciplines—but they're inseparable. We help small business owners integrate their business and personal finances, plan for growth, and prepare for what comes next, whether that's succession, a sale, or retirement.</p>
-              <a data-route="small-businesses" href="#" class="text-link">Explore our approach →</a>
-            </div>
-            <img class="placeholder-image" src="/images/audience-smallbusiness-whatwedo.jpg" alt="Small business financial planning" />
-          </div>
-        </div>
-        <div class="content-row bg-white">
-          <div class="content-row-inner reverse">
-            <img class="placeholder-image" src="/images/audience-smallbusiness-partner.jpg" alt="Business owner wealth management" />
-            <div class="section-text">
-              <span class="section-label">WHY WORK WITH US</span>
-              <h2>A partner who understands the complexity of business ownership</h2>
-              <p>Most advisors treat business owners like any other client. We understand that your business is your largest asset, your primary income source, and often your retirement plan all at once. We bring the planning depth that complexity demands—so you can focus on running your business.</p>
               <a data-route="contact" href="#" class="text-link">Start a conversation →</a>
             </div>
           </div>
@@ -185,9 +185,9 @@
       </div>
       <div class="stories-grid">
         <div class="story-card">
-           <img class="story-image" src="/images/stories-smallbusiness.jpg" alt="Small Business Planning" />
+           <img class="story-image" src="/images/stories-smallbusiness.jpg" alt="Business Planning" />
           <div class="story-content">
-            <h3>Small Business Planning</h3>
+            <h3>Business Planning</h3>
             <p>After decades building a company, a liquidity event brings as many questions as answers. We help structure the transition, manage the tax implications, and build a lasting wealth plan for what comes next.</p>
           </div>
         </div>
@@ -228,7 +228,7 @@
         <div class="split-hero-content">
           <span class="section-label light">ABOUT US</span>
           <h1>Built differently, by design.</h1>
-          <p class="about-hero-subtitle">We believe great wealth management starts with a genuine relationship—not a product pitch. Everything we do flows from that conviction.</p>
+          <p class="about-hero-subtitle">We believe the most complex financial lives belong to business owners — and that they deserve an advisor built around that complexity, not despite it.</p>
         </div>
       </div>
       <div class="split-hero-image">
@@ -240,14 +240,14 @@
       <div class="about-mission-inner">
         <div class="about-pull-quote">
           <blockquote>
-            "Our only obligation is to you. No parent company. No proprietary products. No hidden incentives. Just straightforward advice in your best interest."
+            "Our only obligation is to you. No parent company. No proprietary products. No hidden incentives. Just straightforward advice in your best interest — whether that means growing your business, protecting what you've built, or planning the exit on your terms."
           </blockquote>
         </div>
         <div class="about-story">
           <span class="section-label">OUR STORY</span>
           <h2>Founded on the belief that independence changes everything</h2>
           <p>Merels Capital was founded with a simple but consequential premise: that truly unconflicted advice requires structural independence. When an advisor has no proprietary products to sell and no parent company to answer to, every recommendation can be made purely on its merits.</p>
-          <p>We built this firm to be the kind of advisor we would want for our own families—one that listens deeply, thinks long-term, and holds itself to a fiduciary standard in every client interaction. That clarity of purpose shapes every decision we make.</p>
+          <p>We built this firm primarily to serve business owners — founders, operators, and entrepreneurs whose financial lives don't fit neatly into a standard wealth management model. Your business is your largest asset, your income source, and often the foundation of your retirement. Managing that well requires an advisor who understands all of it, not just the investable assets.</p>
         </div>
       </div>
     </section>
@@ -262,17 +262,17 @@
           <div class="value-card">
             <div class="value-icon">◈</div>
             <h3>Structural Independence</h3>
-            <p>We have no parent company and sell no proprietary products. Our independence isn't a marketing claim—it's baked into how we're built. That structure is what allows us to give advice that is genuinely unconflicted.</p>
+            <p>We have no parent company and sell no proprietary products. Our independence isn't a marketing claim — it's baked into how we're built. That structure is what allows us to give advice that is genuinely unconflicted, whether we're evaluating a retirement plan design or the structure of your business sale.</p>
           </div>
           <div class="value-card">
             <div class="value-icon">◈</div>
             <h3>Understanding Before Action</h3>
-            <p>We don't arrive at client meetings with a portfolio pre-loaded. We start by listening—understanding your situation, your goals, and the trade-offs you're willing to make before we offer a single recommendation.</p>
+            <p>We don't arrive at client meetings with a portfolio pre-loaded. Business owners face a different set of trade-offs than salaried employees — variable income, illiquid equity, competing capital demands — and we start by understanding yours before offering a single recommendation.</p>
           </div>
           <div class="value-card">
             <div class="value-icon">◈</div>
             <h3>Long-Term Partnership</h3>
-            <p>We measure our success over years, not quarters. We want to be the advisor you call when something changes in your life, and the one who is still there when your children are ready to build their own financial futures.</p>
+            <p>We measure our success over years, not quarters. We want to be the advisor you call when something changes in your business, and the one still there when you're ready to step back from it — whether that means a sale, a succession, or simply building enough outside the business that you have a choice.</p>
           </div>
         </div>
       </div>
@@ -282,13 +282,13 @@
       <div class="about-founding-inner">
         <div class="section-header centered">
           <span class="section-label">WHY WE BUILT THIS FIRM</span>
-          <h2>Because the industry's incentives were pointed in the wrong direction.</h2>
+          <h2>Because business owners deserve better than a standard wealth management playbook.</h2>
         </div>
         <div class="founding-body">
           <div class="founding-text">
-            <p>Most wealth management firms are built around products. The advice they give is shaped, even if subtly, by what they sell, what their parent company manufactures, and how their advisors are compensated. For clients, that creates a persistent question: is this recommendation in my interest, or theirs?</p>
-            <p>We built Merels Capital to make that question unnecessary. By remaining independent with no proprietary products, no parent company, and no distribution incentives we can give advice that is structurally unconflicted. Not just claimed to be, but actually designed to be. Every recommendation we make stands on one criterion alone: is this the right thing for this client?</p>
-            <p>We also believed that genuine wealth management requires a depth of relationship that large institutions struggle to provide. When your advisor changes every few years, when your portfolio is built from a centralized model, when you're one of thousands of clients, something important gets lost. We built this firm to be different on that dimension too: fewer clients, deeper relationships, senior advisors engaged at every stage.</p>
+            <p>Most wealth management firms are built around publicly traded portfolios. Their models assume a client with a salary, a 401(k), and a relatively predictable financial life. Business owners don't fit that model — and the advice they receive often reflects that mismatch.</p>
+            <p>We built Merels Capital to serve clients whose wealth is built differently. For a business owner, the most important financial decisions often have nothing to do with stock selection: how to structure owner compensation, how to build retirement wealth inside the business, how to separate personal liquidity from operating capital, how to prepare for a transaction years in advance. These are the decisions that move the needle.</p>
+            <p>We also believed that genuinely useful advice for business owners requires a depth of relationship that large institutions struggle to provide. When your situation changes — a new partner, a line of credit, a potential buyer at the door — you need an advisor who already understands your business, not one who needs to be briefed from scratch. We built this firm to be that advisor: fewer clients, deeper relationships, senior advisors engaged at every stage.</p>
             <p>That is the firm we set out to build. It is the firm we intend to remain.</p>
           </div>
           <div class="founding-image">
@@ -307,19 +307,19 @@
         <div class="practice-grid">
           <div class="practice-card">
             <h3>We listen before we recommend.</h3>
-            <p>We don't arrive at a first meeting with a set of products to sell. Before we suggest anything, we spend time understanding your situation, your goals, your concerns, the trade-offs you're willing to make, and what prosperity actually means to you. The plan follows from that conversation, not the other way around.</p>
+            <p>We don't arrive at a first meeting with a set of products to sell. Before we suggest anything, we spend time understanding your business, your goals, the trade-offs you're willing to make, and what financial independence actually looks like for you. The plan follows from that conversation, not the other way around.</p>
           </div>
           <div class="practice-card">
             <h3>We tell you what we actually think.</h3>
-            <p>If an investment you're excited about doesn't make sense for your situation, we'll say so. If the market is doing something that doesn't change what you should do, we'll say that too. Our job is to give you our honest assessment, not to validate decisions you've already made or tell you what you want to hear.</p>
+            <p>If a strategy you're considering doesn't make sense for your situation, we'll say so. If keeping capital in the business makes more sense than investing it, we'll say that too. Our job is to give you our honest assessment — not to validate decisions you've already made or recommend what's easiest for us to implement.</p>
           </div>
           <div class="practice-card">
             <h3>We think about taxes every time.</h3>
-            <p>An investment decision and a tax decision are the same decision. We don't treat tax planning as something that happens in April, it's embedded in every portfolio decision we make, from how we harvest losses to how we think about the location of assets across your accounts.</p>
+            <p>For business owners, tax planning isn't a year-end exercise — it's embedded in every decision, from how you structure compensation to how you time a liquidity event. We coordinate with your CPA and think about the tax consequences of every recommendation we make, because for business owners the tax tail often wags the dog.</p>
           </div>
           <div class="practice-card">
             <h3>We stay engaged when it matters most.</h3>
-            <p>The moments when clients most need their advisor, a business sale, an inheritance, a divorce, a market crisis, are exactly when some firms go quiet or hand you off to a junior associate. We remain directly involved at every inflection point, because those are the moments that define a financial life.</p>
+            <p>The moments when business owners most need an advisor — a potential acquisition, a partner dispute, a sudden liquidity event — are exactly when some firms go quiet or hand you off to a junior associate. We remain directly involved at every inflection point, because those are the moments that define a financial life.</p>
           </div>
         </div>
       </div>
@@ -328,8 +328,8 @@
     <section id="cta">
       <div class="cta-inner">
         <h2>Let's start with a conversation.</h2>
-        <p>No obligation, no pressure. Just a straightforward discussion about where you are and where you want to go.</p>
-        <a href="/contact" class="btn-primary-light">Get in Touch</a>
+        <p>No obligation, no pressure. Just a straightforward discussion about where your business is, where you want it to go, and how your personal finances fit into that picture.</p>
+        <a data-route="contact" href="#" class="btn-primary-light">Get in Touch</a>
       </div>
     </section>
   `}function f(){return`
@@ -526,7 +526,7 @@
     <section class="split-hero">
       <div class="split-hero-left">
         <div class="split-hero-content">
-          <span class="section-label light">SMALL BUSINESSES</span>
+          <span class="section-label light">BUSINESSES</span>
           <h1>Wealth planning built around your business.</h1>
           <p class="about-hero-subtitle">Comprehensive financial guidance for business owners navigating growth, succession, and the transition to personal wealth.</p>
         </div>
@@ -541,7 +541,7 @@
         <div class="section-text">
           <span class="section-label">WHAT WE DO</span>
           <h2>Integrating your business and personal financial life</h2>
-          <p>For most business owners, the line between personal and business finances is blurred by design. Your business is your largest asset, your primary income source, and often the foundation of your retirement plan. We help you manage that complexity, coordinating business cash flow, personal savings, tax strategy, and long-term planning into a single coherent picture.</p>
+          <p>For most business owners, the line between personal and business finances is blurred by design. Your business is your largest asset, your primary income source, and often the foundation of your retirement plan. We help you manage that complexity — coordinating business cash flow, personal savings, tax strategy, and long-term planning into a single coherent picture.</p>
           <p>Whether you're in growth mode, preparing for a sale, or planning for the next generation, we bring the depth of planning your situation demands.</p>
         </div>
         <img class="placeholder-image" src="/images/page-smallbusiness-whatwedo.jpg" alt="Integrating business and personal finances" />
@@ -552,7 +552,7 @@
       <div class="section-header centered">
         <span class="section-label">HOW WE HELP</span>
         <h2>Services for business owners</h2>
-        <p class="section-intro">From day-to-day planning to once-in-a-lifetime transactions, we support business owners across every dimension of their financial life.</p>
+        <p class="section-intro">From day-to-day planning to once-in-a-lifetime transactions, we support business owners — from sole proprietors to mid-market companies — across every dimension of their financial life.</p>
       </div>
       <div class="pillars-grid">
         <div class="pillar">
@@ -594,6 +594,82 @@
           <div class="pillar-icon">◈</div>
           <h3>Cash Flow &amp; Income Planning</h3>
           <p>Managing the variability of business income to support a stable personal financial plan through every business cycle.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-row bg-off-white">
+      <div class="content-row-inner">
+        <div class="section-text">
+          <span class="section-label">EXIT STRATEGY &amp; SUCCESSION</span>
+          <h2>Planning your exit before you need one</h2>
+          <p>The most expensive mistake business owners make is waiting until they're ready to sell before thinking about the transaction. The decisions that determine how much you keep — business structure, asset vs. stock sale, installment arrangements, Qualified Small Business Stock exclusions — need to be made years in advance to have their full effect.</p>
+          <p>We work with business owners well before a liquidity event to position the business and its ownership structure for the best possible after-tax outcome. That includes coordinating with M&amp;A attorneys and CPAs, evaluating third-party sale vs. internal succession options, and making sure the proceeds translate into a lasting personal financial plan — not just a large deposit that gets mismanaged post-close.</p>
+          <ul class="content-list">
+            <li>Pre-sale tax positioning and deal structure analysis</li>
+            <li>Qualified Small Business Stock (QSBS) planning</li>
+            <li>Installment sales, earnouts, and seller financing strategy</li>
+            <li>Family and key-employee succession structuring</li>
+            <li>Post-exit investment and income planning</li>
+          </ul>
+        </div>
+        <img class="placeholder-image" src="/images/page-smallbusiness-whatwedo.jpg" alt="Exit and succession planning" />
+      </div>
+    </section>
+
+    <section class="content-row bg-white">
+      <div class="content-row-inner reverse">
+        <img class="placeholder-image" src="/images/page-smallbusiness-partner.jpg" alt="Business cash flow planning" />
+        <div class="section-text">
+          <span class="section-label">CASH FLOW PLANNING</span>
+          <h2>Separating personal wealth from business capital</h2>
+          <p>Business owners often conflate their personal and business finances — drawing more when business is good, less when it isn't, and hoping it evens out. It rarely does. Without a deliberate structure separating business capital from personal income, it's difficult to build real personal wealth independent of the business, manage tax liability efficiently, or plan accurately for the future.</p>
+          <p>We help owners establish a clear framework: how much to pay yourself in salary vs. distributions, how to build personal liquidity buffers that can weather a slow business cycle, and how to deploy excess business cash in a way that serves both the business and your personal balance sheet.</p>
+          <ul class="content-list">
+            <li>Salary vs. distribution optimization for S-Corp and LLC owners</li>
+            <li>Personal liquidity planning independent of business performance</li>
+            <li>Managing variable income through conservative spending frameworks</li>
+            <li>Coordinating business and personal cash flow across tax years</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-row bg-off-white">
+      <div class="content-row-inner">
+        <div class="section-text">
+          <span class="section-label">OWNER RETIREMENT PLANS</span>
+          <h2>Building retirement wealth inside your business</h2>
+          <p>Business owners have access to some of the most powerful retirement savings vehicles available — but choosing the right one, and structuring it correctly, requires matching the plan to your business profile. A Solo 401(k) can allow a self-employed owner to defer up to $70,000 per year. A SEP-IRA is simpler but capped differently. A defined benefit or cash balance plan can allow high-income owners to defer $100,000 or more annually — with a significant tax deduction in the year of contribution.</p>
+          <p>Getting this right matters enormously over time. We evaluate the full landscape of plan options for your situation and implement the structure that maximizes your retirement contributions, reduces your current tax burden, and integrates with your overall financial plan.</p>
+          <ul class="content-list">
+            <li>Solo 401(k) — highest contribution limits for self-employed and owner-only businesses</li>
+            <li>SEP-IRA — simple, flexible, no annual filing requirement</li>
+            <li>SIMPLE IRA — designed for small businesses with a handful of employees</li>
+            <li>Defined Benefit &amp; Cash Balance Plans — for high earners seeking outsized annual deferrals</li>
+            <li>Profit-sharing plan design and annual contribution optimization</li>
+          </ul>
+        </div>
+        <img class="placeholder-image" src="/images/page-smallbusiness-whatwedo.jpg" alt="Owner retirement plan design" />
+      </div>
+    </section>
+
+    <section class="content-row bg-white">
+      <div class="content-row-inner reverse">
+        <img class="placeholder-image" src="/images/page-smallbusiness-partner.jpg" alt="Tax-efficient wealth extraction" />
+        <div class="section-text">
+          <span class="section-label">TAX-EFFICIENT WEALTH EXTRACTION</span>
+          <h2>Keeping more of what your business generates</h2>
+          <p>For business owners, the tax return is one of the most important financial planning documents of the year — and one of the most underutilized. The difference between a well-structured and a poorly structured owner compensation strategy can easily be tens of thousands of dollars annually, compounded over the life of a business.</p>
+          <p>We work closely with your CPA to identify and implement strategies that legally reduce your tax burden at both the business and personal level — coordinating the timing of income, the structure of deductions, and the use of tax-advantaged accounts to build wealth more efficiently year over year.</p>
+          <ul class="content-list">
+            <li>Entity structure review — S-Corp, LLC, and C-Corp tax treatment</li>
+            <li>Qualified Business Income (QBI) deduction optimization</li>
+            <li>Section 179 and bonus depreciation strategies</li>
+            <li>Roth conversion planning in low-income business years</li>
+            <li>Charitable giving strategies — Donor-Advised Funds and appreciated asset gifting</li>
+            <li>Deferred compensation and benefits structuring</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -1245,7 +1321,7 @@
                 <option value="" disabled selected>Select a topic…</option>
                 <option value="individuals">Wealth Management for Individuals &amp; Families</option>
                 <option value="family-offices">Family Office Services</option>
-                <option value="small-businesses">Small Business Services</option>
+                <option value="businesses">Business Services</option>
                 <option value="general">General Inquiry</option>
               </select>
             </div>
@@ -2107,7 +2183,7 @@
           <h4>Services</h4>
           <a data-route="individuals" href="#">Individuals &amp; Families</a>
           <a data-route="family-offices" href="#">Family Offices</a>
-          <a data-route="small-businesses" href="#">Small Businesses</a>
+          <a data-route="businesses" href="#">Businesses</a>
         </div>
         <div class="footer-col">
           <h4>Company</h4>
@@ -2158,4 +2234,4 @@
         </form>
       </div>
     </div>
-  `}function De(){let e=document.getElementById(`tool-nl-form`);e&&e.addEventListener(`submit`,async t=>{t.preventDefault();let n=document.getElementById(`tool-nl-email`).value.trim(),r=document.getElementById(`tool-nl-first`).value.trim(),i=document.getElementById(`tool-nl-last`).value.trim(),a=document.getElementById(`tool-nl-msg`),o=e.querySelector(`button`);if(!n){a.textContent=`Please enter your email address.`,a.className=`tool-newsletter-msg tool-newsletter-error`,a.hidden=!1;return}o.disabled=!0,o.textContent=`Subscribing...`,a.hidden=!0;try{let t=await(await fetch(q,{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify({email:n,first_name:r,last_name:i})})).json();t.success?(a.textContent=`You're subscribed! Welcome to the Merels Capital newsletter.`,a.className=`tool-newsletter-msg tool-newsletter-success`,e.reset()):(a.textContent=t.error??`Something went wrong. Please try again.`,a.className=`tool-newsletter-msg tool-newsletter-error`),a.hidden=!1}catch{a.textContent=`Connection error. Please try again.`,a.className=`tool-newsletter-msg tool-newsletter-error`,a.hidden=!1}finally{o.disabled=!1,o.textContent=`Subscribe to Newsletter`}})}function Oe(){let e=document.getElementById(`footer-nl-form`);e&&e.addEventListener(`submit`,async t=>{t.preventDefault();let n=document.getElementById(`footer-nl-email`).value.trim(),r=document.getElementById(`footer-nl-msg`),i=e.querySelector(`button`);if(n){i.disabled=!0,r.hidden=!0;try{let t=await(await fetch(q,{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify({email:n})})).json();r.textContent=t.success?`You're subscribed!`:t.error??`Something went wrong.`,r.className=t.success?`footer-newsletter-msg footer-nl-success`:`footer-newsletter-msg footer-nl-error`,r.hidden=!1,t.success&&e.reset()}catch{r.textContent=`Connection error. Please try again.`,r.className=`footer-newsletter-msg footer-nl-error`,r.hidden=!1}finally{i.disabled=!1}}})}function J(e,t,r){n(e,()=>t()+Ee(),()=>{r?.(),De()})}n(`home`,c,u),n(`about`,d),n(`individuals`,f),n(`family-offices`,p),n(`small-businesses`,m),n(`articles`,h),n(`articles/gold-2025`,g),n(`articles/private-credit-2026`,_),n(`articles/usd-2026`,v),n(`articles/energy-2026`,y),n(`articles/fed-2026`,b),n(`contact`,ee,x),J(`tools/retirement-calculator`,w,T),J(`tools/retirement-quiz`,ne,re),J(`tools/social-security`,A,ae),J(`tools/rmd-planner`,se,ce),J(`tools/roth-conversion`,le,ue),J(`tools/401k-rollover`,I,L),J(`tools/529-planner`,V,H),J(`tools/risk-tolerance`,fe,pe),J(`tools/tax-savings`,ye,be),J(`tools/savings-goal`,Se,Ce),document.getElementById(`header`).innerHTML=we(),document.getElementById(`footer`).innerHTML=Te(),Oe();var ke=document.getElementById(`header`);window.addEventListener(`scroll`,()=>{ke.classList.toggle(`scrolled`,window.scrollY>10)},{passive:!0});var Y=document.getElementById(`mobile-menu-btn`),Ae=document.getElementById(`nav-links`),je=document.getElementById(`nav-actions`);Y.addEventListener(`click`,()=>{let e=Ae.classList.toggle(`open`);je.classList.toggle(`open`,e),Y.setAttribute(`aria-label`,e?`Close menu`:`Open menu`)});var X=document.getElementById(`tools-dropdown-btn`);if(X){let e=X.closest(`.nav-dropdown`);X.addEventListener(`click`,t=>{t.stopPropagation();let n=e.classList.toggle(`open`);X.setAttribute(`aria-expanded`,String(n))}),document.addEventListener(`click`,()=>{e.classList.remove(`open`),X.setAttribute(`aria-expanded`,`false`)})}var Me=document.getElementById(`book-now-btn`),Z=document.getElementById(`booking-modal`),Ne=document.getElementById(`booking-modal-close`),Pe=Z.querySelector(`.booking-modal-backdrop`),Fe=document.getElementById(`booking-iframe`),Ie=!1;function Q(){Ie||=(Fe.src=`https://bookings.merelscapital.com`,!0),Z.hidden=!1,document.body.style.overflow=`hidden`}Me.addEventListener(`click`,Q),document.addEventListener(`click`,e=>{e.target.closest(`[data-action="open-booking"]`)&&Q()});function $(){Z.hidden=!0,document.body.style.overflow=``}Ne.addEventListener(`click`,$),Pe.addEventListener(`click`,$),document.addEventListener(`keydown`,e=>{e.key===`Escape`&&$()}),s();function Le(){let e=new Date;for(e.setDate(e.getDate()+1);e.getDay()===0||e.getDay()===6;)e.setDate(e.getDate()+1);let t=e.toLocaleDateString(`en-CA`,{timeZone:`America/Denver`});fetch(`https://api.merelscapital.com/slots?date=${t}`).catch(()=>{})}window.addEventListener(`load`,()=>{setTimeout(Le,3e3)});
+  `}function De(){let e=document.getElementById(`tool-nl-form`);e&&e.addEventListener(`submit`,async t=>{t.preventDefault();let n=document.getElementById(`tool-nl-email`).value.trim(),r=document.getElementById(`tool-nl-first`).value.trim(),i=document.getElementById(`tool-nl-last`).value.trim(),a=document.getElementById(`tool-nl-msg`),o=e.querySelector(`button`);if(!n){a.textContent=`Please enter your email address.`,a.className=`tool-newsletter-msg tool-newsletter-error`,a.hidden=!1;return}o.disabled=!0,o.textContent=`Subscribing...`,a.hidden=!0;try{let t=await(await fetch(q,{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify({email:n,first_name:r,last_name:i})})).json();t.success?(a.textContent=`You're subscribed! Welcome to the Merels Capital newsletter.`,a.className=`tool-newsletter-msg tool-newsletter-success`,e.reset()):(a.textContent=t.error??`Something went wrong. Please try again.`,a.className=`tool-newsletter-msg tool-newsletter-error`),a.hidden=!1}catch{a.textContent=`Connection error. Please try again.`,a.className=`tool-newsletter-msg tool-newsletter-error`,a.hidden=!1}finally{o.disabled=!1,o.textContent=`Subscribe to Newsletter`}})}function Oe(){let e=document.getElementById(`footer-nl-form`);e&&e.addEventListener(`submit`,async t=>{t.preventDefault();let n=document.getElementById(`footer-nl-email`).value.trim(),r=document.getElementById(`footer-nl-msg`),i=e.querySelector(`button`);if(n){i.disabled=!0,r.hidden=!0;try{let t=await(await fetch(q,{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify({email:n})})).json();r.textContent=t.success?`You're subscribed!`:t.error??`Something went wrong.`,r.className=t.success?`footer-newsletter-msg footer-nl-success`:`footer-newsletter-msg footer-nl-error`,r.hidden=!1,t.success&&e.reset()}catch{r.textContent=`Connection error. Please try again.`,r.className=`footer-newsletter-msg footer-nl-error`,r.hidden=!1}finally{i.disabled=!1}}})}function J(e,t,r){n(e,()=>t()+Ee(),()=>{r?.(),De()})}n(`home`,c,u),n(`about`,d),n(`individuals`,f),n(`family-offices`,p),n(`businesses`,m),n(`articles`,h),n(`articles/gold-2025`,g),n(`articles/private-credit-2026`,_),n(`articles/usd-2026`,v),n(`articles/energy-2026`,y),n(`articles/fed-2026`,b),n(`contact`,ee,x),J(`tools/retirement-calculator`,w,T),J(`tools/retirement-quiz`,ne,re),J(`tools/social-security`,A,ae),J(`tools/rmd-planner`,se,ce),J(`tools/roth-conversion`,le,ue),J(`tools/401k-rollover`,I,L),J(`tools/529-planner`,V,H),J(`tools/risk-tolerance`,fe,pe),J(`tools/tax-savings`,ye,be),J(`tools/savings-goal`,Se,Ce),document.getElementById(`header`).innerHTML=we(),document.getElementById(`footer`).innerHTML=Te(),Oe();var ke=document.getElementById(`header`);window.addEventListener(`scroll`,()=>{ke.classList.toggle(`scrolled`,window.scrollY>10)},{passive:!0});var Y=document.getElementById(`mobile-menu-btn`),Ae=document.getElementById(`nav-links`),je=document.getElementById(`nav-actions`);Y.addEventListener(`click`,()=>{let e=Ae.classList.toggle(`open`);je.classList.toggle(`open`,e),Y.setAttribute(`aria-label`,e?`Close menu`:`Open menu`)});var X=document.getElementById(`tools-dropdown-btn`);if(X){let e=X.closest(`.nav-dropdown`);X.addEventListener(`click`,t=>{t.stopPropagation();let n=e.classList.toggle(`open`);X.setAttribute(`aria-expanded`,String(n))}),document.addEventListener(`click`,()=>{e.classList.remove(`open`),X.setAttribute(`aria-expanded`,`false`)})}var Me=document.getElementById(`book-now-btn`),Z=document.getElementById(`booking-modal`),Ne=document.getElementById(`booking-modal-close`),Pe=Z.querySelector(`.booking-modal-backdrop`),Fe=document.getElementById(`booking-iframe`),Ie=!1;function Q(){Ie||=(Fe.src=`https://bookings.merelscapital.com`,!0),Z.hidden=!1,document.body.style.overflow=`hidden`}Me.addEventListener(`click`,Q),document.addEventListener(`click`,e=>{e.target.closest(`[data-action="open-booking"]`)&&Q()});function $(){Z.hidden=!0,document.body.style.overflow=``}Ne.addEventListener(`click`,$),Pe.addEventListener(`click`,$),document.addEventListener(`keydown`,e=>{e.key===`Escape`&&$()}),s();function Le(){let e=new Date;for(e.setDate(e.getDate()+1);e.getDay()===0||e.getDay()===6;)e.setDate(e.getDate()+1);let t=e.toLocaleDateString(`en-CA`,{timeZone:`America/Denver`});fetch(`https://api.merelscapital.com/slots?date=${t}`).catch(()=>{})}window.addEventListener(`load`,()=>{setTimeout(Le,3e3)});
