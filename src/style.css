@@ -222,6 +222,12 @@ a { text-decoration: none; }
   background: var(--off-white);
 }
 
+.nav-dropdown-divider {
+  height: 1px;
+  background: var(--gray-light);
+  margin: 0.3rem 0;
+}
+
 /* Bookings menu button */
 .booking-modal {
   position: fixed;

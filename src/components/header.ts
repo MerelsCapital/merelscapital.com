@@ -6,7 +6,20 @@ export function renderHeader(): string {
         <a data-route="home" data-scroll="audience-content" href="/#audience-content">Services</a>
         <a data-route="home" data-scroll="philosophy" href="/#philosophy">Philosophy</a>
         <a data-route="home" data-scroll="approach" href="/#approach">Our Approach</a>
-        <a data-route="home" data-scroll="insights" href="/#insights">Insights</a>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-trigger" id="articles-dropdown-btn" aria-expanded="false">
+            Articles <span class="nav-dropdown-arrow">▾</span>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a data-route="guides/trusts" href="#">Trusts: A Detailed Overview</a>
+            <a data-route="guides/retirement-planning" href="#">Retirement Planning Options</a>
+            <a data-route="guides/tax-planning" href="#">Tax Planning for Business Owners</a>
+            <a data-route="guides/cash-flow" href="#">Cash Flow Management</a>
+            <a data-route="guides/employee-benefits" href="#">Employee Benefits</a>
+            <div class="nav-dropdown-divider"></div>
+            <a data-route="articles" href="#">All Articles</a>
+          </div>
+        </div>
         <div class="nav-dropdown">
           <button class="nav-dropdown-trigger" id="tools-dropdown-btn" aria-expanded="false">
             Tools <span class="nav-dropdown-arrow">▾</span>
@@ -27,7 +40,6 @@ export function renderHeader(): string {
       </div>
       <div class="nav-actions" id="nav-actions">
         <a data-route="about" href="#">About Us</a>
-        <a data-route="articles" href="#">Articles</a>
         <button id="book-now-btn" class="nav-cta">Book Now!</button>
       </div>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open menu">

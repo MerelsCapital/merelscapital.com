@@ -60,6 +60,26 @@ registerRoute('articles/fed-2026', async () => {
   const { renderArticleFed2026 } = await import('./pages/article-fed-2026.js')
   return { html: renderArticleFed2026() }
 })
+registerRoute('guides/trusts', async () => {
+  const { renderGuideTrusts } = await import('./pages/guides/trusts.js')
+  return { html: renderGuideTrusts() }
+})
+registerRoute('guides/retirement-planning', async () => {
+  const { renderGuideRetirementPlanning } = await import('./pages/guides/retirement-planning.js')
+  return { html: renderGuideRetirementPlanning() }
+})
+registerRoute('guides/tax-planning', async () => {
+  const { renderGuideTaxPlanning } = await import('./pages/guides/tax-planning.js')
+  return { html: renderGuideTaxPlanning() }
+})
+registerRoute('guides/cash-flow', async () => {
+  const { renderGuideCashFlow } = await import('./pages/guides/cash-flow.js')
+  return { html: renderGuideCashFlow() }
+})
+registerRoute('guides/employee-benefits', async () => {
+  const { renderGuideEmployeeBenefits } = await import('./pages/guides/employee-benefits.js')
+  return { html: renderGuideEmployeeBenefits() }
+})
 registerRoute('contact', async () => {
   const { renderContact, initContact } = await import('./pages/contact.js')
   return { html: renderContact(), init: initContact }
@@ -127,20 +147,34 @@ mobileBtn.addEventListener('click', () => {
   mobileBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu')
 })
 
-// ── Tools dropdown ───────────────────────────────────
-const toolsBtn = document.getElementById('tools-dropdown-btn')
-if (toolsBtn) {
-  const toolsDropdown = toolsBtn.closest('.nav-dropdown')!
-  toolsBtn.addEventListener('click', (e) => {
+// ── Nav dropdowns ────────────────────────────────────
+function initDropdown(btnId: string) {
+  const btn = document.getElementById(btnId)
+  if (!btn) return
+  const dropdown = btn.closest('.nav-dropdown')!
+  btn.addEventListener('click', (e) => {
     e.stopPropagation()
-    const isOpen = toolsDropdown.classList.toggle('open')
-    toolsBtn.setAttribute('aria-expanded', String(isOpen))
-  })
-  document.addEventListener('click', () => {
-    toolsDropdown.classList.remove('open')
-    toolsBtn.setAttribute('aria-expanded', 'false')
+    const opening = !dropdown.classList.contains('open')
+    document.querySelectorAll('.nav-dropdown.open').forEach(d => {
+      d.classList.remove('open')
+      d.querySelector<HTMLElement>('[aria-expanded]')?.setAttribute('aria-expanded', 'false')
+    })
+    if (opening) {
+      dropdown.classList.add('open')
+      btn.setAttribute('aria-expanded', 'true')
+    }
   })
 }
+
+document.addEventListener('click', () => {
+  document.querySelectorAll('.nav-dropdown.open').forEach(d => {
+    d.classList.remove('open')
+    d.querySelector<HTMLElement>('[aria-expanded]')?.setAttribute('aria-expanded', 'false')
+  })
+})
+
+initDropdown('tools-dropdown-btn')
+initDropdown('articles-dropdown-btn')
 
 // ── Booking modal ────────────────────────────────────
 const bookBtn  = document.getElementById('book-now-btn')!
