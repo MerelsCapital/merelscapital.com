@@ -1,6 +1,32 @@
-type RouteLoader = () => Promise<{ html: string; init?: () => void }>
+interface RouteMeta {
+  title: string
+  description: string
+  ogTitle?: string
+  ogDescription?: string
+}
+
+type RouteLoader = () => Promise<{ html: string; init?: () => void; meta?: RouteMeta }>
 
 const routes = new Map<string, RouteLoader>()
+
+const DEFAULT_META: RouteMeta = {
+  title: 'Merels Capital – Independent Wealth Management',
+  description: 'Merels Capital provides independent, unconflicted wealth management for individuals, families, and institutions.',
+}
+
+function applyMeta(meta: RouteMeta, route: string) {
+  document.title = meta.title
+
+  const setMeta = (sel: string, attr: string, val: string) => {
+    const el = document.querySelector<HTMLMetaElement>(sel)
+    if (el) el.setAttribute(attr, val)
+  }
+
+  setMeta('meta[name="description"]', 'content', meta.description)
+  setMeta('meta[property="og:title"]', 'content', meta.ogTitle ?? meta.title)
+  setMeta('meta[property="og:description"]', 'content', meta.ogDescription ?? meta.description)
+  setMeta('meta[property="og:url"]', 'content', `https://merelscapital.com${route === 'home' ? '/' : `/${route}`}`)
+}
 
 export function registerRoute(name: string, loader: RouteLoader) {
   routes.set(name, loader)
@@ -16,9 +42,10 @@ function pathToRoute(path: string): string {
 
 async function renderRoute(route: string, scrollTarget?: string) {
   const resolved = routes.has(route) ? route : 'home'
-  const { html, init } = await routes.get(resolved)!()
+  const { html, init, meta } = await routes.get(resolved)!()
   const main = document.getElementById('main-content')!
   main.innerHTML = html
+  applyMeta(meta ?? DEFAULT_META, resolved)
   init?.()
   if (scrollTarget) {
     document.getElementById(scrollTarget)?.scrollIntoView({ behavior: 'smooth' })
