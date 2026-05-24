@@ -22,14 +22,14 @@ export function renderFooter(): string {
       <div class="footer-links">
         <div class="footer-col">
           <h4>Services</h4>
-          <a data-route="individuals" href="#">Individuals &amp; Families</a>
-          <a data-route="family-offices" href="#">Family Offices</a>
-          <a data-route="businesses" href="#">Businesses</a>
+          <a href="/individuals/">Individuals &amp; Families</a>
+          <a href="/family-offices/">Family Offices</a>
+          <a href="/businesses/">Businesses</a>
         </div>
         <div class="footer-col">
           <h4>Company</h4>
-          <a data-route="about" href="#">About Us</a>
-          <a data-route="articles" href="#">Articles</a>
+          <a href="/about/">About Us</a>
+          <a href="/articles/">Articles</a>
         </div>
         <div class="footer-col">
           <h4>Legal</h4>
@@ -38,7 +38,7 @@ export function renderFooter(): string {
         </div>
         <div class="footer-col">
           <h4>Contact</h4>
-          <a data-route="contact" href="#">Contact Us</a>
+          <a href="/contact/">Contact Us</a>
         </div>
         <div class="footer-col">
           <h4>Newsletter</h4>

@@ -82,7 +82,7 @@ export function renderFamilyOffices(): string {
           <span class="section-label">WHY WORK WITH US</span>
           <h2>Independence that serves the family, not the institution</h2>
           <p>Our open-architecture approach and freedom from proprietary products means every recommendation is made in your family's best interest. No hidden incentives, no preferred managers, no conflicts. Just straightforward advice from advisors who answer only to you.</p>
-          <a data-route="contact" href="#" class="text-link">Start a conversation →</a>
+          <a href="/contact/" class="text-link">Start a conversation →</a>
         </div>
       </div>
     </section>
@@ -91,7 +91,7 @@ export function renderFamilyOffices(): string {
       <div class="cta-inner">
         <h2>Let's discuss how we can support your family office.</h2>
         <p>We work with family offices of all sizes and structures. Tell us about your situation.</p>
-        <a data-route="contact" href="#" class="btn-primary-light">Get in Touch</a>
+        <a href="/contact/" class="btn-primary-light">Get in Touch</a>
       </div>
     </section>
   `

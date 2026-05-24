@@ -97,7 +97,7 @@ export function renderArticleUsd2026(): string {
         <p>The US dollar in early 2026 sits at the intersection of a maturing cyclical bear phase and structural resilience. Historical regimes, robust empirical correlations with global financial conditions and EM growth, and consistent regime-shift patterns provide compelling evidence that the dollar is indeed a cyclical asset offering tactical opportunities for diversified portfolios. While 2026 forecasts lean toward moderate further softening, monitoring Fed projections, relative growth data, and risk sentiment will be key. Investors should prepare for volatility but recognise that reports of the dollar's demise remain, as ever, premature. The greenback's dominance endures; its value, however, will continue to dance to the rhythm of the global cycle.</p>
 
         <div class="article-footer">
-          <a data-route="articles" href="#" class="text-link">← Back to Articles</a>
+          <a href="/articles/" class="text-link">← Back to Articles</a>
         </div>
 
       </div>

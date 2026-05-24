@@ -48,7 +48,7 @@ export function renderHome(): string {
               <span class="section-label">WHAT WE DO</span>
               <h2>Financial guidance for business owners at every stage</h2>
               <p>Running a business and building personal wealth require different disciplines, but the two are inseparable. We help business owners integrate their business and personal finances, plan for growth, and prepare for what comes next, whether that's an exit, a succession, or retirement on your own terms.</p>
-              <a data-route="businesses" href="#" class="text-link">Explore our approach →</a>
+              <a href="/businesses/" class="text-link">Explore our approach →</a>
             </div>
             <picture><source media="(max-width: 768px)" srcset="/images/mobile/audience-smallbusiness-whatwedo.jpg"><img class="placeholder-image" src="/images/desktop/audience-smallbusiness-whatwedo.jpg" alt="Business financial planning"></picture>
           </div>
@@ -60,7 +60,7 @@ export function renderHome(): string {
               <span class="section-label">WHY WORK WITH US</span>
               <h2>A partner who understands the complexity of business ownership</h2>
               <p>Most advisors treat business owners like any other client. We understand that your business is your largest asset, your primary income source, and often your retirement plan all at once. We bring the planning depth that complexity demands, so you can focus on running your business.</p>
-              <a data-route="contact" href="#" class="text-link">Start a conversation →</a>
+              <a href="/contact/" class="text-link">Start a conversation →</a>
             </div>
           </div>
         </div>
@@ -73,7 +73,7 @@ export function renderHome(): string {
               <span class="section-label">WHAT WE DO</span>
               <h2>Wealth advisory built around your vision of prosperity</h2>
               <p>We provide comprehensive financial planning and investment management grounded in what matters most to you, not an abstract benchmark. Every recommendation we make is shaped by your goals, your values, and the life you want to live.</p>
-              <a data-route="individuals" href="#" class="text-link">Explore our approach →</a>
+              <a href="/individuals/" class="text-link">Explore our approach →</a>
             </div>
             <picture><source media="(max-width: 768px)" srcset="/images/mobile/audience-individuals-whatwedo.jpg"><img class="placeholder-image" src="/images/desktop/audience-individuals-whatwedo.jpg" alt="Wealth advisory partnership"></picture>
           </div>
@@ -85,7 +85,7 @@ export function renderHome(): string {
               <span class="section-label">WHY WORK WITH US</span>
               <h2>A partner through every defining moment</h2>
               <p>The most important financial decisions in life rarely come with a roadmap. Whether you're navigating a liquidity event, planning for the next generation, or redefining what retirement means to you, we're here to provide clarity and confidence at every step.</p>
-              <a data-route="contact" href="#" class="text-link">Start a conversation →</a>
+              <a href="/contact/" class="text-link">Start a conversation →</a>
             </div>
           </div>
         </div>
@@ -98,7 +98,7 @@ export function renderHome(): string {
               <span class="section-label">WHAT WE DO</span>
               <h2>Serving the complexity of multi-generational wealth</h2>
               <p>Family offices require more than investment management. They demand coordinated oversight of governance, reporting, tax planning, and legacy strategy. We provide the institutional rigor and personalized service that complex family structures require.</p>
-              <a data-route="family-offices" href="#" class="text-link">Explore our approach →</a>
+              <a href="/family-offices/" class="text-link">Explore our approach →</a>
             </div>
             <picture><source media="(max-width: 768px)" srcset="/images/mobile/audience-familyoffice-whatwedo.jpeg"><img class="placeholder-image" src="/images/desktop/audience-familyoffice-whatwedo.jpeg" alt="Family office wealth management"></picture>
           </div>
@@ -110,7 +110,7 @@ export function renderHome(): string {
               <span class="section-label">WHY WORK WITH US</span>
               <h2>Independence that serves the family, not the institution</h2>
               <p>Our open-architecture approach and freedom from proprietary products means every recommendation is made in your family's best interest. We act as a trusted extension of your family office, bringing capabilities that would otherwise require an entire internal team.</p>
-              <a data-route="contact" href="#" class="text-link">Start a conversation →</a>
+              <a href="/contact/" class="text-link">Start a conversation →</a>
             </div>
           </div>
         </div>

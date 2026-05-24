@@ -126,7 +126,7 @@ export function renderArticleFed2026(): string {
         <p>For investors and households, the message is clear: plan for a world where the cost of money stays elevated longer than the optimistic forecasts of 2025 suggested. Focus on quality, cash flow, and flexibility. The economy is not in crisis — but the Fed's job has become significantly harder.</p>
 
         <div class="article-footer">
-          <a data-route="articles" href="#" class="text-link">← Back to Articles</a>
+          <a href="/articles/" class="text-link">← Back to Articles</a>
         </div>
 
       </div>

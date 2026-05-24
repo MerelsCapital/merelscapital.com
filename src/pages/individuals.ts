@@ -82,7 +82,7 @@ export function renderIndividuals(): string {
           <span class="section-label">HOW WE HELP</span>
           <h2>A partner through every defining moment</h2>
           <p>The most consequential financial decisions rarely come with a manual. Whether you're approaching a business exit, navigating an inheritance, planning for a child's education, or thinking carefully about what retirement looks like for you. We provide clarity and confidence at every step.</p>
-          <a data-route="contact" href="#" class="text-link">Start a conversation →</a>
+          <a href="/contact/" class="text-link">Start a conversation →</a>
         </div>
       </div>
     </section>
@@ -91,7 +91,7 @@ export function renderIndividuals(): string {
       <div class="cta-inner">
         <h2>Ready to build a plan that's truly yours?</h2>
         <p>Every engagement begins with an honest conversation about where you are and where you want to go.</p>
-        <a data-route="contact" href="#" class="btn-primary-light">Schedule an Introduction</a>
+        <a href="/contact/" class="btn-primary-light">Schedule an Introduction</a>
       </div>
     </section>
   `

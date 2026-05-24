@@ -61,7 +61,7 @@ export function renderArticlePrivateCredit2026(): string {
         <p>The sector's maturation — greater transparency demands, standardisation, and liquidity-management discipline — will be accelerated by recent events. Yet its core strengths in certainty of execution, flexibility, and diversification position it to support lower-tier borrowers and capture new opportunities. Private credit is aiming to cement itself as a core pillar of corporate finance, now trying to prove its resilience under real stress.</p>
 
         <div class="article-footer">
-          <a data-route="articles" href="#" class="text-link">← Back to Articles</a>
+          <a href="/articles/" class="text-link">← Back to Articles</a>
         </div>
 
       </div>

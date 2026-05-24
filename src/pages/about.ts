@@ -106,7 +106,7 @@ export function renderAbout(): string {
       <div class="cta-inner">
         <h2>Let's start with a conversation.</h2>
         <p>No obligation, no pressure. Just a straightforward discussion about where your business is, where you want it to go, and how your personal finances fit into that picture.</p>
-        <a data-route="contact" href="#" class="btn-primary-light">Get in Touch</a>
+        <a href="/contact/" class="btn-primary-light">Get in Touch</a>
       </div>
     </section>
   `

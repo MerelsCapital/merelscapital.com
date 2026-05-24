@@ -4,108 +4,108 @@
   <!-- Core pages -->
   <url>
     <loc>https://merelscapital.com/</loc>
-    <lastmod>2026-05-03</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://merelscapital.com/about</loc>
-    <lastmod>2026-05-03</lastmod>
+    <loc>https://merelscapital.com/about/</loc>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://merelscapital.com/contact</loc>
-    <lastmod>2026-05-03</lastmod>
+    <loc>https://merelscapital.com/contact/</loc>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Service pages -->
   <url>
-    <loc>https://merelscapital.com/businesses</loc>
-    <lastmod>2026-05-03</lastmod>
+    <loc>https://merelscapital.com/businesses/</loc>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://merelscapital.com/individuals</loc>
-    <lastmod>2026-05-03</lastmod>
+    <loc>https://merelscapital.com/individuals/</loc>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://merelscapital.com/family-offices</loc>
-    <lastmod>2026-05-03</lastmod>
+    <loc>https://merelscapital.com/family-offices/</loc>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <!-- Guides -->
   <url>
-    <loc>https://merelscapital.com/guides/trusts</loc>
-    <lastmod>2026-05-03</lastmod>
+    <loc>https://merelscapital.com/guides/trusts/</loc>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://merelscapital.com/guides/retirement-planning</loc>
-    <lastmod>2026-05-03</lastmod>
+    <loc>https://merelscapital.com/guides/retirement-planning/</loc>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://merelscapital.com/guides/tax-planning</loc>
-    <lastmod>2026-05-03</lastmod>
+    <loc>https://merelscapital.com/guides/tax-planning/</loc>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://merelscapital.com/guides/cash-flow</loc>
-    <lastmod>2026-05-03</lastmod>
+    <loc>https://merelscapital.com/guides/cash-flow/</loc>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://merelscapital.com/guides/employee-benefits</loc>
-    <lastmod>2026-05-03</lastmod>
+    <loc>https://merelscapital.com/guides/employee-benefits/</loc>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- Articles -->
   <url>
-    <loc>https://merelscapital.com/articles</loc>
-    <lastmod>2026-05-03</lastmod>
+    <loc>https://merelscapital.com/articles/</loc>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://merelscapital.com/articles/fed-2026</loc>
+    <loc>https://merelscapital.com/articles/fed-2026/</loc>
     <lastmod>2026-05-03</lastmod>
     <changefreq>never</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://merelscapital.com/articles/energy-2026</loc>
+    <loc>https://merelscapital.com/articles/energy-2026/</loc>
     <lastmod>2026-05-03</lastmod>
     <changefreq>never</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://merelscapital.com/articles/usd-2026</loc>
+    <loc>https://merelscapital.com/articles/usd-2026/</loc>
     <lastmod>2026-05-03</lastmod>
     <changefreq>never</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://merelscapital.com/articles/private-credit-2026</loc>
+    <loc>https://merelscapital.com/articles/private-credit-2026/</loc>
     <lastmod>2026-05-03</lastmod>
     <changefreq>never</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://merelscapital.com/articles/gold-2025</loc>
+    <loc>https://merelscapital.com/articles/gold-2025/</loc>
     <lastmod>2026-05-03</lastmod>
     <changefreq>never</changefreq>
     <priority>0.6</priority>
@@ -113,62 +113,68 @@
 
   <!-- Tools -->
   <url>
-    <loc>https://merelscapital.com/tools/retirement-calculator</loc>
-    <lastmod>2026-05-03</lastmod>
+    <loc>https://merelscapital.com/tools/</loc>
+    <lastmod>2026-05-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://merelscapital.com/tools/retirement-calculator/</loc>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://merelscapital.com/tools/retirement-quiz</loc>
-    <lastmod>2026-05-03</lastmod>
+    <loc>https://merelscapital.com/tools/retirement-quiz/</loc>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://merelscapital.com/tools/social-security</loc>
-    <lastmod>2026-05-03</lastmod>
+    <loc>https://merelscapital.com/tools/social-security/</loc>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://merelscapital.com/tools/rmd-planner</loc>
-    <lastmod>2026-05-03</lastmod>
+    <loc>https://merelscapital.com/tools/rmd-planner/</loc>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://merelscapital.com/tools/roth-conversion</loc>
-    <lastmod>2026-05-03</lastmod>
+    <loc>https://merelscapital.com/tools/roth-conversion/</loc>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://merelscapital.com/tools/401k-rollover</loc>
-    <lastmod>2026-05-03</lastmod>
+    <loc>https://merelscapital.com/tools/401k-rollover/</loc>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://merelscapital.com/tools/529-planner</loc>
-    <lastmod>2026-05-03</lastmod>
+    <loc>https://merelscapital.com/tools/529-planner/</loc>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://merelscapital.com/tools/risk-tolerance</loc>
-    <lastmod>2026-05-03</lastmod>
+    <loc>https://merelscapital.com/tools/risk-tolerance/</loc>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://merelscapital.com/tools/tax-savings</loc>
-    <lastmod>2026-05-03</lastmod>
+    <loc>https://merelscapital.com/tools/tax-savings/</loc>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://merelscapital.com/tools/savings-goal</loc>
-    <lastmod>2026-05-03</lastmod>
+    <loc>https://merelscapital.com/tools/savings-goal/</loc>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

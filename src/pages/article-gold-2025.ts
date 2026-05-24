@@ -83,7 +83,7 @@ export function renderArticleGold2025(): string {
         <p>In summary, our outlook for gold remains constructive, with prices potentially climbing to $5,300 per ounce amid sustained demand from private investors, central banks, and high-net-worth individuals hedging against persistent uncertainties. While structural supports like diversification needs and official buying provide a strong foundation, vigilance is essential for potential reversals tied to easing geopolitical risks or shifts in Fed policy.</p>
 
         <div class="article-footer">
-          <a data-route="articles" href="#" class="text-link">← Back to Articles</a>
+          <a href="/articles/" class="text-link">← Back to Articles</a>
         </div>
 
       </div>

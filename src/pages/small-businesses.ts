@@ -158,7 +158,7 @@ export function renderSmallBusinesses(): string {
           <span class="section-label">WHO WE SERVE</span>
           <h2>Owners at every stage of the journey</h2>
           <p>We work with founders, operators, and transitioning owners across a wide range of industries and business sizes. Whether you're still building, preparing to exit, or navigating what comes after, we're here to make sure your financial life keeps pace with your business.</p>
-          <a data-route="contact" href="#" class="text-link">Start a conversation →</a>
+          <a href="/contact/" class="text-link">Start a conversation →</a>
         </div>
       </div>
     </section>

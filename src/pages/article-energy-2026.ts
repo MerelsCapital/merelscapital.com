@@ -99,7 +99,7 @@ export function renderArticleEnergy2026(): string {
         <p>In summary, the 2026 energy sector offers compelling risk/reward for disciplined capital allocators. Data centers provide secular demand tailwinds; the Iranian conflict adds near-term price volatility and geopolitical premia; and the accelerating renewable buildout supplies both a long-term supply buffer and attractive investment opportunities. The net result: higher returns for energy investors, tempered macro drag, and a powerful reminder that the energy transition and geopolitics remain inextricably linked.</p>
 
         <div class="article-footer">
-          <a data-route="articles" href="#" class="text-link">← Back to Articles</a>
+          <a href="/articles/" class="text-link">← Back to Articles</a>
         </div>
 
       </div>
