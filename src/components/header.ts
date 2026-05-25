@@ -16,6 +16,7 @@ export function renderHeader(): string {
             <a href="/guides/tax-planning/">Tax Planning for Business Owners</a>
             <a href="/guides/cash-flow/">Cash Flow Management</a>
             <a href="/guides/employee-benefits/">Employee Benefits</a>
+            <a href="/faq/">FAQ</a>
             <div class="nav-dropdown-divider"></div>
             <a href="/articles/">All Articles</a>
           </div>

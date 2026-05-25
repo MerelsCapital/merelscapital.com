@@ -159,6 +159,15 @@ export const routes: RouteConfig[] = [
     },
   },
   {
+    path: 'faq',
+    modulePath: './pages/faq.ts',
+    renderFn: 'renderFAQ',
+    meta: {
+      title: 'Frequently Asked Questions | Merels Capital',
+      description: 'Answers to common questions about Merels Capital — fees, services, investment approach, becoming a client, asset safety, and how we work with individuals, families, and business owners.',
+    },
+  },
+  {
     path: 'contact',
     modulePath: './pages/contact.ts',
     renderFn: 'renderContact',
